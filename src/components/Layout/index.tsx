@@ -36,7 +36,7 @@ const Layout = ({ children }: PropsWithChildren) => {
     if (showBurgerMenu) {
       burgerMenuRef.current!.style.width = "0%"
       setShowBurgerMenu(false)
-      router.push(to)
+      router.push(to + "#top")
     }
   }
 
@@ -64,6 +64,7 @@ const Layout = ({ children }: PropsWithChildren) => {
   return (
     <>
       <div id="main">
+        <div id="top" />
         <header>
           <Image src={pdpsi} onClick={() => router.push("/")} alt={"PDPsi"} />
           <nav>

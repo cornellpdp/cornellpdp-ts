@@ -100,8 +100,8 @@ footer {
   align-items: center;
   height: 5rem;
   user-select: none;
-  background-color: rgb(129, 128, 128);
-  color: rgb(0, 0, 0);
+  background-color: rgb(162, 162, 162);
+  color: rgb(50, 50, 50);
   padding: 0rem 4rem;
 }
 
@@ -123,7 +123,7 @@ footer .footerRight {
 }
 
 footer .footerRight div {
-  font-size: smaller;
+  font-size: x-small;
 }
 
 .BurgerMenu {
@@ -204,6 +204,7 @@ footer .footerRight div {
     box-sizing: border-box;
     position: relative;
     margin-bottom: 1rem;
+    font-size: xx-large;
   }
 }
 
