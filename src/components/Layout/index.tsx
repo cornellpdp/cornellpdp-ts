@@ -5,10 +5,13 @@ import { NavItem } from "./types"
 import { BurgerIcon } from "./BurgerIcon"
 import { NavItems } from "./NavItems"
 import { BurgerMenu } from "./BurgerMenu"
+import pdpsi from "public/img/pdpsi.png"
 
 const NavLinks: NavItem[] = [
-  { name: "Home", to: "/" },
-  { name: "About", to: "/about" },
+  { name: "HOME", to: "/" },
+  { name: "ABOUT", to: "/about" },
+  { name: "BROTHERS", to: "/brothers" },
+  { name: "RUSH", to: "/rush" },
 ]
 
 const Layout = ({ children }: PropsWithChildren) => {
@@ -62,14 +65,29 @@ const Layout = ({ children }: PropsWithChildren) => {
     <>
       <div id="main">
         <header>
-          <a onClick={() => router.push("/")}>Logo</a>
+          <Image src={pdpsi} onClick={() => router.push("/")} alt={"PDPsi"} />
           <nav>
             <NavItems navItems={NavLinks} />
             <BurgerIcon ref={burgerIconRef} handleClick={clickedBurger} />
           </nav>
         </header>
         <main>{children}</main>
-        <footer>test</footer>
+        <footer>
+          <a href="https://www.instagram.com/cornellpdpsi/" target="_blank" rel="noopener noreferrer">
+            INSTAGRAM
+          </a>
+          <a
+            href="https://www.facebook.com/Cornellpideltapsi/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            FACEBOOK
+          </a>
+          <div className="footerRight">
+            <div>© 2023 Cornell Pi Delta Psi Fraternity, Inc.</div>
+            <div>Website by Joshua Guo</div>
+          </div>
+        </footer>
       </div>
       <BurgerMenu ref={burgerMenuRef} navItems={NavLinks} handleClick={clickedBurgerItem} />
     </>

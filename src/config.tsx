@@ -1,6 +1,6 @@
 import Head from "next/head"
 
-const titleDefault = "website-template-ts"
+const titleDefault = "Pi Delta Psi Fraternity Inc. at Cornell University"
 
 export default function Header({ title = titleDefault }) {
   return (

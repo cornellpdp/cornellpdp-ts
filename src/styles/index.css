@@ -1,6 +1,12 @@
 :root {
 }
 
+@font-face {
+  font-family: "ptsans";
+  font-weight: normal;
+  src: url("/ptsans.ttf");
+}
+
 html,
 body {
   padding: 0;
@@ -8,6 +14,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
+  font-family: "ptsans", sans-serif;
 }
 
 #main {
@@ -15,6 +22,21 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+/* LAYOUT START */
 
 header {
   box-sizing: border-box;
@@ -67,17 +89,41 @@ main {
   margin-top: -5rem;
 }
 
+main .mainContent {
+  margin: 2rem 18rem;
+}
+
 footer {
   position: sticky;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
   height: 5rem;
   user-select: none;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: white;
+  background-color: rgb(129, 128, 128);
+  color: rgb(0, 0, 0);
   padding: 0rem 4rem;
+}
+
+footer a {
+  margin-right: 1rem;
+}
+
+footer a:hover {
+  color: rgb(220, 220, 220);
+}
+
+footer .footerRight {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+  margin-left: auto;
+  text-align: right;
+}
+
+footer .footerRight div {
+  font-size: smaller;
 }
 
 .BurgerMenu {
@@ -121,9 +167,12 @@ footer {
     margin-top: -4rem;
   }
 
+  main .mainContent {
+    margin: 2rem 1rem;
+  }
+
   footer {
     height: 4rem;
-    justify-content: center;
     padding: 0rem 1rem;
   }
 
@@ -157,3 +206,53 @@ footer {
     margin-bottom: 1rem;
   }
 }
+
+@media (min-width: 575.99px) and (max-width: 1023.98px) {
+  main .mainContent {
+    margin: 2rem 6rem;
+  }
+
+  footer {
+    padding: 0rem 2.5rem;
+  }
+}
+
+/* LAYOUT END */
+
+/* BACKGROUND BEGIN */
+
+.background {
+  height: 100vh;
+  pointer-events: none;
+  user-select: none;
+}
+
+.background .backgroundImage {
+  position: relative;
+  object-fit: cover;
+  height: 100vh;
+  width: 100vw;
+  filter: brightness(75%);
+}
+
+.background .backgroundCover {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  top: calc(100vh / 3);
+}
+
+/* BACKGROUND END */
+
+/* HOMEPAGE BEGIN */
+
+.kappa {
+  object-fit: cover;
+  width: 33.33%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* HOMEPAGE END */
