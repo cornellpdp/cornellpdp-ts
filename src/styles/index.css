@@ -52,6 +52,12 @@ h3 {
   margin-block: 0;
 }
 
+h4 {
+  font-weight: normal;
+  font-size: 1rem;
+  margin-block: 0;
+}
+
 /* LAYOUT START */
 
 header {
@@ -106,7 +112,7 @@ main {
 }
 
 main .mainContent {
-  margin: 2rem 18rem;
+  margin: 2rem 12rem;
 }
 
 footer {
@@ -310,3 +316,32 @@ footer .footerRight div {
 }
 
 /* ABOUT END */
+
+/* BROTHERS BEGIN */
+
+.activeHouseContainer .activeClass {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.activeHouseContainer .activeClass .activeBrother {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  text-align: left;
+}
+
+.activeHouseContainer .activeClass .activeBrother img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1023.98px) {
+  .activeHouseContainer .activeClass .activeBrother {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* BROTHERS END */

@@ -65,5 +65,5 @@ export default function Page() {
 }
 
 export const getStaticProps: GetStaticProps<AboutProps> = async () => {
-  return { props: { title: "About" } }
+  return { props: { title: "ABOUT" } }
 }
