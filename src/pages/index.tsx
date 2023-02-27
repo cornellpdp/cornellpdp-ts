@@ -13,8 +13,8 @@ export default function Page() {
   return (
     <div style={{ position: "relative" }}>
       <Background bgImage={homepage} alt="Homepage Image">
-        <Image src={kappa} alt="Pi Delta Psi Kappa Chapter" className="kappa" />
-        <Image src={crest} alt="Pi Delta Psi Crest" />
+        <Image src={kappa} alt="Pi Delta Psi Kappa Chapter" className="kappa" priority={true} />
+        <Image src={crest} alt="Pi Delta Psi Crest" priority={true} />
       </Background>
       <div className="mainContent" style={{ textAlign: "center" }}>
         <h1>

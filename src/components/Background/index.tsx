@@ -5,7 +5,7 @@ import { BackgroundProps } from "./types"
 const Background: React.FC<BackgroundProps> = (props) => {
   return (
     <div className="background">
-      <Image src={props.bgImage} alt={props.alt} className="backgroundImage" />
+      <Image src={props.bgImage} alt={props.alt} className="backgroundImage" priority={true} />
       <div className="backgroundCover">{props.children}</div>
     </div>
   )

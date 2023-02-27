@@ -6,10 +6,8 @@ const ActiveHouse: React.FC<ActiveHouseProps> = (props) => {
   return (
     <div className="activeHouseContainer">
       {props.activeHouse.map((activeClass) => (
-        <>
-          <h1 style={{ textAlign: "center" }} key={activeClass.classTitle}>
-            {activeClass.classTitle}
-          </h1>
+        <div key={activeClass.classTitle}>
+          <h1 style={{ textAlign: "center" }}>{activeClass.classTitle}</h1>
           <div className="activeClass">
             {activeClass.activeBrothers.map((brother) => (
               <div key={brother.number} className="activeBrother">
@@ -27,7 +25,7 @@ const ActiveHouse: React.FC<ActiveHouseProps> = (props) => {
               </div>
             ))}
           </div>
-        </>
+        </div>
       ))}
     </div>
   )

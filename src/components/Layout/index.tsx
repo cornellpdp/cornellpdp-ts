@@ -66,7 +66,7 @@ const Layout = ({ children }: PropsWithChildren) => {
       <div id="main">
         <div id="top" />
         <header>
-          <Image src={pdpsi} onClick={() => router.push("/")} alt={"PDPsi"} />
+          <Image src={pdpsi} onClick={() => router.push("/")} alt={"PDPsi"} priority={true} />
           <nav>
             <NavItems navItems={NavLinks} />
             <BurgerIcon ref={burgerIconRef} handleClick={clickedBurger} />
