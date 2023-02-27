@@ -4,7 +4,7 @@ import { NavItemsProps } from "./types"
 export const NavItems: React.FunctionComponent<NavItemsProps> = ({ navItems }) => (
   <>
     {navItems.map((navItem) => (
-      <a key={navItem.name} onClick={() => router.push(navItem.to)}>
+      <a key={navItem.name} onClick={() => router.push(navItem.to + "#top")}>
         {navItem.name}
       </a>
     ))}

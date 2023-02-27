@@ -18,7 +18,7 @@ export default function Page() {
       </Background>
       <div className="mainContent" style={{ textAlign: "center" }}>
         <h1>
-          Pi Delta Psi Fraternity, Inc. at <span style={{ color: "red" }}>Cornell University</span>
+          Pi Delta Psi Fraternity, Inc. at <span>Cornell University</span>
         </h1>
         <p>
           Pi Delta Psi is an Asian-interest cultural fraternity founded on February 20, 1994 at
@@ -33,5 +33,5 @@ export default function Page() {
 }
 
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
-  return { props: { title: "Homepage" } }
+  return { props: { title: "Pi Delta Psi Fraternity Inc. at Cornell University" } }
 }

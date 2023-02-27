@@ -7,6 +7,12 @@
   src: url("/ptsans.ttf");
 }
 
+@font-face {
+  font-family: "ptsans";
+  font-weight: bold;
+  src: url("/ptsans-bold.ttf");
+}
+
 html,
 body {
   padding: 0;
@@ -32,8 +38,18 @@ p {
   font-size: 1.25rem;
 }
 
+span {
+  color: red;
+}
+
 h1 {
   font-size: 2.25rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-block: 0;
 }
 
 /* LAYOUT START */
@@ -257,3 +273,40 @@ footer .footerRight div {
 }
 
 /* HOMEPAGE END */
+
+/* ABOUT BEGIN */
+
+.aboutImageText {
+  color: white;
+  width: 66.66%;
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 575.98px) {
+  .aboutImageText {
+    width: auto;
+    margin: 0rem 1rem;
+    font-size: 3rem;
+  }
+}
+
+.eboardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.eboardContainer p {
+  margin-block: 0;
+  font-size: 0.75rem;
+}
+
+@media (min-width: 1279.98px) {
+  .eboardContainer {
+    margin: 0 12rem;
+  }
+}
+
+/* ABOUT END */
