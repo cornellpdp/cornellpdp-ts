@@ -92,7 +92,7 @@ const CurrentHouse: ActiveClass[] = [
         name: "Derrick *NICE TO ME* Chia",
         number: "187",
         year: "2025",
-        college: Colleges.cas,
+        college: Colleges.cals,
         major: Majors.info,
       },
       {
@@ -230,7 +230,7 @@ const CurrentHouse: ActiveClass[] = [
         name: "Marcus *Lucius* Kang",
         number: "175",
         year: "2024",
-        college: Colleges.cas,
+        college: Colleges.cals,
         major: Majors.info,
       },
       {
@@ -336,7 +336,7 @@ const CurrentHouse: ActiveClass[] = [
         name: "Thomas *PRIDE* Lee",
         number: "158",
         year: "2023",
-        college: Colleges.cas,
+        college: Colleges.cals,
         major: "",
       },
       {
