@@ -61,6 +61,11 @@ const Layout = ({ children }: PropsWithChildren) => {
   }
   useOutsideAlerter(burgerMenuRef)
 
+  useEffect(() => {
+    let l = document.querySelector("header")
+    l?.classList.add("fade-in")
+  })
+
   return (
     <>
       <div id="main">
