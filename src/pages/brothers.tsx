@@ -222,8 +222,8 @@ const CurrentHouse: ActiveClass[] = [
         name: "Joshua *ATAKE* Chang",
         number: "174",
         year: "2024",
-        college: Colleges.cas,
-        major: Majors.info,
+        college: Colleges.humec,
+        major: "Policy Analysis and Management",
       },
       {
         image: marcus,

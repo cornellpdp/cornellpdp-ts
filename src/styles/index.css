@@ -262,7 +262,7 @@ footer .footerRight div {
   height: 100vh;
   pointer-events: none;
   user-select: none;
-  opacity: 0;
+  opacity: 0.33;
   transition: 1.75s opacity;
 }
 
