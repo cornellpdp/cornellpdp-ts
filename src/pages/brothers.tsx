@@ -35,6 +35,14 @@ import ethan from "public/img/axi/ethan.png"
 import thomas from "public/img/axi/thomas.png"
 import derek from "public/img/axi/derek.png"
 import mchu from "public/img/annex/mchu.png"
+import tuo from "public/img/at/tuo.png"
+import james from "public/img/at/james.png"
+import levi from "public/img/at/levi.png"
+import khoa from "public/img/at/khoa.png"
+import oliver from "public/img/at/oliver.png"
+import gamboa from "public/img/at/gamboa.png"
+import max from "public/img/at/max.png"
+
 
 type BrothersProps = {
   title: string
@@ -60,6 +68,75 @@ const Majors = {
 }
 
 const CurrentHouse: ActiveClass[] = [
+  {
+    classTitle: "ALPHA TAU — SPRING 2023",
+    activeBrothers: [
+      {
+        image: tuo,
+        name: "Thomas *REBIRTH* Kuo",
+        number: "191",
+        year: "2026",
+        college: Colleges.cas,
+        major: "Government",
+      },
+      {
+        image: james,
+        name: "James *MINI PEKKA* Kim",
+        number: "192",
+        year: "2026",
+        college: Colleges.humec,
+        major: "Biology and Society",
+      },
+      {
+        image: levi,
+        name: "Levi *enrose* Zheng",
+        number: "193",
+        year: "2026",
+        college: Colleges.cas,
+        major: Majors.cs,
+      },
+      {
+        image: khoa,
+        name: "Khoa *SSANT* Nguyen",
+        number: "194",
+        year: "2026",
+        college: Colleges.cas,
+        major: Majors.cs,
+      },
+      {
+        image: oliver,
+        name: "Oliver *UNBOUNDED* Nishikawa",
+        number: "195",
+        year: "2025",
+        college: Colleges.humec,
+        major: "Nutritional Sciences",
+      },
+      {
+        image: placeholder,
+        name: "Aidan *MADE U* Look",
+        number: "196",
+        year: "2026",
+        college: Colleges.dyson,
+        major: Majors.dyson,
+      },
+      {
+        image: gamboa,
+        name: "Marcus *PUSO* Gamboa",
+        number: "197",
+        year: "2026",
+        college: Colleges.coe,
+        major: "Biomedical Engineering",
+      },
+      {
+        image: max,
+        name: "Max *PERUN* Wang",
+        number: "198",
+        year: "2026",
+        college: Colleges.cas,
+        major: Majors.cs,
+      },
+    ],
+  },
   {
     classTitle: "ALPHA SIGMA — FALL 2022",
     activeBrothers: [
@@ -247,14 +324,6 @@ const CurrentHouse: ActiveClass[] = [
     classTitle: "ALPHA OMICRON — SPRING 2021",
     activeBrothers: [
       {
-        image: placeholder,
-        name: "Logan *Achaemenes* Chang",
-        number: "162",
-        year: "2023",
-        college: Colleges.ilr,
-        major: Majors.ilr,
-      },
-      {
         image: liam,
         name: "Liam *Kū* Monahan",
         number: "163",
@@ -286,67 +355,6 @@ const CurrentHouse: ActiveClass[] = [
         college: Colleges.cas,
         major: Majors.cs,
       },
-      {
-        image: jason,
-        name: "Jason *ASMR* Kwong",
-        number: "169",
-        year: "2023",
-        college: Colleges.coe,
-        major: Majors.cs,
-      },
-    ],
-  },
-  {
-    classTitle: "ALPHA XI — SPRING 2020",
-    activeBrothers: [
-      {
-        image: alau,
-        name: "Alan *BRUTUS* Lau",
-        number: "154",
-        year: "2023",
-        college: Colleges.cals,
-        major: "Communications",
-      },
-      {
-        image: marvin,
-        name: "Marvin *LINK* Yang",
-        number: "155",
-        year: "2023",
-        college: Colleges.coe,
-        major: Majors.cs,
-      },
-      {
-        image: jared,
-        name: "Jared *CRUX* Wong",
-        number: "156",
-        year: "2023",
-        college: Colleges.cas,
-        major: "Economics",
-      },
-      {
-        image: ethan,
-        name: "Ethan *JODYE* Shan",
-        number: "157",
-        year: "2023",
-        college: Colleges.hotel,
-        major: Majors.hotel,
-      },
-      {
-        image: thomas,
-        name: "Thomas *PRIDE* Lee",
-        number: "158",
-        year: "2023",
-        college: Colleges.cals,
-        major: "",
-      },
-      {
-        image: derek,
-        name: "Derek *Ryusoken* Xie",
-        number: "160",
-        year: "2023",
-        college: Colleges.ilr,
-        major: Majors.ilr,
-      },
     ],
   },
   {
@@ -359,21 +367,6 @@ const CurrentHouse: ActiveClass[] = [
         year: "2024",
         college: Colleges.hotel,
         major: Majors.hotel,
-      },
-    ],
-  },
-  {
-    classTitle: "ANNEX",
-    activeBrothers: [
-      {
-        image: mchu,
-        name: "Michael *OVERFLOW* Chu",
-        number: "201",
-        year: "2023",
-        college: Colleges.hotel,
-        major: Majors.hotel,
-        more: "Delta Chapter — Stony Brook University",
-        more2: "Fall 2019 — Alpha Upsilon Class",
       },
     ],
   },
