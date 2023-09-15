@@ -4,7 +4,7 @@ import brothers from "public/img/brothers.jpg"
 import { ActiveClass } from "@/components/ActiveHouse/types"
 import ActiveHouse from "@/components/ActiveHouse"
 import placeholder from "public/img/default.jpg"
-import andrew from "public/img/as/andrew.jpg"
+import andrew from "public/img/as/Andrew_2.png"
 import will from "public/img/as/will.jpg"
 import chapadia from "public/img/as/chapadia.jpg"
 import derrick from "public/img/as/derrick.jpg"
@@ -17,6 +17,7 @@ import kinllen from "public/img/ar/kinllen.png"
 import tony from "public/img/ar/tony.png"
 import han from "public/img/ar/han.jpg"
 import jj from "public/img/ar/jj.png"
+import jguo from "public/img/ar/jguo.png"
 import junior from "public/img/ap/junior.png"
 import chris from "public/img/ap/chris.png"
 import pranav from "public/img/ap/pranav.png"
@@ -27,20 +28,13 @@ import dan from "public/img/ap/dan.jpg"
 import liam from "public/img/ao/liam.png"
 import jun from "public/img/ao/jun.png"
 import jack from "public/img/ao/jack.png"
-import jason from "public/img/ao/jason.png"
-import alau from "public/img/axi/alau.png"
-import marvin from "public/img/axi/marvin.png"
-import jared from "public/img/axi/jared.png"
-import ethan from "public/img/axi/ethan.png"
-import thomas from "public/img/axi/thomas.png"
-import derek from "public/img/axi/derek.png"
-import mchu from "public/img/annex/mchu.png"
-import tuo from "public/img/at/tuo.png"
+import tuo from "public/img/at/tuo.jpg"
 import james from "public/img/at/james.png"
-import levi from "public/img/at/levi.png"
+import levi from "public/img/at/levi.jpg"
 import khoa from "public/img/at/khoa.png"
 import oliver from "public/img/at/oliver.png"
-import gamboa from "public/img/at/gamboa.png"
+import aidan from "public/img/at/AL_1.png"
+import gamboa from "public/img/at/gamboa.jpg"
 import max from "public/img/at/max.png"
 
 
@@ -107,12 +101,12 @@ const CurrentHouse: ActiveClass[] = [
         image: oliver,
         name: "Oliver *UNBOUNDED* Nishikawa",
         number: "195",
-        year: "2025",
+        year: "2026",
         college: Colleges.humec,
         major: "Nutritional Sciences",
       },
       {
-        image: placeholder,
+        image: aidan,
         name: "Aidan *MADE U* Look",
         number: "196",
         year: "2026",
@@ -250,7 +244,7 @@ const CurrentHouse: ActiveClass[] = [
         major: Majors.dyson,
       },
       {
-        image: placeholder,
+        image: jguo,
         name: "Joshua *MIMIR* Guo",
         number: "183",
         year: "2024",
