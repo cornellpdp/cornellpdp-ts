@@ -36,6 +36,7 @@ import oliver from "public/img/at/oliver.png"
 import aidan from "public/img/at/AL_1.png"
 import gamboa from "public/img/at/gamboa.jpg"
 import max from "public/img/at/max.png"
+import kai from "public/img/am/kai.png"
 
 
 type BrothersProps = {
@@ -355,7 +356,7 @@ const CurrentHouse: ActiveClass[] = [
     classTitle: "ALPHA MU — SPRING 2019",
     activeBrothers: [
       {
-        image: placeholder,
+        image: kai,
         name: "Kai *CREED* Kim",
         number: "148",
         year: "2024",
