@@ -2,6 +2,8 @@ import { GetStaticProps } from "next"
 import Background from "@/components/Background"
 import RushGraphic from "@/components/RushGraphic"
 import rush from "public/img/rush.jpg"
+import fa23front from "public/img/rush/fa23front.jpg"
+import fa23back from "public/img/rush/fa23back.jpg"
 import sp23front from "public/img/rush/sp23front.jpg"
 import sp23back from "public/img/rush/sp23back.jpg"
 import fa22front from "public/img/rush/fa22front.jpg"
@@ -47,6 +49,7 @@ export default function Page() {
           to meet the brothers. At the end of rush week, two rounds of interviews take place and bids are
           given to accepted new members.
         </p>
+        <RushGraphic semester="Fall 2023" front={fa23front} back={fa23back} />
         <RushGraphic semester="Spring 2023" front={sp23front} back={sp23back} />
         <RushGraphic semester="Fall 2022" front={fa22front} back={fa22back} />
         <RushGraphic semester="Spring 2022" front={sp22front} back={sp22back} />
