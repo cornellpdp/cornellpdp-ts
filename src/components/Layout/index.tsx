@@ -11,6 +11,7 @@ const NavLinks: NavItem[] = [
   { name: "HOME", to: "/" },
   { name: "ABOUT", to: "/about" },
   { name: "BROTHERS", to: "/brothers" },
+  { name: "DONATE", to: "/donate" },
   { name: "RUSH", to: "/rush" },
 ]
 
