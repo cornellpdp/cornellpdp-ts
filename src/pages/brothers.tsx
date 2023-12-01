@@ -64,6 +64,27 @@ const Majors = {
 
 const CurrentHouse: ActiveClass[] = [
   {
+    classTitle: "ALPHA UPSILON — FALL 2023",
+    activeBrothers: [
+      {
+        image: placeholder,
+        name: "Jaydon *SYZYGY* Ryu",
+        number: "199",
+        year: "2026",
+        college: Colleges.aap,
+        major: "Design and Environmental Analysis",
+      },
+      {
+        image: placeholder,
+        name: "Richard *NEZHA* Lin",
+        number: "200",
+        year: "2026",
+        college: Colleges.coe,
+        major: "Computer Science",
+      }
+    ]
+  },
+  {
     classTitle: "ALPHA TAU — SPRING 2023",
     activeBrothers: [
       {
