@@ -3,24 +3,25 @@ import Background from "@/components/Background"
 import about from "public/img/about.jpg"
 import EBoard from "@/components/EBoard"
 import { EboardMember } from "@/components/EBoard/types"
-import placeholder from "public/img/default.jpg"
-import liam from "public/img/ao/liam.png"
-import dan from "public/img/ap/dan.jpg"
-import alex from "public/img/ap/alex.png"
-import jj from "public/img/ar/jj.png"
-import marcus from "public/img/ap/marcus.jpg"
+import will from "public/img/as/will.jpg"
+import andrew from "public/img/as/Andrew_2.png"
+import chapadia from "public/img/as/chapadia.jpg"
+import ivan from "public/img/as/ivan.jpg"
+import oliver from "public/img/at/oliver.png"
+import james from "public/img/at/james.png"
+
 
 type AboutProps = {
   title: string
 }
 
 const EBoardList: EboardMember[] = [
-  { image: liam, title: "President", name: "Liam *Kū* Monahan" },
-  { image: dan, title: "Vice President", name: "Daniel *TITUS* Lee" },
-  { image: placeholder, title: "Warden", name: "*LUPOS*" },
-  { image: alex, title: "Treasurer", name: "Alex *ETERNAL* Choi" },
-  { image: jj, title: "Recorder", name: "John Joshua *Crito* Bernardino" },
-  { image: marcus, title: "House Manager", name: "Marcus *Lucius* Kang" },
+  { image: will, title: "President", name: "William *ATTICUS* Xing" },
+  { image: andrew, title: "Vice President", name: "Andrew *CLEITUS* Hsiao" },
+  { image: chapadia, title: "Warden", name: "Chris *KROSSAPPELSOS* Chapadia" },
+  { image: ivan, title: "Treasurer", name: "Ivan *kinopio* Lin" },
+  { image: oliver, title: "Recorder", name: "Oliver *360KICKFLIP* Nishikawa" },
+  { image: james, title: "House Manager", name: "James *MINI PEKKA* Kim" },
 ]
 
 export default function Page() {
@@ -56,7 +57,7 @@ export default function Page() {
         </div>
         {/* eboard */}
         <div style={{ textAlign: "center" }}>
-          <h1>EXECUTIVE BOARD 2023</h1>
+          <h1>EXECUTIVE BOARD 2024</h1>
           <EBoard list={EBoardList} />
         </div>
       </div>
