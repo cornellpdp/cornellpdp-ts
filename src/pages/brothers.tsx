@@ -4,6 +4,9 @@ import brothers from "public/img/brothers.jpg"
 import { ActiveClass } from "@/components/ActiveHouse/types"
 import ActiveHouse from "@/components/ActiveHouse"
 import placeholder from "public/img/default.jpg"
+import richard2 from "public/img/au/richard2.jpg"
+import richard from "public/img/au/richard.jpg"
+import jaydon from "public/img/au/jaydon.jpg"
 import andrew from "public/img/as/Andrew_2.png"
 import will from "public/img/as/will.jpg"
 import chapadia from "public/img/as/chapadia.jpg"
@@ -64,23 +67,76 @@ const Majors = {
 
 const CurrentHouse: ActiveClass[] = [
   {
-    classTitle: "ALPHA UPSILON — FALL 2023",
+    classTitle: "ALPHA PHI — Spring 2024",
     activeBrothers: [
       {
         image: placeholder,
-        name: "Jaydon *SYZYGY* Ryu",
-        number: "199",
+        name: "Vail *FAUSTUS* Chen",
+        number: "201",
         year: "2026",
-        college: Colleges.aap,
-        major: "Design and Environmental Analysis",
+        college: Colleges.cas,
+        major: "Math and Computer Science",
       },
       {
         image: placeholder,
+        name: "Vinny *ATHERIS* Camarillo",
+        number: "202",
+        year: "2027",
+        college: Colleges.humec,
+        major: "Healthcare Policy",
+      },
+      {
+        image: placeholder,
+        name: "Gabriel *AKAZA* Huang",
+        number: "203",
+        year: "2027",
+        college: Colleges.coe,
+        major: "Operations Research and Information Engineering",
+      },
+      {
+        image: placeholder,
+        name: "Thomas *APØllo* Nguyen",
+        number: "204",
+        year: "2027",
+        college: Colleges.cals,
+        major: "Biological Sciences",
+      },
+      {
+        image: placeholder,
+        name: "Adriano *Chakri* Greco",
+        number: "205",
+        year: "2026",
+        college: Colleges.dyson,
+        major: Majors.dyson,
+      },
+      {
+        image: placeholder,
+        name: "Kyle *Ahhhaa!* Chu",
+        number: "206",
+        year: "2027",
+        college: Colleges.coe,
+        major: Majors.cs,
+      }
+    ]
+  },
+  {
+    classTitle: "ALPHA UPSILON — FALL 2023",
+    activeBrothers: [
+      {
+        image: jaydon,
+        name: "Jaydon *SYZYGY* Ryu",
+        number: "199",
+        year: "2026",
+        college: Colleges.humec,
+        major: "Design and Environmental Analysis",
+      },
+      {
+        image: richard2,
         name: "Richard *NEZHA* Lin",
         number: "200",
         year: "2026",
         college: Colleges.coe,
-        major: "Computer Science",
+        major: Majors.cs
       }
     ]
   },
@@ -204,14 +260,6 @@ const CurrentHouse: ActiveClass[] = [
         college: Colleges.aap,
         major: "Architecture",
       },
-      {
-        image: ken,
-        name: "Kenneth *SYNKRONOS* Choi",
-        number: "190",
-        year: "2024",
-        college: Colleges.cals,
-        major: "Communications",
-      },
     ],
   },
   {
@@ -226,163 +274,12 @@ const CurrentHouse: ActiveClass[] = [
         major: Majors.info,
       },
       {
-        image: min,
-        name: "Michael *EMPYREAN* Min",
-        number: "178",
-        year: "2024",
-        college: Colleges.humec,
-        major: "Human Biology, Health, and Society",
-      },
-      {
-        image: kinllen,
-        name: "Kinllen *TESSERACT* Peng",
-        number: "179",
-        year: "2024",
-        college: Colleges.cas,
-        major: "Computer Science/Math",
-      },
-      {
-        image: tony,
-        name: "Tony *wasa* Bi",
-        number: "180",
-        year: "2024",
-        college: Colleges.cas,
-        major: "Economics",
-      },
-      {
-        image: han,
-        name: "Han *D-Man* Abdali",
-        number: "181",
-        year: "2024",
-        college: Colleges.coe,
-        major: "Mechanical Engineering",
-      },
-      {
         image: jj,
         name: "John Joshua *Crito* Bernardino",
         number: "182",
         year: "2025",
         college: Colleges.dyson,
         major: Majors.dyson,
-      },
-      {
-        image: jguo,
-        name: "Joshua *MIMIR* Guo",
-        number: "183",
-        year: "2024",
-        college: Colleges.coe,
-        major: Majors.cs,
-      },
-    ],
-  },
-  {
-    classTitle: "ALPHA PI — FALL 2021",
-    activeBrothers: [
-      {
-        image: junior,
-        name: "Junior *VARANUS* Lin",
-        number: "170",
-        year: "2024",
-        college: Colleges.humec,
-        major: "Human Biology, Health, and Society",
-      },
-      {
-        image: chris,
-        name: "Christopher *CORDUROY* Chan",
-        number: "171",
-        year: "2024",
-        college: Colleges.coe,
-        major: "Operations Research and Information Engineering",
-      },
-      {
-        image: pranav,
-        name: "Pranav *Dynatós* Kengeri",
-        number: "172",
-        year: "2024",
-        college: Colleges.dyson,
-        major: Majors.dyson,
-      },
-      {
-        image: alex,
-        name: "Alex *ETERNAL* Choi",
-        number: "173",
-        year: "2024",
-        college: Colleges.humec,
-        major: "Policy Analysis and Management",
-      },
-      {
-        image: jchang,
-        name: "Joshua *ATAKE* Chang",
-        number: "174",
-        year: "2024",
-        college: Colleges.humec,
-        major: "Policy Analysis and Management",
-      },
-      {
-        image: marcus,
-        name: "Marcus *Lucius* Kang",
-        number: "175",
-        year: "2024",
-        college: Colleges.cals,
-        major: Majors.info,
-      },
-      {
-        image: dan,
-        name: "Daniel *TITUS* Lee",
-        number: "176",
-        year: "2024",
-        college: Colleges.cals,
-        major: "Information Science/E&S",
-      },
-    ],
-  },
-  {
-    classTitle: "ALPHA OMICRON — SPRING 2021",
-    activeBrothers: [
-      {
-        image: liam,
-        name: "Liam *Kū* Monahan",
-        number: "163",
-        year: "2024",
-        college: Colleges.cals,
-        major: "Communications",
-      },
-      {
-        image: jun,
-        name: "Jun Oh *SOLITAIRE* Koo",
-        number: "164",
-        year: "2024",
-        college: Colleges.aap,
-        major: "Architecture",
-      },
-      {
-        image: placeholder,
-        name: "Steven *MAJOR* Long",
-        number: "167",
-        year: "2024",
-        college: Colleges.cas,
-        major: Majors.cs,
-      },
-      {
-        image: jack,
-        name: "Jack *YASASHII* Lo",
-        number: "168",
-        year: "2023",
-        college: Colleges.cas,
-        major: Majors.cs,
-      },
-    ],
-  },
-  {
-    classTitle: "ALPHA MU — SPRING 2019",
-    activeBrothers: [
-      {
-        image: kai,
-        name: "Kai *CREED* Kim",
-        number: "148",
-        year: "2024",
-        college: Colleges.hotel,
-        major: Majors.hotel,
       },
     ],
   },
