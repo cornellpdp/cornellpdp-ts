@@ -242,8 +242,8 @@ const CurrentHouse: ActiveClass[] = [
         name: "Oliver *UNBOUNDED* Nishikawa",
         number: "195",
         year: "2026",
-        college: Colleges.humec,
-        major: "Nutritional Sciences",
+        college: Colleges.coe,
+        major: "Chemical Engineering",
       },
       {
         image: aidan,
