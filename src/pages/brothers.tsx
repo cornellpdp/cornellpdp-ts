@@ -101,7 +101,7 @@ const CurrentHouse: ActiveClass[] = [
         number: "209",
         year: "2026",
         college: Colleges.coe,
-        major: "Electrical and Computer Engineering and Compute Science",
+        major: "Electrical and Computer Engineering and Computer Science",
       },
       {
         image: placeholder,
@@ -154,7 +154,7 @@ const CurrentHouse: ActiveClass[] = [
         number: "202",
         year: "2027",
         college: Colleges.humec,
-        major: "Healthcare Policy",
+        major: "Healthcare Policy and Human Development",
       },
       {
         image: gabe,
