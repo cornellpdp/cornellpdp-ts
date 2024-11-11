@@ -45,7 +45,7 @@ import gabe from "public/img/aphi/gabe.jpg"
 import vinny from "public/img/aphi/vinny.jpg"
 import adriano from "public/img/aphi/adriboy.jpg"
 import vail from "public/img/aphi/vail.jpg"
-import thomasn from "public/img/aphi/thomasn.jpg"
+import thomasn from "public/img/aphi/tnguyen.jpg"
 
 
 
