@@ -40,7 +40,7 @@ import aidan from "public/img/at/AL_1.png"
 import gamboa from "public/img/at/gamboa.jpg"
 import max from "public/img/at/max.png"
 import kai from "public/img/am/kai.png"
-// import kyle from "public/img/aphi/kych.jpg"
+import kyle from "public/img/aphi/kych.jpg"
 // import gabe from "public/img/aphi/gabe.jpg"
 // import vinny from "public/img/aphi/vinny.jpg"
 // import adriano from "public/img/aphi/adriboy.jpg"
@@ -181,7 +181,7 @@ const CurrentHouse: ActiveClass[] = [
         major: Majors.dyson,
       },
       {
-        image: placeholder,
+        image: kyle,
         name: "Kyle *Ahhhaa!* Chu",
         number: "206",
         year: "2027",
