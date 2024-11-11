@@ -30,7 +30,6 @@ const Donate: React.FC = () => {
 
 
   return (
-
     <div style={containerStyle}>
       <h1>Pi Delta Psi loves its alumni!
       </h1>
