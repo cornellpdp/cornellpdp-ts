@@ -78,7 +78,7 @@ const CurrentHouse: ActiveClass[] = [
         number: "207",
         year: "2027",
         college: Colleges.cas,
-        major: "Math and Computer Science",
+        major: "premed",
       },
       {
         image: placeholder,
