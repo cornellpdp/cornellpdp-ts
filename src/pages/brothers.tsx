@@ -43,7 +43,7 @@ import kai from "public/img/am/kai.png"
 import kyle from "public/img/aphi/kych.jpg"
 // import gabe from "public/img/aphi/gabe.jpg"
 // import vinny from "public/img/aphi/vinny.jpg"
-// import adriano from "public/img/aphi/adriboy.jpg"
+import adriano from "public/img/aphi/adriano.png"
 // import vail from "public/img/aphi/vail.jpg"
 // import thomasn from "public/img/aphi/tnguyen.jpg"
 
@@ -173,7 +173,7 @@ const CurrentHouse: ActiveClass[] = [
         major: Majors.biosci,
       },
       {
-        image: placeholder,
+        image: adriano,
         name: "Adriano *Chakri* Greco",
         number: "205",
         year: "2026",
