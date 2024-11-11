@@ -64,6 +64,8 @@ const Majors = {
   ilr: "Industrial and Labor Relations",
   hotel: "Hotel Administration",
   ece: "Electrical and Computer Engineering",
+  biosci: "Biological Science",
+  isst: "Information Science, Systems, and Technology"
 }
 
 const CurrentHouse: ActiveClass[] = [
@@ -84,7 +86,7 @@ const CurrentHouse: ActiveClass[] = [
         number: "208",
         year: "2027",
         college: Colleges.cals,
-        major: "Healthcare Policy",
+        major: Majors.biosci,
       },
       {
         image: placeholder,
@@ -92,23 +94,23 @@ const CurrentHouse: ActiveClass[] = [
         number: "209",
         year: "2026",
         college: Colleges.coe,
-        major: Majors.ece,
+        major: "Electrical and Computer Engineering and Compute Science",
       },
       {
         image: placeholder,
         name: "Andrew *BELLAGIO* Kim",
         number: "210",
         year: "2027",
-        college: Colleges.cals,
-        major: "Biological Sciences",
+        college: Colleges.hotel,
+        major: Majors.hotel,
       },
       {
         image: placeholder,
         name: "Justin *finement* Yang",
         number: "211",
         year: "2026",
-        college: Colleges.dyson,
-        major: Majors.dyson,
+        college: Colleges.cals,
+        major: "Biological Science and Food Science",
       },
       {
         image: placeholder,
@@ -116,7 +118,7 @@ const CurrentHouse: ActiveClass[] = [
         number: "212",
         year: "2027",
         college: Colleges.coe,
-        major: Majors.cs,
+        major: Majors.isst,
       },
       {
         image: placeholder,
@@ -161,7 +163,7 @@ const CurrentHouse: ActiveClass[] = [
         number: "204",
         year: "2027",
         college: Colleges.cals,
-        major: "Biological Sciences",
+        major: Majors.biosci,
       },
       {
         image: placeholder,
