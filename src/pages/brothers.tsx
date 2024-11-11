@@ -63,9 +63,71 @@ const Majors = {
   cs: "Computer Science",
   ilr: "Industrial and Labor Relations",
   hotel: "Hotel Administration",
+  ece: "Electrical and Computer Engineering",
 }
 
 const CurrentHouse: ActiveClass[] = [
+  {
+    classTitle: "ALPHA CHI — Fall 2024",
+    activeBrothers: [
+      {
+        image: placeholder,
+        name: "Dominic *IGNATIUS* Nguyen",
+        number: "207",
+        year: "2027",
+        college: Colleges.cas,
+        major: "Math and Computer Science",
+      },
+      {
+        image: placeholder,
+        name: "Kevin *sun* Zhu",
+        number: "208",
+        year: "2027",
+        college: Colleges.cals,
+        major: "Healthcare Policy",
+      },
+      {
+        image: placeholder,
+        name: "Francis *ARGOS* Pham",
+        number: "209",
+        year: "2026",
+        college: Colleges.coe,
+        major: Majors.ece,
+      },
+      {
+        image: placeholder,
+        name: "Andrew *BELLAGIO* Kim",
+        number: "210",
+        year: "2027",
+        college: Colleges.cals,
+        major: "Biological Sciences",
+      },
+      {
+        image: placeholder,
+        name: "Justin *finement* Yang",
+        number: "211",
+        year: "2026",
+        college: Colleges.dyson,
+        major: Majors.dyson,
+      },
+      {
+        image: placeholder,
+        name: "Paul *Reiner* Hwang",
+        number: "212",
+        year: "2027",
+        college: Colleges.coe,
+        major: Majors.cs,
+      },
+      {
+        image: placeholder,
+        name: "Aryan *MEGA PEKKA* Jain",
+        number: "213",
+        year: "2027",
+        college: Colleges.dyson,
+        major: Majors.dyson,
+      }
+    ]
+  },
   {
     classTitle: "ALPHA PHI — Spring 2024",
     activeBrothers: [
