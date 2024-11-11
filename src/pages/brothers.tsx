@@ -40,12 +40,12 @@ import aidan from "public/img/at/AL_1.png"
 import gamboa from "public/img/at/gamboa.jpg"
 import max from "public/img/at/max.png"
 import kai from "public/img/am/kai.png"
-import kyle from "public/img/aphi/kych.jpg"
-import gabe from "public/img/aphi/gabe.jpg"
-import vinny from "public/img/aphi/vinny.jpg"
-import adriano from "public/img/aphi/adriboy.jpg"
-import vail from "public/img/aphi/vail.jpg"
-import thomasn from "public/img/aphi/tngyen.jpg"
+// import kyle from "public/img/aphi/kych.jpg"
+// import gabe from "public/img/aphi/gabe.jpg"
+// import vinny from "public/img/aphi/vinny.jpg"
+// import adriano from "public/img/aphi/adriboy.jpg"
+// import vail from "public/img/aphi/vail.jpg"
+// import thomasn from "public/img/aphi/tnguyen.jpg"
 
 
 
@@ -84,8 +84,8 @@ const CurrentHouse: ActiveClass[] = [
         name: "Dominic *IGNATIUS* Nguyen",
         number: "207",
         year: "2027",
-        college: Colleges.cas,
-        major: "premed",
+        college: Colleges.cals,
+        major: "Nutritional Science",
       },
       {
         image: placeholder,
@@ -141,7 +141,7 @@ const CurrentHouse: ActiveClass[] = [
     classTitle: "ALPHA PHI — Spring 2024",
     activeBrothers: [
       {
-        image: vail,
+        image: placeholder,
         name: "Vail *FAUSTUS* Chen",
         number: "201",
         year: "2026",
@@ -149,7 +149,7 @@ const CurrentHouse: ActiveClass[] = [
         major: "Math and Computer Science",
       },
       {
-        image: vinny,
+        image: placeholder,
         name: "Vinny *ATHERIS* Camarillo",
         number: "202",
         year: "2027",
@@ -157,7 +157,7 @@ const CurrentHouse: ActiveClass[] = [
         major: "Healthcare Policy",
       },
       {
-        image: gabe,
+        image: placeholder,
         name: "Gabriel *AKAZA* Huang",
         number: "203",
         year: "2027",
@@ -165,7 +165,7 @@ const CurrentHouse: ActiveClass[] = [
         major: "Operations Research and Information Engineering",
       },
       {
-        image: thomasn,
+        image: placeholder,
         name: "Thomas *APØllo* Nguyen",
         number: "204",
         year: "2027",
@@ -173,7 +173,7 @@ const CurrentHouse: ActiveClass[] = [
         major: Majors.biosci,
       },
       {
-        image: adriano,
+        image: placeholder,
         name: "Adriano *Chakri* Greco",
         number: "205",
         year: "2026",
@@ -181,7 +181,7 @@ const CurrentHouse: ActiveClass[] = [
         major: Majors.dyson,
       },
       {
-        image: kyle,
+        image: placeholder,
         name: "Kyle *Ahhhaa!* Chu",
         number: "206",
         year: "2027",
