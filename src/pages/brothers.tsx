@@ -225,7 +225,7 @@ const CurrentHouse: ActiveClass[] = [
       },
       {
         image: levi,
-        name: "Levi *enrose* Zheng",
+        name: "Levi *enrose* Zeng",
         number: "193",
         year: "2026",
         college: Colleges.cas,
