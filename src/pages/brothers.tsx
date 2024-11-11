@@ -40,12 +40,12 @@ import aidan from "public/img/at/AL_1.png"
 import gamboa from "public/img/at/gamboa.jpg"
 import max from "public/img/at/max.png"
 import kai from "public/img/am/kai.png"
-import kyle from "public/img/aphi/kych.JPG"
-import gabe from "public/img/aphi/gabe.JPG"
-import vinny from "public/img/aphi/vinny.JPG"
-import adriano from "public/img/aphi/adriboy.JPG"
-import vail from "public/img/aphi/vail.JPG"
-import thomasn from "public/img/aphi/tnguyen.JPG"
+import kyle from "public/img/aphi/kych.jpg"
+import gabe from "public/img/aphi/gabe.jpg"
+import vinny from "public/img/aphi/vinny.jpg"
+import adriano from "public/img/aphi/adriboy.jpg"
+import vail from "public/img/aphi/vail.jpg"
+import thomasn from "public/img/aphi/tngyen.jpg"
 
 
 
