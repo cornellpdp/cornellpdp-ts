@@ -181,7 +181,7 @@ const CurrentHouse: ActiveClass[] = [
         major: Majors.dyson,
       },
       {
-        image: kyle,
+        image: kai,
         name: "Kyle *Ahhhaa!* Chu",
         number: "206",
         year: "2027",
