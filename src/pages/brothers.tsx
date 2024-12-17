@@ -35,6 +35,7 @@ import tuo from "public/img/at/tuo.jpg"
 import james from "public/img/at/james.png"
 import levi from "public/img/at/levi.jpg"
 import khoa from "public/img/at/khoa.png"
+import khoa2 from "public/img/at/khoa2.png"
 import oliver from "public/img/at/oliver.png"
 import aidan from "public/img/at/AL_1.png"
 import gamboa from "public/img/at/gamboa.jpg"
@@ -239,7 +240,7 @@ const CurrentHouse: ActiveClass[] = [
         major: Majors.cs,
       },
       {
-        image: khoa,
+        image: khoa2,
         name: "Khoa *SSANT* Nguyen",
         number: "194",
         year: "2026",
