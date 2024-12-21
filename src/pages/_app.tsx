@@ -2,6 +2,8 @@ import "@/styles/index.css"
 import type { AppProps } from "next/app"
 import Header from "@/config"
 import Layout from "@/components/Layout"
+import { Analytics } from "@vercel/analytics/react"
+
 //import Donate from "@/pages/Donate"
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -11,6 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
+      <Analytics />
     </>
   )
 }
