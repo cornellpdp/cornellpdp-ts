@@ -26,6 +26,11 @@ import sp18front from "public/img/rush/sp18front.jpg"
 import sp18back from "public/img/rush/sp18back.jpg"
 import fa17front from "public/img/rush/fa17front.png"
 import fa17back from "public/img/rush/fa17back.png"
+import fa24back from  "public/img/rush/fa24back.jpg"
+import fa24front from  "public/img/rush/fa24front.jpg"
+import sp24front from  "public/img/rush/sp24front.jpg"
+import sp24back from  "public/img/rush/sp24back.jpg"
+
 
 type RushProps = {
   title: string
@@ -49,6 +54,8 @@ export default function Page() {
           to meet the brothers. At the end of rush week, two rounds of interviews take place and bids are
           given to accepted new members.
         </p>
+        <RushGraphic semester="Fall 2024" front={fa24front} back={fa24back} />
+        <RushGraphic semester="Spring 2024" front={sp24front} back={sp24back} />
         <RushGraphic semester="Fall 2023" front={fa23front} back={fa23back} />
         <RushGraphic semester="Spring 2023" front={sp23front} back={sp23back} />
         <RushGraphic semester="Fall 2022" front={fa22front} back={fa22back} />
