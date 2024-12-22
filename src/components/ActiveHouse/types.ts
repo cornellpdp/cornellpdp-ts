@@ -2,7 +2,7 @@ import React from "react"
 import { StaticImageData } from "next/image"
 
 export type ActiveBrother = {
-  image: StaticImageData;
+  image: string;
   number: string;
   name: string;
   year: string;

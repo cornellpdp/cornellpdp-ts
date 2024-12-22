@@ -11,7 +11,7 @@ const ActiveHouse: React.FC<ActiveHouseProps> = (props) => {
           <div className="activeClass">
             {activeClass.activeBrothers.map((brother) => (
               <div key={brother.number} className="activeBrother">
-                <Image src={brother.image} alt={brother.name} />
+                <Image src={brother.image} alt={brother.name} width={250} height={250} />
                 <div>
                   <h3 style={{ fontWeight: "bold" }}>
                     #{brother.number} {brother.name}
