@@ -57,7 +57,7 @@ export default function Page() {
         </div>
         {/* eboard */}
         <div style={{ textAlign: "center" }}>
-          <h1>EXECUTIVE BOARD 2024</h1>
+          <h1>EXECUTIVE BOARD 2025</h1>
           <EBoard list={EBoardList} />
         </div>
       </div>
