@@ -322,11 +322,34 @@ footer .footerRight div {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
+  padding: 1rem;
+
 }
 
-.eboardContainer p {
-  margin-block: 0;
-  font-size: 0.75rem;
+.eboardItem {
+  display: flex;
+  flex-direction: column; /* Stack image and text */
+  align-items: center; /* Center the text */
+}
+
+.eboardItem .imageWrapper {
+  width: 100%; /* Full width of the grid column */
+  aspect-ratio: 1; /* Maintain a 1:1 aspect ratio */
+  overflow: hidden; /* Crop overflowing image content */
+  position: relative;
+}
+
+.eboardItem img {
+  width: 100%; /* Fill the width of the container */
+  height: 100%; /* Fill the height of the container */
+  object-fit: cover; /* Ensure images fit while maintaining aspect ratio */
+}
+
+.eboardItem p {
+  margin: 0rem 0;
+  text-align: center;
+  font-family: "ptsans", sans-serif;
+  font-size: 0.90rem; /* Adjust size */
 }
 
 @media (min-width: 1279.98px) {

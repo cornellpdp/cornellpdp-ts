@@ -3,12 +3,12 @@ import Background from "@/components/Background"
 import about from "public/img/about.jpg"
 import EBoard from "@/components/EBoard"
 import { EboardMember } from "@/components/EBoard/types"
-import will from "public/img/as/will.jpg"
-import andrew from "public/img/as/Andrew_2.png"
-import chapadia from "public/img/as/chapadia.jpg"
-import ivan from "public/img/as/ivan.jpg"
 import oliver from "public/img/at/oliver.png"
 import james from "public/img/at/james.png"
+import tuo from "public/img/at/tuo.jpg"
+import levi from "public/img/at/levi.jpg"
+import vinny from "public/img/aphi/vinny.png"
+import kych from "public/img/aphi/kych.png"
 
 
 type AboutProps = {
@@ -16,12 +16,12 @@ type AboutProps = {
 }
 
 const EBoardList: EboardMember[] = [
-  { image: will, title: "President", name: "William *ATTICUS* Xing" },
-  { image: andrew, title: "Vice President", name: "Andrew *CLEITUS* Hsiao" },
-  { image: chapadia, title: "Warden", name: "Chris *KROSSAPPELSOS* Chapadia" },
-  { image: ivan, title: "Treasurer", name: "Ivan *kinopio* Lin" },
-  { image: oliver, title: "Recorder", name: "Oliver *360KICKFLIP* Nishikawa" },
-  { image: james, title: "House Manager", name: "James *MINI PEKKA* Kim" },
+  { image: james, title: "President", name: "James *MINI PEKKA* Kim" },
+  { image: oliver, title: "Vice President", name: "Oliver *360KICKFLIP* Nishikawa" },
+  { image: tuo, title: "Warden", name: "Thomas *REBIRTH* Kuo" },
+  { image: levi, title: "Treasurer", name: "Levi *enrose* Zeng" },
+  { image: vinny, title: "Recorder", name: "Vinny *ATHERIS* Camarillo" },
+  { image: kych, title: "House Manager", name: "Kyle *Ahhhaa!* Chu" },
 ]
 
 export default function Page() {

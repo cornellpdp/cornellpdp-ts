@@ -16,6 +16,7 @@ export default function Page() {
         <Image src={kappa} alt="Pi Delta Psi Kappa Chapter" className="kappa" priority={true} />
         <Image src={crest} alt="Pi Delta Psi Crest" priority={true} />
       </Background>
+
       <div className="mainContent" style={{ textAlign: "center" }}>
         <h1>
           Pi Delta Psi Fraternity, Inc. at <span>Cornell University</span>
@@ -27,6 +28,7 @@ export default function Page() {
           entire Asian American community. We are guided by four pillars: Academic Achievement, Cultural
           Awareness, Righteousness, and Friendship/Loyalty.
         </p>
+        
       </div>
     </div>
   )

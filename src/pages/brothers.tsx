@@ -3,58 +3,6 @@ import Background from "@/components/Background"
 import brothers from "public/img/brothers.jpg"
 import { ActiveClass } from "@/components/ActiveHouse/types"
 import ActiveHouse from "@/components/ActiveHouse"
-// import placeholder from "public/img/default.jpg"
-// import richard2 from "public/img/au/richard2.jpg"
-// import richard from "public/img/au/richard.jpg"
-// import jaydon from "public/img/au/jaydon.jpg"
-// import andrew from "public/img/as/Andrew_2.png"
-// import will from "public/img/as/will.jpg"
-// import chapadia from "public/img/as/chapadia.jpg"
-// import derrick from "public/img/as/derrick.jpg"
-// import ivan from "public/img/as/ivan.jpg"
-// import wonjae from "public/img/as/wonjae.jpg"
-// import ken from "public/img/as/ken.jpg"
-// import luis from "public/img/ar/luis.png"
-// import min from "public/img/ar/min.png"
-// import kinllen from "public/img/ar/kinllen.png"
-// import tony from "public/img/ar/tony.png"
-// import han from "public/img/ar/han.jpg"
-// import jj from "public/img/ar/jj.png"
-// import jguo from "public/img/ar/jguo.png"
-// import junior from "public/img/ap/junior.png"
-// import chris from "public/img/ap/chris.png"
-// import pranav from "public/img/ap/pranav.png"
-// import alex from "public/img/ap/alex.png"
-// import jchang from "public/img/ap/jchang.png"
-// import marcus from "public/img/ap/marcus.jpg"
-// import dan from "public/img/ap/dan.jpg"
-// import liam from "public/img/ao/liam.png"
-// import jun from "public/img/ao/jun.png"
-// import jack from "public/img/ao/jack.png"
-// import tuo from "public/img/at/tuo.jpg"
-// import james from "public/img/at/james.png"
-// import levi from "public/img/at/levi.jpg"
-// import khoa from "public/img/at/khoa.png"
-// import khoa2 from "public/img/at/khoa2.png"
-// import oliver from "public/img/at/oliver.png"
-// import aidan from "public/img/at/AL_1.png"
-// import gamboa from "public/img/at/gamboa.jpg"
-// import max from "public/img/at/max.png"
-// import kai from "public/img/am/kai.png"
-// import kyle from "public/img/aphi/kych.png"
-// import gabe from "public/img/aphi/gabe.png"
-// import vinny from "public/img/aphi/vinny.png"
-// import adriano from "public/img/aphi/adriano.png"
-// import vail from "public/img/aphi/vail.png"
-// import thomasn from "public/img/aphi/thomasn.png"
-
-import importImages from '@/utils/brotherImages';
-
-const loadImages = async () => {
-  const brothers = await importImages();
-};
-
-loadImages();
 
 type BrothersProps = {
   title: string
