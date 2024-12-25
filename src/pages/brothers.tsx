@@ -1,7 +1,9 @@
+import { useState } from "react"
 import { GetStaticProps } from "next"
 import Background from "@/components/Background"
 import brothers from "public/img/brothers.jpg"
 import { ActiveClass } from "@/components/ActiveHouse/types"
+import Image from 'next/image'
 import ActiveHouse from "@/components/ActiveHouse"
 
 type BrothersProps = {
@@ -32,7 +34,7 @@ const Majors = {
 
 const CurrentHouse: ActiveClass[] = [
   {
-    classTitle: "ALPHA CHI — Fall 2024",
+    classTitle: "ALPHA CHI — FA '24",
     activeBrothers: [
       {
         image: '/img/default.jpg',
@@ -56,7 +58,7 @@ const CurrentHouse: ActiveClass[] = [
         number: "209",
         year: "2026",
         college: Colleges.coe,
-        major: "Electrical and Computer Engineering and Computer Science",
+        major: "Electrical and Computer Engineering & Computer Science",
       },
       {
         image: '/img/default.jpg',
@@ -72,7 +74,7 @@ const CurrentHouse: ActiveClass[] = [
         number: "211",
         year: "2026",
         college: Colleges.cals,
-        major: "Biological Science and Food Science",
+        major: "Biological Science & Food Science",
       },
       {
         image: '/img/default.jpg',
@@ -93,7 +95,7 @@ const CurrentHouse: ActiveClass[] = [
     ]
   },
   {
-    classTitle: "ALPHA PHI — Spring 2024",
+    classTitle: "ALPHA PHI — SP '24",
     activeBrothers: [
       {
         image: '/img/aphi/vail.png',
@@ -101,7 +103,7 @@ const CurrentHouse: ActiveClass[] = [
         number: "201",
         year: "2026",
         college: Colleges.cas,
-        major: "Math and Computer Science",
+        major: "Math & Computer Science",
       },
       {
         image: '/img/aphi/vinny.png',
@@ -109,7 +111,7 @@ const CurrentHouse: ActiveClass[] = [
         number: "202",
         year: "2027",
         college: Colleges.humec,
-        major: "Healthcare Policy and Human Development",
+        major: "Healthcare Policy & Human Development",
       },
       {
         image: '/img/aphi/gabe.png',
@@ -117,7 +119,7 @@ const CurrentHouse: ActiveClass[] = [
         number: "203",
         year: "2027",
         college: Colleges.coe,
-        major: "Operations Research and Information Engineering",
+        major: "Operations Research & Information Engineering",
       },
       {
         image: '/img/aphi/thomasn.png',
@@ -146,7 +148,7 @@ const CurrentHouse: ActiveClass[] = [
     ]
   },
   {
-    classTitle: "ALPHA UPSILON — FALL 2023",
+    classTitle: "ALPHA UPSILON — FA '23",
     activeBrothers: [
       {
         image: '/img/au/jaydon.jpg',
@@ -167,7 +169,7 @@ const CurrentHouse: ActiveClass[] = [
     ]
   },
   {
-    classTitle: "ALPHA TAU — SPRING 2023",
+    classTitle: "ALPHA TAU — SP'23",
     activeBrothers: [
       {
         image: '/img/at/tuo.jpg',
@@ -236,7 +238,7 @@ const CurrentHouse: ActiveClass[] = [
     ],
   },
   {
-    classTitle: "ALPHA SIGMA — FALL 2022",
+    classTitle: "ALPHA SIGMA — FA '22",
     activeBrothers: [
       {
         image: '/img/as/Andrew_2.png',
@@ -312,6 +314,8 @@ const CurrentHouse: ActiveClass[] = [
 ]
 
 export default function Page() {
+  const [selectedClass, setSelectedClass] = useState(CurrentHouse[0])
+
   return (
     <div style={{ position: "relative" }}>
       <Background bgImage={brothers} alt="Brothers Image">
@@ -321,7 +325,77 @@ export default function Page() {
         </div>
       </Background>
       <div className="mainContent">
-        <ActiveHouse activeHouse={CurrentHouse} />
+        {/* Menu Selection*/}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            gap: "15x",
+            margin: "20px 0",
+          }}
+        >
+          {CurrentHouse.map((cls, i) => (
+            <button
+              key={i}
+              onClick={() => setSelectedClass(cls)}
+              style={{
+                padding: "10px 20px",
+                fontSize: "16px",
+                border: "2px solid #ccc",
+                borderRadius: "8px",
+                backgroundColor: selectedClass.classTitle === cls.classTitle ? "#007BFF" : "#FFF",
+                color: selectedClass.classTitle === cls.classTitle ? "#FFF" : "#000",
+                cursor: "pointer",
+                transition: "all 0.3s ease",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "#007BFF"
+                e.currentTarget.style.color = "#FFF"
+              }}
+              onMouseLeave={(e) => {
+                if (selectedClass.classTitle !== cls.classTitle) {
+                  e.currentTarget.style.backgroundColor = "#FFF"
+                  e.currentTarget.style.color = "#000"
+                }
+              }}
+            >
+              {cls.classTitle}
+            </button>
+          ))}
+        </div>
+
+
+        {/* <ActiveHouse activeHouse={CurrentHouse} /> */}
+        <div>
+          <h2 style={{ textAlign: "center", margin: "20px 0" }}>
+            {selectedClass.classTitle}
+          </h2>
+          <div style={{ display: "grid", gap: "20px", gridTemplateColumns: "repeat(auto-fit, minmx(200px, 1fr))"}}>
+            {selectedClass.activeBrothers.map((brother, i) => (
+              <div
+                key={i}
+                style={{
+                  border: "1px solid #ccc",
+                  borderRadius: "10px",
+                  padding: "10px",
+                  textAlign: "center",
+                }}
+              >
+                <Image
+                  src={brother.image}
+                  alt={brother.name}
+                  width={400}
+                  height={600}
+                />
+                <h3>{brother.name}</h3>
+                <p>Number: {brother.number}</p>
+                <p>Year: {brother.year}</p>
+                <p>{brother.major}</p>
+                </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   )
