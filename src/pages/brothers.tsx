@@ -34,7 +34,8 @@ const Majors = {
 
 const CurrentHouse: ActiveClass[] = [
   {
-    classTitle: "ALPHA CHI — FA '24",
+    classTitle: "ALPHA CHI",
+    fullClassTitle: "ALPHA CHI — FA '24",
     activeBrothers: [
       {
         image: '/img/default.jpg',
@@ -95,7 +96,8 @@ const CurrentHouse: ActiveClass[] = [
     ]
   },
   {
-    classTitle: "ALPHA PHI — SP '24",
+    classTitle: "ALPHIA PHI",
+    fullClassTitle: "ALPHA PHI — SP '24",
     activeBrothers: [
       {
         image: '/img/aphi/vail.png',
@@ -148,7 +150,8 @@ const CurrentHouse: ActiveClass[] = [
     ]
   },
   {
-    classTitle: "ALPHA UPSILON — FA '23",
+    classTitle: "ALPHA UPSILON",
+    fullClassTitle: "ALPHA UPSILON — FA '23",
     activeBrothers: [
       {
         image: '/img/au/jaydon.jpg',
@@ -169,7 +172,8 @@ const CurrentHouse: ActiveClass[] = [
     ]
   },
   {
-    classTitle: "ALPHA TAU — SP'23",
+    classTitle: "ALPHA TAU",
+    fullClassTitle: "ALPHA TAU — SP'23",
     activeBrothers: [
       {
         image: '/img/at/tuo.jpg',
@@ -238,7 +242,8 @@ const CurrentHouse: ActiveClass[] = [
     ],
   },
   {
-    classTitle: "ALPHA SIGMA — FA '22",
+    classTitle: "ALPHA SIGMA",
+    fullClassTitle: "ALPHA SIGMA — FA '22",
     activeBrothers: [
       {
         image: '/img/as/Andrew_2.png',
@@ -291,7 +296,8 @@ const CurrentHouse: ActiveClass[] = [
     ],
   },
   {
-    classTitle: "ALPHA RHO — SPRING 2022",
+    classTitle: "ALPHA RHO",
+    fullClassTitle: "ALPHA RHO — SPRING 2022",
     activeBrothers: [
       {
         image: '/img/ar/luis.png',
@@ -336,40 +342,61 @@ export default function Page() {
           }}
         >
           {CurrentHouse.map((cls, i) => (
-            <button
-              key={i}
-              onClick={() => setSelectedClass(cls)}
+            <div
+            key={i}
+            onClick={() => setSelectedClass(cls)}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "125px",
+              height: "100px",
+              border: "2px solid #000",
+              borderRadius: "8px",
+              backgroundColor: selectedClass.classTitle === cls.classTitle ? "#000" : "#FFF",
+              color: selectedClass.classTitle === cls.classTitle ? "#FFF" : "#000",
+              cursor: "pointer",
+              position: "relative",
+              overflow: "hidden",
+              transition: "all 0.3s ease",
+              margin: "0 10px 0 0",
+            }}
+            onMouseEnter={(e) => {
+              const target = e.currentTarget;
+              target.style.background = "#000";
+              target.style.color = "#FFF";
+            }}
+            onMouseLeave={(e) => {
+              const target = e.currentTarget;
+              if (selectedClass.classTitle !== cls.classTitle) {
+                target.style.background = "#FFF";
+                target.style.color = "#000";
+              }
+            }}
+          >
+            <div
               style={{
-                padding: "10px 20px",
-                fontSize: "16px",
-                border: "2px solid #ccc",
-                borderRadius: "8px",
-                backgroundColor: selectedClass.classTitle === cls.classTitle ? "#007BFF" : "#FFF",
-                color: selectedClass.classTitle === cls.classTitle ? "#FFF" : "#000",
-                cursor: "pointer",
-                transition: "all 0.3s ease",
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                background: "radial-gradient(circle at center, transparent 50%, black 100%)",
+                opacity: 0,
+                transition: "opacity 0.3s ease",
               }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = "#007BFF"
-                e.currentTarget.style.color = "#FFF"
-              }}
-              onMouseLeave={(e) => {
-                if (selectedClass.classTitle !== cls.classTitle) {
-                  e.currentTarget.style.backgroundColor = "#FFF"
-                  e.currentTarget.style.color = "#000"
-                }
-              }}
-            >
-              {cls.classTitle}
-            </button>
-          ))}
+              className="hoverEffect"
+            ></div>
+            <span style={{ zIndex: 1 }}>{cls.classTitle}</span>
+          </div>
+        ))}
         </div>
 
 
         {/* <ActiveHouse activeHouse={CurrentHouse} /> */}
         <div>
           <h2 style={{ textAlign: "center", margin: "20px 0" }}>
-            {selectedClass.classTitle}
+            {selectedClass.fullClassTitle}
           </h2>
           <div style={{ display: "grid", gap: "20px", gridTemplateColumns: "repeat(auto-fit, minmx(200px, 1fr))"}}>
             {selectedClass.activeBrothers.map((brother, i) => (

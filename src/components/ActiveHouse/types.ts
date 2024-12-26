@@ -14,6 +14,7 @@ export type ActiveBrother = {
 
 export type ActiveClass = {
   classTitle: string;
+  fullClassTitle: string;
   activeBrothers: ActiveBrother[];
 }
 
