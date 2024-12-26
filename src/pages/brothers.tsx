@@ -4,11 +4,13 @@ import Background from "@/components/Background"
 import brothers from "public/img/brothers.jpg"
 import { ActiveClass } from "@/components/ActiveHouse/types"
 import Image from 'next/image'
+import styles from "@/components/ClsBtn/ClsBtn.module.css"
 import ActiveHouse from "@/components/ActiveHouse"
 
 type BrothersProps = {
   title: string
 }
+
 
 const Colleges = {
   cas: "College of Arts and Sciences",
@@ -96,7 +98,7 @@ const CurrentHouse: ActiveClass[] = [
     ]
   },
   {
-    classTitle: "ALPHIA PHI",
+    classTitle: "ALPHA PHI",
     fullClassTitle: "ALPHA PHI — SP '24",
     activeBrothers: [
       {
@@ -320,7 +322,7 @@ const CurrentHouse: ActiveClass[] = [
 ]
 
 export default function Page() {
-  const [selectedClass, setSelectedClass] = useState(CurrentHouse[0])
+  const [selectedClass, setSelectedClass] = useState<ActiveClass | null>(null)
 
   return (
     <div style={{ position: "relative" }}>
@@ -345,84 +347,47 @@ export default function Page() {
             <div
             key={i}
             onClick={() => setSelectedClass(cls)}
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "125px",
-              height: "100px",
-              border: "2px solid #000",
-              borderRadius: "8px",
-              backgroundColor: selectedClass.classTitle === cls.classTitle ? "#000" : "#FFF",
-              color: selectedClass.classTitle === cls.classTitle ? "#FFF" : "#000",
-              cursor: "pointer",
-              position: "relative",
-              overflow: "hidden",
-              transition: "all 0.3s ease",
-              margin: "0 10px 0 0",
-            }}
-            onMouseEnter={(e) => {
-              const target = e.currentTarget;
-              target.style.background = "#000";
-              target.style.color = "#FFF";
-            }}
-            onMouseLeave={(e) => {
-              const target = e.currentTarget;
-              if (selectedClass.classTitle !== cls.classTitle) {
-                target.style.background = "#FFF";
-                target.style.color = "#000";
-              }
-            }}
+            className={`${styles.clsBtn} ${selectedClass?.classTitle === cls.classTitle ? styles.selected : ""}`}
           >
-            <div
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-                background: "radial-gradient(circle at center, transparent 50%, black 100%)",
-                opacity: 0,
-                transition: "opacity 0.3s ease",
-              }}
-              className="hoverEffect"
-            ></div>
-            <span style={{ zIndex: 1 }}>{cls.classTitle}</span>
+            <span>{cls.classTitle}</span>
           </div>
         ))}
         </div>
 
 
         {/* <ActiveHouse activeHouse={CurrentHouse} /> */}
-        <div>
-          <h2 style={{ textAlign: "center", margin: "20px 0" }}>
-            {selectedClass.fullClassTitle}
-          </h2>
-          <div style={{ display: "grid", gap: "20px", gridTemplateColumns: "repeat(auto-fit, minmx(200px, 1fr))"}}>
-            {selectedClass.activeBrothers.map((brother, i) => (
-              <div
-                key={i}
-                style={{
-                  border: "1px solid #ccc",
-                  borderRadius: "10px",
-                  padding: "10px",
-                  textAlign: "center",
-                }}
-              >
+        {selectedClass && (
+          <div>
+            <h2 style={{ textAlign: "center", margin: "20px 0" }}>
+              {selectedClass.fullClassTitle}
+            </h2>
+            <div style={{ display: "grid", gap: "20px", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))" }}>
+              {selectedClass.activeBrothers.map((brother, index) => (
+                <div
+                  key={index}
+                  style={{
+                    border: "1px solid #ccc",
+                    borderRadius: "10px",
+                    padding: "10px",
+                    textAlign: "center",
+                  }}
+                >
                 <Image
                   src={brother.image}
                   alt={brother.name}
-                  width={400}
-                  height={600}
+                  width={100}
+                  height={200}
                 />
-                <h3>{brother.name}</h3>
-                <p>Number: {brother.number}</p>
-                <p>Year: {brother.year}</p>
-                <p>{brother.major}</p>
+                  <h3>{brother.name}</h3>
+                  <p>Number: #{brother.number}</p>
+                  <p>Year: {brother.year}</p>
+                  <p>College: {brother.college}</p>
+                  <p>Major: {brother.major}</p>
                 </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   )

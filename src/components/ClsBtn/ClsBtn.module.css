@@ -1,0 +1,104 @@
+.clsBtn,
+.clsBtn *,
+.clsBtn:after,
+.clsBtn:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.clsBtn {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: white;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px; /* Fixed width */
+  height: 100px; /* Fixed height */
+  border: none; /* No initial border */
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease, border 0.3s ease;
+  position: relative;
+  margin: 0 10px 0 0;
+}
+
+.clsBtn:hover {
+  font-weight: bold;
+  border: 0px solid #000; /* Border appears on hover */
+}
+
+.clsBtn:after,
+.clsBtn:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.clsBtn:before {
+  border-top: var(--border);
+  border-right: var(--border);
+  top: 0;
+  left: 0;
+}
+
+.clsBtn:hover:before {
+  --border: 4px solid #000;
+  animation: border-top-and-right 1s forwards;
+}
+
+.clsBtn:after {
+  border-bottom: var(--border);
+  border-left: var(--border);
+  bottom: 0;
+  right: 0;
+}
+
+.clsBtn:hover:after {
+  --border: 4px solid #000;
+  animation: border-bottom-and-left 1s forwards;
+}
+
+.selected {
+  color: #fff;
+  border: 4px solid #000; /* Border appears for selected */
+  transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+  font-weight: bold;
+}
+
+/* Keyframes for border animations */
+@keyframes border-top-and-right {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes border-bottom-and-left {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
