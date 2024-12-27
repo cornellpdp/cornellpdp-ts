@@ -1,7 +1,10 @@
+import { useState } from "react"
 import { GetStaticProps } from "next"
 import Background from "@/components/Background"
 import brothers from "public/img/brothers.jpg"
-import { ActiveClass } from "@/components/ActiveHouse/types"
+import { ActiveClass, ActiveBrother } from "@/components/ActiveHouse/types"
+import Image from 'next/image'
+import styles from "@/components/styles/styles.module.css"
 import ActiveHouse from "@/components/ActiveHouse"
 
 type BrothersProps = {
@@ -32,7 +35,8 @@ const Majors = {
 
 const CurrentHouse: ActiveClass[] = [
   {
-    classTitle: "ALPHA CHI — Fall 2024",
+    classTitle: "ALPHA CHI",
+    fullClassTitle: "ALPHA CHI — FALL 2024",
     activeBrothers: [
       {
         image: '/img/default.jpg',
@@ -56,7 +60,8 @@ const CurrentHouse: ActiveClass[] = [
         number: "209",
         year: "2026",
         college: Colleges.coe,
-        major: "Electrical and Computer Engineering and Computer Science",
+        major: "Electrical and Computer Engineering & Computer Science",
+        more: "top dog",
       },
       {
         image: '/img/default.jpg',
@@ -72,7 +77,7 @@ const CurrentHouse: ActiveClass[] = [
         number: "211",
         year: "2026",
         college: Colleges.cals,
-        major: "Biological Science and Food Science",
+        major: "Biological Science & Food Science",
       },
       {
         image: '/img/default.jpg',
@@ -93,7 +98,8 @@ const CurrentHouse: ActiveClass[] = [
     ]
   },
   {
-    classTitle: "ALPHA PHI — Spring 2024",
+    classTitle: "ALPHA PHI",
+    fullClassTitle: "ALPHA PHI — SPRING 2024",
     activeBrothers: [
       {
         image: '/img/aphi/vail.png',
@@ -101,7 +107,7 @@ const CurrentHouse: ActiveClass[] = [
         number: "201",
         year: "2026",
         college: Colleges.cas,
-        major: "Math and Computer Science",
+        major: "Math & Computer Science",
       },
       {
         image: '/img/aphi/vinny.png',
@@ -109,7 +115,7 @@ const CurrentHouse: ActiveClass[] = [
         number: "202",
         year: "2027",
         college: Colleges.humec,
-        major: "Healthcare Policy and Human Development",
+        major: "Healthcare Policy & Human Development",
       },
       {
         image: '/img/aphi/gabe.png',
@@ -117,7 +123,7 @@ const CurrentHouse: ActiveClass[] = [
         number: "203",
         year: "2027",
         college: Colleges.coe,
-        major: "Operations Research and Information Engineering",
+        major: "Operations Research & Information Engineering",
       },
       {
         image: '/img/aphi/thomasn.png',
@@ -142,11 +148,13 @@ const CurrentHouse: ActiveClass[] = [
         year: "2027",
         college: Colleges.coe,
         major: Majors.cs,
+        more: "akdguy2",
       }
     ]
   },
   {
-    classTitle: "ALPHA UPSILON — FALL 2023",
+    classTitle: "ALPHA UPSILON",
+    fullClassTitle: "ALPHA UPSILON — FALL 2023",
     activeBrothers: [
       {
         image: '/img/au/jaydon.jpg',
@@ -167,7 +175,8 @@ const CurrentHouse: ActiveClass[] = [
     ]
   },
   {
-    classTitle: "ALPHA TAU — SPRING 2023",
+    classTitle: "ALPHA TAU",
+    fullClassTitle: "ALPHA TAU — SPRING 2023",
     activeBrothers: [
       {
         image: '/img/at/tuo.jpg',
@@ -200,6 +209,7 @@ const CurrentHouse: ActiveClass[] = [
         year: "2026",
         college: Colleges.cas,
         major: Majors.cs,
+        more: "akdguy1"
       },
       {
         image: '/img/at/oliver.png',
@@ -236,7 +246,8 @@ const CurrentHouse: ActiveClass[] = [
     ],
   },
   {
-    classTitle: "ALPHA SIGMA — FALL 2022",
+    classTitle: "ALPHA SIGMA",
+    fullClassTitle: "ALPHA SIGMA — FALL 2022",
     activeBrothers: [
       {
         image: '/img/as/Andrew_2.png',
@@ -253,6 +264,7 @@ const CurrentHouse: ActiveClass[] = [
         year: "2025",
         college: Colleges.cas,
         major: Majors.info,
+        more: "corniest bro"
       },
       {
         image: '/img/as/chapadia.jpg',
@@ -280,7 +292,7 @@ const CurrentHouse: ActiveClass[] = [
       },
       {
         image: '/img/as/wonjae.jpg',
-        name: "Wonjae *I.M. Lee",
+        name: "Wonjae *I.M.* Lee",
         number: "189",
         year: "2026",
         college: Colleges.aap,
@@ -289,7 +301,8 @@ const CurrentHouse: ActiveClass[] = [
     ],
   },
   {
-    classTitle: "ALPHA RHO — SPRING 2022",
+    classTitle: "ALPHA RHO",
+    fullClassTitle: "ALPHA RHO — SPRING 2022",
     activeBrothers: [
       {
         image: '/img/ar/luis.png',
@@ -312,6 +325,8 @@ const CurrentHouse: ActiveClass[] = [
 ]
 
 export default function Page() {
+  const [selectedClass, setSelectedClass] = useState<ActiveClass | null>(null)
+
   return (
     <div style={{ position: "relative" }}>
       <Background bgImage={brothers} alt="Brothers Image">
@@ -320,8 +335,87 @@ export default function Page() {
           ACTIVE HOUSE
         </div>
       </Background>
-      <div className="mainContent">
-        <ActiveHouse activeHouse={CurrentHouse} />
+      <div 
+        className="mainContent"
+        style={{
+          maxWidth: "1370px",
+          margin: "0 auto",
+          padding: "0 15px 25px 15px",
+        }}>
+        {/* Menu Selection*/}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            gap: "15x",
+            margin: "20px 0",
+          }}
+        >
+          {CurrentHouse.map((cls, i) => (
+            <div
+            key={i}
+            onClick={() => setSelectedClass(cls)}
+            className={`${styles.clsBtn} ${selectedClass?.classTitle === cls.classTitle ? styles.selected : ""}`}
+          >
+            <span>{cls.classTitle}</span>
+          </div>
+        ))}
+        </div>
+        
+        {/* card grid */}
+        {selectedClass && (
+          <div>
+            <h2 style={{ textAlign: "center", margin: "20px 0" }}>
+              {selectedClass.fullClassTitle}
+            </h2>
+            <div style={{ 
+              display: "grid", 
+              gap: "20px", 
+              gridTemplateColumns: "repeat(auto-fit, minmax(262px, 1fr))",
+              justifyContent: "center",
+            }}
+          >
+              {selectedClass.activeBrothers.map((brother, i) => (
+                <div
+                  key={i}
+                  className={styles.card}
+                >
+
+                <Image
+                  src={brother.image}
+                  alt={brother.name}
+                  layout="fill"
+                  className={styles.cardImage}
+                />
+
+                {/* hover-overlay */}
+                <div className={styles.hoverOverlay}>
+                  <div className={styles.brotherInfo}>
+                    <h2>#{brother.number}</h2>
+                    <h3>{brother.name}</h3>
+                    <p>
+                      Major: {brother.major}
+                      <br />
+                      Year: {brother.year}
+                      <br />
+                      {brother.college}
+                    </p>
+                    <p className={styles.hiddenNote}>
+                      {brother.more}
+                    </p>
+                  </div>
+                </div>
+                
+                {/* bottom left label */}
+                <div className={styles.bottomLabel}>
+                  {brother.name}
+                </div>
+              </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   )

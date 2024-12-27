@@ -11,3 +11,4 @@ yarn dev
 ```
 
 created 2023 by joshua guo, sp22
+managed by kyle chu (sp24, fa24), francis pham (fa24)

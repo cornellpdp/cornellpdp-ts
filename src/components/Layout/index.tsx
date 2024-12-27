@@ -91,8 +91,9 @@ const Layout = ({ children }: PropsWithChildren) => {
             FACEBOOK
           </a>
           <div className="footerRight">
-            <div>© 2023 Cornell Pi Delta Psi Fraternity, Inc.</div>
+            <div>© 2024 Cornell Pi Delta Psi Fraternity, Inc.</div>
             <div>Website by Joshua Guo</div>
+            <div>Maintained by Kyle Chu, Francis Pham</div>
           </div>
         </footer>
       </div>
