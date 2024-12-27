@@ -2,15 +2,14 @@ import { useState } from "react"
 import { GetStaticProps } from "next"
 import Background from "@/components/Background"
 import brothers from "public/img/brothers.jpg"
-import { ActiveClass } from "@/components/ActiveHouse/types"
+import { ActiveClass, ActiveBrother } from "@/components/ActiveHouse/types"
 import Image from 'next/image'
-import styles from "@/components/ClsBtn/ClsBtn.module.css"
+import styles from "@/components/styles/styles.module.css"
 import ActiveHouse from "@/components/ActiveHouse"
 
 type BrothersProps = {
   title: string
 }
-
 
 const Colleges = {
   cas: "College of Arts and Sciences",
@@ -323,6 +322,7 @@ const CurrentHouse: ActiveClass[] = [
 
 export default function Page() {
   const [selectedClass, setSelectedClass] = useState<ActiveClass | null>(null)
+  const [selectedBrother, setSelectedBrother] = useState<ActiveBrother | null>(null)
 
   return (
     <div style={{ position: "relative" }}>
@@ -354,38 +354,115 @@ export default function Page() {
         ))}
         </div>
 
-
-        {/* <ActiveHouse activeHouse={CurrentHouse} /> */}
         {selectedClass && (
           <div>
             <h2 style={{ textAlign: "center", margin: "20px 0" }}>
               {selectedClass.fullClassTitle}
             </h2>
-            <div style={{ display: "grid", gap: "20px", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))" }}>
-              {selectedClass.activeBrothers.map((brother, index) => (
+            <div style={{ 
+              display: "grid", 
+              gap: "20px", 
+              gridTemplateColumns: "repeat(4, 1fr)" 
+            }}
+          >
+              {selectedClass.activeBrothers.map((brother, i) => (
                 <div
-                  key={index}
+                  key={i}
                   style={{
-                    border: "1px solid #ccc",
+                    position: "relative",
+                    cursor: "pointer",
+                    overflow: "hidden",
+                    width: "225px",
+                    height: "300px",
                     borderRadius: "10px",
-                    padding: "10px",
-                    textAlign: "center",
                   }}
+                  onClick={() => setSelectedBrother(brother)}
                 >
+
+                {/* white scale */}
                 <Image
                   src={brother.image}
                   alt={brother.name}
-                  width={100}
-                  height={200}
+                  layout="fill"
+                  style={{ 
+                    objectFit: "cover",
+                    filter: "brightness(100%)",
+                    transition: "filter 0.5s ease",
+                    borderRadius: "10px",
+                  }}
+                  className={`${styles.hoverEffect}}`}
                 />
-                  <h3>{brother.name}</h3>
-                  <p>Number: #{brother.number}</p>
-                  <p>Year: {brother.year}</p>
-                  <p>College: {brother.college}</p>
-                  <p>Major: {brother.major}</p>
+                <div
+                  style={{
+                    position: "absolute",
+                    bottom: "10px",
+                    left: "10px",
+                    color: "white",
+                    backgroundColor: "rgba(0, 0, 0, 0.6)",
+                    padding: "5px 10px",
+                    borderRadius: "5px",
+                    zIndex: 2,
+                  }}
+                >
+                  {brother.name}
                 </div>
+              </div>
               ))}
             </div>
+
+            {/* Popup */}
+            {selectedBrother && (
+              <div
+                style={{
+                  position: "fixed",
+                  top: "50%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                  backgroundColor: "white",
+                  border: "1px solid #ccc",
+                  borderRadius: "10px",
+                  padding: "20px",
+                  zIndex: 1000,
+                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                  textAlign: "center",
+                }}
+              >
+                <h2>{selectedBrother.name}</h2>
+                <p>Number: #{selectedBrother.number}</p>
+                <p>Year: {selectedBrother.year}</p>
+                <p>College: {selectedBrother.college}</p>
+                <p>Major: {selectedBrother.major}</p>
+                <button
+                  onClick={() => setSelectedBrother(null)}
+                  style={{
+                    marginTop: "10px",
+                    padding: "10px 20px",
+                    backgroundColor: "#0070f3",
+                    color: "white",
+                    border: "none",
+                    borderRadius: "5px",
+                    cursor: "pointer",                
+                  }}
+                >
+                  Close
+                </button>
+              </div>
+            )}
+
+            {selectedBrother && (
+              <div
+                style={{
+                  position: "fixed",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  backgroundColor: "rgba(0, 0, 0, 0.5)",
+                  zIndex: 999,
+                }}
+                onClick={() => setSelectedBrother(null)}
+                ></div>
+            )}
           </div>
         )}
       </div>

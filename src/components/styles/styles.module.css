@@ -102,3 +102,7 @@
     height: 100%;
   }
 }
+
+.hoverEffect:hover {
+  filter: brightness(150%);
+}
