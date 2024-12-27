@@ -36,7 +36,7 @@ const Majors = {
 const CurrentHouse: ActiveClass[] = [
   {
     classTitle: "ALPHA CHI",
-    fullClassTitle: "ALPHA CHI — FA '24",
+    fullClassTitle: "ALPHA CHI — FALL 2024",
     activeBrothers: [
       {
         image: '/img/default.jpg',
@@ -98,7 +98,7 @@ const CurrentHouse: ActiveClass[] = [
   },
   {
     classTitle: "ALPHA PHI",
-    fullClassTitle: "ALPHA PHI — SP '24",
+    fullClassTitle: "ALPHA PHI — SPRING 2024",
     activeBrothers: [
       {
         image: '/img/aphi/vail.png',
@@ -152,7 +152,7 @@ const CurrentHouse: ActiveClass[] = [
   },
   {
     classTitle: "ALPHA UPSILON",
-    fullClassTitle: "ALPHA UPSILON — FA '23",
+    fullClassTitle: "ALPHA UPSILON — FALL 2023",
     activeBrothers: [
       {
         image: '/img/au/jaydon.jpg',
@@ -174,7 +174,7 @@ const CurrentHouse: ActiveClass[] = [
   },
   {
     classTitle: "ALPHA TAU",
-    fullClassTitle: "ALPHA TAU — SP'23",
+    fullClassTitle: "ALPHA TAU — SPRING 2023",
     activeBrothers: [
       {
         image: '/img/at/tuo.jpg',
@@ -244,7 +244,7 @@ const CurrentHouse: ActiveClass[] = [
   },
   {
     classTitle: "ALPHA SIGMA",
-    fullClassTitle: "ALPHA SIGMA — FA '22",
+    fullClassTitle: "ALPHA SIGMA — FALL 2022",
     activeBrothers: [
       {
         image: '/img/as/Andrew_2.png',
@@ -372,25 +372,21 @@ export default function Page() {
                     position: "relative",
                     cursor: "pointer",
                     overflow: "hidden",
-                    width: "225px",
-                    height: "300px",
-                    borderRadius: "10px",
+                    width: "262px",
+                    height: "350px",
+                    borderRadius: "4px",
                   }}
                   onClick={() => setSelectedBrother(brother)}
                 >
 
-                {/* white scale */}
                 <Image
                   src={brother.image}
                   alt={brother.name}
                   layout="fill"
                   style={{ 
                     objectFit: "cover",
-                    filter: "brightness(100%)",
-                    transition: "filter 0.5s ease",
-                    borderRadius: "10px",
                   }}
-                  className={`${styles.hoverEffect}}`}
+                  className={styles.hoverEffect}
                 />
                 <div
                   style={{
@@ -402,6 +398,8 @@ export default function Page() {
                     padding: "5px 10px",
                     borderRadius: "5px",
                     zIndex: 2,
+                    fontSize: "18px",
+                    fontWeight: 100
                   }}
                 >
                   {brother.name}
