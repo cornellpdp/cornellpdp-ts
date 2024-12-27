@@ -262,7 +262,7 @@ const CurrentHouse: ActiveClass[] = [
         name: "William *ATTICUS* Xing",
         number: "185",
         year: "2025",
-        college: Colleges.cas,
+        college: Colleges.cals,
         major: Majors.info,
         more: "corniest bro"
       },
