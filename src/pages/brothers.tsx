@@ -332,6 +332,7 @@ export default function Page() {
           ACTIVE HOUSE
         </div>
       </Background>
+
       <div className="mainContent">
         {/* Menu Selection*/}
         <div
@@ -348,7 +349,7 @@ export default function Page() {
             key={i}
             onClick={() => setSelectedClass(cls)}
             className={`${styles.clsBtn} ${selectedClass?.classTitle === cls.classTitle ? styles.selected : ""}`}
-          >
+            >
             <span>{cls.classTitle}</span>
           </div>
         ))}

@@ -3,8 +3,7 @@ import type { AppProps } from "next/app"
 import Header from "@/config"
 import Layout from "@/components/Layout"
 import { Analytics } from "@vercel/analytics/react"
-
-//import Donate from "@/pages/Donate"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -14,6 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </Layout>
       <Analytics />
+      <SpeedInsights />
     </>
   )
 }
