@@ -36,7 +36,7 @@ const Majors = {
 const CurrentHouse: ActiveClass[] = [
   {
     classTitle: "ALPHA CHI",
-    fullClassTitle: "ALPHA CHI — FA '24",
+    fullClassTitle: "ALPHA CHI — FALL 2024",
     activeBrothers: [
       {
         image: '/img/default.jpg',
@@ -61,6 +61,7 @@ const CurrentHouse: ActiveClass[] = [
         year: "2026",
         college: Colleges.coe,
         major: "Electrical and Computer Engineering & Computer Science",
+        more: "top dog",
       },
       {
         image: '/img/default.jpg',
@@ -98,7 +99,7 @@ const CurrentHouse: ActiveClass[] = [
   },
   {
     classTitle: "ALPHA PHI",
-    fullClassTitle: "ALPHA PHI — SP '24",
+    fullClassTitle: "ALPHA PHI — SPRING 2024",
     activeBrothers: [
       {
         image: '/img/aphi/vail.png',
@@ -147,12 +148,13 @@ const CurrentHouse: ActiveClass[] = [
         year: "2027",
         college: Colleges.coe,
         major: Majors.cs,
+        more: "akdguy2",
       }
     ]
   },
   {
     classTitle: "ALPHA UPSILON",
-    fullClassTitle: "ALPHA UPSILON — FA '23",
+    fullClassTitle: "ALPHA UPSILON — FALL 2023",
     activeBrothers: [
       {
         image: '/img/au/jaydon.jpg',
@@ -174,7 +176,7 @@ const CurrentHouse: ActiveClass[] = [
   },
   {
     classTitle: "ALPHA TAU",
-    fullClassTitle: "ALPHA TAU — SP'23",
+    fullClassTitle: "ALPHA TAU — SPRING 2023",
     activeBrothers: [
       {
         image: '/img/at/tuo.jpg',
@@ -207,6 +209,7 @@ const CurrentHouse: ActiveClass[] = [
         year: "2026",
         college: Colleges.cas,
         major: Majors.cs,
+        more: "akdguy1"
       },
       {
         image: '/img/at/oliver.png',
@@ -244,7 +247,7 @@ const CurrentHouse: ActiveClass[] = [
   },
   {
     classTitle: "ALPHA SIGMA",
-    fullClassTitle: "ALPHA SIGMA — FA '22",
+    fullClassTitle: "ALPHA SIGMA — FALL 2022",
     activeBrothers: [
       {
         image: '/img/as/Andrew_2.png',
@@ -259,8 +262,9 @@ const CurrentHouse: ActiveClass[] = [
         name: "William *ATTICUS* Xing",
         number: "185",
         year: "2025",
-        college: Colleges.cas,
+        college: Colleges.cals,
         major: Majors.info,
+        more: "corniest bro"
       },
       {
         image: '/img/as/chapadia.jpg',
@@ -288,7 +292,7 @@ const CurrentHouse: ActiveClass[] = [
       },
       {
         image: '/img/as/wonjae.jpg',
-        name: "Wonjae *I.M. Lee",
+        name: "Wonjae *I.M.* Lee",
         number: "189",
         year: "2026",
         college: Colleges.aap,
@@ -322,7 +326,6 @@ const CurrentHouse: ActiveClass[] = [
 
 export default function Page() {
   const [selectedClass, setSelectedClass] = useState<ActiveClass | null>(null)
-  const [selectedBrother, setSelectedBrother] = useState<ActiveBrother | null>(null)
 
   return (
     <div style={{ position: "relative" }}>
@@ -332,8 +335,18 @@ export default function Page() {
           ACTIVE HOUSE
         </div>
       </Background>
+<<<<<<< HEAD
 
       <div className="mainContent">
+=======
+      <div 
+        className="mainContent"
+        style={{
+          maxWidth: "1370px",
+          margin: "0 auto",
+          padding: "0 15px 25px 15px",
+        }}>
+>>>>>>> 29c9e04fa18cd7c14a1116be632dfa4fda715aa6
         {/* Menu Selection*/}
         <div
           style={{
@@ -354,7 +367,8 @@ export default function Page() {
           </div>
         ))}
         </div>
-
+        
+        {/* card grid */}
         {selectedClass && (
           <div>
             <h2 style={{ textAlign: "center", margin: "20px 0" }}>
@@ -363,107 +377,48 @@ export default function Page() {
             <div style={{ 
               display: "grid", 
               gap: "20px", 
-              gridTemplateColumns: "repeat(4, 1fr)" 
+              gridTemplateColumns: "repeat(auto-fit, minmax(262px, 1fr))",
+              justifyContent: "center",
             }}
           >
               {selectedClass.activeBrothers.map((brother, i) => (
                 <div
                   key={i}
-                  style={{
-                    position: "relative",
-                    cursor: "pointer",
-                    overflow: "hidden",
-                    width: "225px",
-                    height: "300px",
-                    borderRadius: "10px",
-                  }}
-                  onClick={() => setSelectedBrother(brother)}
+                  className={styles.card}
                 >
 
-                {/* white scale */}
                 <Image
                   src={brother.image}
                   alt={brother.name}
                   layout="fill"
-                  style={{ 
-                    objectFit: "cover",
-                    filter: "brightness(100%)",
-                    transition: "filter 0.5s ease",
-                    borderRadius: "10px",
-                  }}
-                  className={`${styles.hoverEffect}}`}
+                  className={styles.cardImage}
                 />
-                <div
-                  style={{
-                    position: "absolute",
-                    bottom: "10px",
-                    left: "10px",
-                    color: "white",
-                    backgroundColor: "rgba(0, 0, 0, 0.6)",
-                    padding: "5px 10px",
-                    borderRadius: "5px",
-                    zIndex: 2,
-                  }}
-                >
+
+                {/* hover-overlay */}
+                <div className={styles.hoverOverlay}>
+                  <div className={styles.brotherInfo}>
+                    <h2>#{brother.number}</h2>
+                    <h3>{brother.name}</h3>
+                    <p>
+                      Major: {brother.major}
+                      <br />
+                      Year: {brother.year}
+                      <br />
+                      {brother.college}
+                    </p>
+                    <p className={styles.hiddenNote}>
+                      {brother.more}
+                    </p>
+                  </div>
+                </div>
+                
+                {/* bottom left label */}
+                <div className={styles.bottomLabel}>
                   {brother.name}
                 </div>
               </div>
               ))}
             </div>
-
-            {/* Popup */}
-            {selectedBrother && (
-              <div
-                style={{
-                  position: "fixed",
-                  top: "50%",
-                  left: "50%",
-                  transform: "translate(-50%, -50%)",
-                  backgroundColor: "white",
-                  border: "1px solid #ccc",
-                  borderRadius: "10px",
-                  padding: "20px",
-                  zIndex: 1000,
-                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
-                  textAlign: "center",
-                }}
-              >
-                <h2>{selectedBrother.name}</h2>
-                <p>Number: #{selectedBrother.number}</p>
-                <p>Year: {selectedBrother.year}</p>
-                <p>College: {selectedBrother.college}</p>
-                <p>Major: {selectedBrother.major}</p>
-                <button
-                  onClick={() => setSelectedBrother(null)}
-                  style={{
-                    marginTop: "10px",
-                    padding: "10px 20px",
-                    backgroundColor: "#0070f3",
-                    color: "white",
-                    border: "none",
-                    borderRadius: "5px",
-                    cursor: "pointer",                
-                  }}
-                >
-                  Close
-                </button>
-              </div>
-            )}
-
-            {selectedBrother && (
-              <div
-                style={{
-                  position: "fixed",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                  backgroundColor: "rgba(0, 0, 0, 0.5)",
-                  zIndex: 999,
-                }}
-                onClick={() => setSelectedBrother(null)}
-                ></div>
-            )}
           </div>
         )}
       </div>
