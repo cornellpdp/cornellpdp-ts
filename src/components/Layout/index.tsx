@@ -78,18 +78,19 @@ const Layout = ({ children }: PropsWithChildren) => {
             <BurgerIcon ref={burgerIconRef} handleClick={clickedBurger} />
           </nav>
         </header>
+
         <main>{children}</main>
         <footer>
           <a href="https://www.instagram.com/cornellpdpsi/" target="_blank" rel="noopener noreferrer">
             INSTAGRAM
           </a>
-          <a
-            href="https://www.facebook.com/Cornellpideltapsi/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://www.facebook.com/Cornellpideltapsi/" target="_blank" rel="noopener noreferrer">
             FACEBOOK
           </a>
+          <a href="https://www.pideltapsi.com/" target="_blank" rel="noopener noreferrer" > 
+            NATIONAL WEBSITE 
+          </a>
+          
           <div className="footerRight">
             <div>© 2024 Cornell Pi Delta Psi Fraternity, Inc.</div>
             <div>Website by Joshua Guo</div>

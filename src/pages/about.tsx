@@ -10,7 +10,6 @@ import levi from "public/img/at/levi.jpg"
 import vinny from "public/img/aphi/vinny.png"
 import kych from "public/img/aphi/kych.png"
 
-
 type AboutProps = {
   title: string
 }

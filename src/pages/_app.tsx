@@ -4,7 +4,6 @@ import Head from "next/head"
 import Header from "@/config"
 import Layout from "@/components/Layout"
 import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
 //import Donate from "@/pages/Donate"
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -18,7 +17,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </Layout>
       <Analytics />
-      <SpeedInsights />
     </>
   )
 }
