@@ -1,4 +1,5 @@
 import { GetStaticProps } from "next"
+import Link from 'next/link';
 import Image from "next/image"
 import Background from "@/components/Background"
 import homepage from "public/img/homepage.jpg"
@@ -20,7 +21,7 @@ export default function Page() {
 
       <div className="mainContent">
 
-        <div className="about">
+        <div className="hSection">
           <div className="leftColumn">
             <h1>&Pi; &Delta; &Psi;</h1>
             <h3>
@@ -29,7 +30,6 @@ export default function Page() {
               Established 04.25.1998
             </h3>
           </div>
-
           <p className="rightColumn">
             Pi Delta Psi is an Asian-interest cultural fraternity founded on February 20, 1994 at
             Binghamton University in Binghamton, New York. Since our founding, the primary mission of Pi
@@ -38,10 +38,8 @@ export default function Page() {
             Awareness, Righteousness, and Friendship/Loyalty.
           </p>
         </div>
-        <br/>
-        <br/>
-        <br/>
-        <div className="about">
+        <br/> <br/> <br/> <br/> <br/> <br/>
+        <div className="hSection">
           <div className="leftColumn">
             <Image
                 src={president}
@@ -58,6 +56,14 @@ export default function Page() {
             --------------------------placeholder---------------------------------
           </div>
         </div>
+        <br/> <br/> <br/> <br/> <br/> <br/>
+        <div className='centerColumn'>
+          <h1> Interested in Joining? </h1>
+          <Link href="/rush#top" passHref>
+            <button className='rushButton'> RUSH </button>
+          </Link>
+        </div>
+
       </div>
 
 
