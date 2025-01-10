@@ -1098,6 +1098,154 @@ const Roster: Class[] = [
     classTitle: "ALPHA KAPPA",
     fullClassTitle: "ALPHA KAPPA - SPRING 2018",
     activeBrothers: [
+      {
+        image:'/img/default.jpg',
+        name: "Steven *SWEETSPOT* Lu",
+        number: "133",
+        big: "Hansen *DROSE* Tai",
+      },
+      {
+        image:'/img/default.jpg',
+        name: "William *XAVIER* Zhang",
+        number: "134",
+        big: "Felix *U.D. APP* Chin",
+        little: "Matthew *LIL UZI* Kuo"
+      },
+      {
+        image:'/img/default.jpg',
+        name: "Michael *CAESAR* Chin",
+        number: "135",
+        big: "Andrew *ATLANTIC* Lee",
+        little: "Alan *BRUTUS* Lau"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Sangbo *EMPEROR* Yoon",
+        number: "136",
+        big: "Emmanuel *JETSTREAM* Paulino",
+        little: "Jun Oh *SOLITAIRE* Koo"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Derek *GUNGNIR* Cheung",
+        number: "137",
+        big: "Andrew *IDFWY* Deng",
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Jack *KODIAK* Ding",
+        number: "138",
+        big: "Max *EMBRE* Kong",
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Depei *HOWL* Yu",
+        number: "140",
+        big: "Jason *4 AM* Lee",
+        little: "Allen *FORESIGHT* Chen"
+      },
+    ]
+  },
+  {
+    classTitle: "ALPHA IOTA",
+    fullClassTitle: "ALPHA IOTA - FALL 2017",
+    activeBrothers: [
+      {
+        image: '/img/default.jpg',
+        name: "Jason *TSUZUMI* Lin",
+        number: "128",
+        big: "Jefferson *TRUENO* Poserio",
+        little: "Arthur *LUPARA* Liao"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Justin *ESCANOR* Oh",
+        number: "129",
+        big: "Austen *OG-MINTS* Te",
+        little: "Alan *2nd-Order* Wo"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Laurence *ENCORE* Zhang",
+        number: "130",
+        big: "Christopher *PARETO* Wan",
+        little: "Steven *NXO* Yeung"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Miah *TYGA* Feroz",
+        number: "131",
+        big: "Jason *ASTRO* Zhou",
+        little: "Brian *METRO* Lu & Jordan *ABSTRACT* Chan"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Aaron *EXCISION* Ogita",
+        number: "132",
+        big: "Lawrence *SONOROUS* Hu",
+        little: "Kai *CREED* Kim"
+      },
+    ]
+  },
+  {
+    classTitle: "ALPHA THETA",
+    fullClassTitle: "ALPHA THETA - SPRING 2017",
+    activeBrothers: [
+      {
+        image: '/img/default.jpg',
+        name: "Raymond *HORUS* Guo",
+        number: "121",
+        big: "",
+        little: "Eumin *wyrm* Kim"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Andrew *ATLANTIC* Lee",
+        number: "122",
+        big: "",
+        little: "Michael *CAESAR* Chin",
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Jason *4 AM* Lee",
+        number: "123",
+        big: "",
+        little: "Depei *HOWL* Yu & Justin *LIFELINE* Ong"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Jay *LIL MAC* Lee",
+        number: "124",
+        big: "",
+        little: "Brian *HANWOO* Jeong & William *SUNSIN* Lee"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Austin *VITREUM* Chiu",
+        number: "125",
+        big: "",
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Max *EMBRE* Kong",
+        number: "126",
+        big: "",
+        little: "Jack *KODIAK* Ding"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Hansen *DROSE* Tai",
+        number: "127",
+        big: "",
+        little: "Steven *SWEETSPOT* Lu & Steven *Ouranos* Wang"
+      },
+      
+    ]
+  },
+  {
+    classTitle: "ALPHA ETA",
+    fullClassTitle: "ALPHA ETA - FALL 2016",
+    activeBrothers: [
       
     ]
   }
