@@ -1,11 +1,11 @@
 import React from "react"
 import Image from "next/image"
-import { ActiveHouseProps } from "./types"
+import { RosterProps } from "./types"
 
-const ActiveHouse: React.FC<ActiveHouseProps> = (props) => {
+const Roster: React.FC<RosterProps> = (props) => {
   return (
     <div className="activeHouseContainer">
-      {props.activeHouse.map((activeClass) => (
+      {props.roster.map((activeClass) => (
         <div key={activeClass.classTitle}>
           <h1 style={{ textAlign: "center" }}>{activeClass.classTitle}</h1>
           <div className="activeClass">
@@ -19,6 +19,8 @@ const ActiveHouse: React.FC<ActiveHouseProps> = (props) => {
                   <h4>Class of {brother.year}</h4>
                   <h4>{brother.college}</h4>
                   <h4>{brother.major}</h4>
+                  <h4>{brother.big}</h4>
+                  <h4>{brother.little}</h4>
                   <h4>{brother.more}</h4>
                   <h4>{brother.more2}</h4>
                 </div>
@@ -31,4 +33,4 @@ const ActiveHouse: React.FC<ActiveHouseProps> = (props) => {
   )
 }
 
-export default ActiveHouse
+export default Roster
