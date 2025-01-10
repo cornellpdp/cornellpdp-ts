@@ -1064,6 +1064,40 @@ const Roster: Class[] = [
     classTitle: "ALPHA LAMBDA",
     fullClassTitle: "ALPHA LAMBDA - FALL 2018",
     activeBrothers: [
+      {
+        image:'/img/default.jpg',
+        name: "Brian *HANWOO* Jeong",
+        number: "141",
+        big: "Jay *LIL MAC* Lee",
+        little: "Ethan *JODYE* Shan"
+      },
+      {
+        image:'/img/default.jpg',
+        name: "Eumin (Andy) *wyrm* Kim",
+        number: "142",
+        big: "Raymond *HORUS* Guo",
+        little: "Derek *Ryusoken* Xie"
+      },
+      {
+        image:'/img/default.jpg',
+        name: "Brian *METRO* Lu",
+        number: "143",
+        big: "Miah *TYGA* Feroz",
+        little: "Thomas *PRIDE* Lee"
+      },
+      {
+        image:'/img/default.jpg',
+        name: "Steven *Ouranos* Wang",
+        number: "144",
+        big: "Hansen *DROSE* Tai",
+        little: "Takashi *Caligula* Yuasa"
+      },
+    ]
+  },
+  {
+    classTitle: "ALPHA KAPPA",
+    fullClassTitle: "ALPHA KAPPA - SPRING 2018",
+    activeBrothers: [
       
     ]
   }
