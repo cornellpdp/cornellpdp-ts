@@ -1195,14 +1195,14 @@ const Roster: Class[] = [
         image: '/img/default.jpg',
         name: "Raymond *HORUS* Guo",
         number: "121",
-        big: "",
+        big: "N/A", //his big delettered
         little: "Eumin *wyrm* Kim"
       },
       {
         image: '/img/default.jpg',
         name: "Andrew *ATLANTIC* Lee",
         number: "122",
-        big: "",
+        big: "George ** Mao",
         little: "Michael *CAESAR* Chin",
       },
       {
@@ -1216,27 +1216,27 @@ const Roster: Class[] = [
         image: '/img/default.jpg',
         name: "Jay *LIL MAC* Lee",
         number: "124",
-        big: "",
+        big: "Alex ** Huang",
         little: "Brian *HANWOO* Jeong & William *SUNSIN* Lee"
       },
       {
         image: '/img/default.jpg',
         name: "Austin *VITREUM* Chiu",
         number: "125",
-        big: "",
+        big: "N/A", //his big delettered
       },
       {
         image: '/img/default.jpg',
         name: "Max *EMBRE* Kong",
         number: "126",
-        big: "",
+        big: "Luke ** Shin",
         little: "Jack *KODIAK* Ding"
       },
       {
         image: '/img/default.jpg',
         name: "Hansen *DROSE* Tai",
         number: "127",
-        big: "",
+        big: "Alex ** Huang",
         little: "Steven *SWEETSPOT* Lu & Steven *Ouranos* Wang"
       },
       
