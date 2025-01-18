@@ -335,10 +335,6 @@ export default function Page() {
           ACTIVE HOUSE
         </div>
       </Background>
-<<<<<<< HEAD
-
-      <div className="mainContent">
-=======
       <div 
         className="mainContent"
         style={{
@@ -346,7 +342,6 @@ export default function Page() {
           margin: "0 auto",
           padding: "0 15px 25px 15px",
         }}>
->>>>>>> 29c9e04fa18cd7c14a1116be632dfa4fda715aa6
         {/* Menu Selection*/}
         <div
           style={{
