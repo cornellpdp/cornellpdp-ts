@@ -4,7 +4,6 @@ import Head from "next/head"
 import Header from "@/config"
 import Layout from "@/components/Layout"
 import { Analytics } from "@vercel/analytics/react"
-//import Donate from "@/pages/Donate"
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

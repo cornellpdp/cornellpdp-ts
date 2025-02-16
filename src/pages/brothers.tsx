@@ -902,7 +902,7 @@ const Roster: Class[] = [
         little: "Joshua *MIMIR* Guo" 
       },
       {
-        image:'/img/default.jpg',
+        image:'/img/ao/jason.png',
         name: "Jason *ASMR* Kwong",
         number: "169",
         year: "2023",
