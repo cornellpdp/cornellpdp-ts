@@ -197,3 +197,28 @@
   font-size: 7px;
   transition: opacity 0.3s ease;
 }
+
+/* Rush Link */
+
+.rushing {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.rush:link {
+    color: #0000FF;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.rush:visited {
+  color: #800080;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.rush:active {
+  color: #FF0000;
+  background-color: transparent;
+  text-decoration: underline;
+}
