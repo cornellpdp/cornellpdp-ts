@@ -3,7 +3,7 @@ import React, { CSSProperties } from 'react';
 const Donate: React.FC = () => {
   const openExternalLink = () => {
     // Replace 'https://example.com' with the external link you want to open.
-    window.open('https://www.paypal.com/paypalme/Cornellpdpsi', '_blank');
+    window.open('https://paypal.me/levi2441', '_blank');
   };
 
   const containerStyle: CSSProperties = {
