@@ -19,6 +19,7 @@ const ActiveHouse: React.FC<ActiveHouseProps> = (props) => {
                   <h4>Class of {brother.year}</h4>
                   <h4>{brother.college}</h4>
                   <h4>{brother.major}</h4>
+                  <h4>{brother.minor}</h4>
                   <h4>{brother.more}</h4>
                   <h4>{brother.more2}</h4>
                 </div>

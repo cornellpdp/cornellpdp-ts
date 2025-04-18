@@ -8,6 +8,7 @@ export type ActiveBrother = {
   year: string;
   college: string;
   major: string;
+  minor?: string;
   more?: string;
   more2?: string;
 }
