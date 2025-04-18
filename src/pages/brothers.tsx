@@ -511,8 +511,12 @@ export default function Page() {
                     <p>
                       Major: {brother.major}
                       <br />
-                      Minor: {brother.minor}
-                      <br />
+                      {brother.minor && brother.minor.trim() !== "" && (
+                        <>
+                        Minor: {brother.minor}
+                        <br />
+                      </>
+                    )}
                       Year: {brother.year}
                       <br />
                       {brother.college}
