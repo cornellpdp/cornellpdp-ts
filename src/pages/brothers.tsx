@@ -39,7 +39,7 @@ const CurrentHouse: ActiveClass[] = [
     fullClassTitle: "ALPHA PSI — SPRING 2025",
     activeBrothers: [
       {
-        image: '/img/brothers.jpg',
+        image: '/img/default.jpg',
         name: "Dylan *RIMURU* Wong",
         number: "214",
         year: "2028",
@@ -47,7 +47,7 @@ const CurrentHouse: ActiveClass[] = [
         major: Majors.dyson,
       },
       {
-        image: '/img/brothers.jpg',
+        image: '/img/default.jpg',
         name: "Billy *boi* Hoang",
         number: "215",
         year: "2028",
@@ -56,23 +56,23 @@ const CurrentHouse: ActiveClass[] = [
         minor: "Business"
       },
       {
-        image: '/img/brothers.jpg',
+        image: '/img/default.jpg',
         name: "Owen *ARISEN* Cho",
         number: "216",
         year: "2027",
         college: Colleges.ilr,
         major: Majors.ilr,
       },
-      // {
-      //   image: '/img/brothers.jpg',
-      //   name: "Vincent *DRETHOS* Zheng",
-      //   number: "217",
-      //   year: "2027",
-      //   college: Colleges.ilr,
-      //   major: "Info Science",
-      // },
       {
-        image: '/img/brothers.jpg',
+        image: '/img/default.jpg',
+        name: "Vincent *DRETHOS* Zheng",
+        number: "217",
+        year: "2027",
+        college: Colleges.cas,
+        major: "Info Science",
+      },
+      {
+        image: '/img/default.jpg',
         name: "Ethan Jaybok *MAITO* Lee",
         number: "218",
         year: "2027",
@@ -80,7 +80,7 @@ const CurrentHouse: ActiveClass[] = [
         major: "Global Development and Environment & Sustainability ",
       },
       {
-        image: '/img/brothers.jpg',
+        image: '/img/default.jpg',
         name: "Nathan *VEGETA* Bo",
         number: "219",
         year: "2028",
@@ -89,7 +89,7 @@ const CurrentHouse: ActiveClass[] = [
         minor: "Film"
       },
       {
-        image: '/img/brothers.jpg',
+        image: '/img/default.jpg',
         name: "Ethan *vol* Vo",
         number: "220",
         year: "2028",
@@ -97,7 +97,7 @@ const CurrentHouse: ActiveClass[] = [
         major: Majors.ilr,
       },
       {
-        image: '/img/brothers.jpg',
+        image: '/img/default.jpg',
         name: "Chris *kairyu* Huang",
         number: "221",
         year: "2027",
@@ -105,7 +105,7 @@ const CurrentHouse: ActiveClass[] = [
         major: Majors.ilr,
       },
       {
-        image: '/img/brothers.jpg',
+        image: '/img/default.jpg',
         name: "Peter *GAWAIN* Tsung",
         number: "222",
         year: "2028",
@@ -113,7 +113,7 @@ const CurrentHouse: ActiveClass[] = [
         major: "Biological Sciences",
       },
       {
-        image: '/img/brothers.jpg',
+        image: '/img/default.jpg',
         name: "Masen *VESPER* Chow",
         number: "223",
         year: "2028",
@@ -121,7 +121,7 @@ const CurrentHouse: ActiveClass[] = [
         major: "Food Science",
       },
       {
-        image: '/img/brothers.jpg',
+        image: '/img/default.jpg',
         name: "Ethan Yufei *bee* Wang",
         number: "224",
         year: "2027",
@@ -130,7 +130,7 @@ const CurrentHouse: ActiveClass[] = [
         minor: "Architecture",
       },
       {
-        image: '/img/brothers.jpg',
+        image: '/img/default.jpg',
         name: "Anson *yourpants* Li",
         number: "225",
         year: "2027",
@@ -139,16 +139,14 @@ const CurrentHouse: ActiveClass[] = [
         minor: "Business"
       },
       {
-        image: '/img/brothers.jpg',
+        image: '/img/default.jpg',
         name: "Garrett *widul* Lee",
         number: "226",
         year: "2028",
         college: Colleges.cals,
         major: "Food Science",
       },
-
     ]
-
   },
   {
     classTitle: "ALPHA CHI",
