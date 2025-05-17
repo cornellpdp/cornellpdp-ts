@@ -8,6 +8,7 @@ export type Brother = {
   year?: string;
   college?: string;
   major?: string;
+  minor?: string;
   more?: string;
   more2?: string;
   big: string;
