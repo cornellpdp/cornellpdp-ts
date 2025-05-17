@@ -40,7 +40,7 @@ const CurrentHouse: Class[] = [
     fullClassTitle: "ALPHA CHI — FALL 2024",
     activeBrothers: [
       {
-        image: '/img/default.jpg',
+        image: '/img/achi/dom.jpg',
         name: "Dominic *IGNATIUS* Nguyen",
         number: "207",
         year: "2027",
@@ -49,7 +49,7 @@ const CurrentHouse: Class[] = [
         big: "Marcus *PUSO* Gamboa",
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/achi/kev.jpg',
         name: "Kevin *sun* Zhu",
         number: "208",
         year: "2027",
@@ -58,7 +58,7 @@ const CurrentHouse: Class[] = [
         big: "Marcus *PUSO* Gamboa",
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/achi/francis.jpg',
         name: "Francis *ARGOS* Pham",
         number: "209",
         year: "2026",
@@ -68,7 +68,7 @@ const CurrentHouse: Class[] = [
         more: "top dog",
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/achi/kimdrew.jpg',
         name: "Andrew *BELLAGIO* Kim",
         number: "210",
         year: "2027",
@@ -77,7 +77,7 @@ const CurrentHouse: Class[] = [
         big: "Aidan *MADE U* Look",
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/achi/justin.jpg',
         name: "Justin *finement* Yang",
         number: "211",
         year: "2026",
@@ -86,7 +86,7 @@ const CurrentHouse: Class[] = [
         big: "Levi *enrose* Zeng",
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/achi/paul.jpg',
         name: "Paul *Reiner* Hwang",
         number: "212",
         year: "2027",
@@ -95,7 +95,7 @@ const CurrentHouse: Class[] = [
         big: "Jaydon *SYZYGY* Ryu",
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/achi/aryan.jpg',
         name: "Aryan *MEGA PEKKA* Jain",
         number: "213",
         year: "2027",
