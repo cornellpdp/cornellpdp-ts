@@ -52,8 +52,9 @@ export default function Page() {
               /> 
             </div>
           <div className="rightColumn">
-            <h1>PRESIDENTS MESSAGE</h1>
-            --------------------------placeholder---------------------------------
+            <h1>A LETTER FROM OUR CHAPTER PRESIDENT</h1>
+            <p> Welcome to the official website of the Kappa Chapter of Pi Delta Psi Fraternity, Inc. at Cornell University. Founded on the principles of Academic Achievement, Cultural Awareness, Righteousness, and Friendship/Loyalty, our chapter is dedicated to empowering Asian American students through scholarship, community engagement, and leadership development.</p>
+            <p> <strong>James *MINI PEKKA* Kim <br></br> Chapter President</strong></p>
           </div>
         </div>
         <br/> <br/> <br/> <br/> <br/> <br/>
