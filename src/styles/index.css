@@ -118,7 +118,7 @@ main {
 }
 
 main .mainContent {
-  margin: 2rem 12rem;
+  margin: 1rem 5rem;
 }
 
 footer {
@@ -296,6 +296,78 @@ footer .footerRight div {
   width: 33.33%;
   height: auto;
   margin-bottom: 1rem;
+}
+
+.hSection {
+  display: flex; 
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.leftColumn {
+  flex: 0 0 50%; 
+  text-align: left;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center;
+}
+
+.leftColumn h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 13rem;
+  font-weight: bold;
+  margin: 1.5rem 0 0.5rem 0; 
+  line-height: 1;
+  padding: 0; 
+}
+
+.leftColumn h3 {
+  font-size: 1.5rem;
+  margin: 0.2rem 0 0; 
+  line-height: 1.1;
+  text-align: center;
+}
+
+.leftColumn h3 span {
+  color: red; 
+}
+
+.rightColumn {
+  flex: 1;
+  margin-left: 3rem;
+  text-align: justify;
+}
+
+.centerColumn {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  height: 100%; 
+  text-align: center; 
+}
+
+.rushButton {
+  background: rgb(128, 0, 1);
+  color: white;
+  padding: 18px 100px; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 16px;
+  font-weight: bold; 
+  text-transform: uppercase; 
+  transition: all 0.3s ease;
+}
+
+.rushButton:hover {
+  background: rgb(184, 2, 2);
+}
+
+.rushButton:active {
+  background: rgb(128, 0, 1);
+  transform: scale(0.98);
 }
 
 /* HOMEPAGE END */

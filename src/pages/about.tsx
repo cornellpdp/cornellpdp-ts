@@ -10,7 +10,6 @@ import levi from "public/img/at/levi.jpg"
 import vinny from "public/img/aphi/vinny.png"
 import kych from "public/img/aphi/kych.png"
 
-
 type AboutProps = {
   title: string
 }
@@ -21,7 +20,7 @@ const EBoardList: EboardMember[] = [
   { image: tuo, title: "Warden", name: "Thomas *REBIRTH* Kuo" },
   { image: levi, title: "Treasurer", name: "Levi *enrose* Zeng" },
   { image: vinny, title: "Recorder", name: "Vinny *ATHERIS* Camarillo" },
-  { image: kych, title: "House Manager", name: "Kyle *Ahhhaa!* Chu" },
+  { image: kych, title: "House Manager", name: "Kyle *AMATA* Chu" },
 ]
 
 export default function Page() {
