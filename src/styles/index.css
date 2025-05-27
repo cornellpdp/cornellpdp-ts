@@ -410,7 +410,7 @@ footer .footerRight div {
   }
 
   .leftColumn h1{
-    font-size: 9rem;
+    font-size: 7rem;
   }
 }
 
@@ -734,7 +734,7 @@ footer .footerRight div {
   }
   .donation-bar-track {
     width: 20px;
-    height: 130%;
+    height: 175%;
   }
   .donation-checkpoint {
     width: 55px;
@@ -742,8 +742,8 @@ footer .footerRight div {
     font-size: 1rem;
   }
   .donation-checkpoint-goal {
-    width: 100px;
-    height: 70px;
+    width: 120px;
+    height: 100px;
     font-size: 1rem;
   }
   .donation-checkpoint-goal {
