@@ -734,13 +734,13 @@ footer .footerRight div {
   }
   .donation-bar-track {
     width: 20px;
-    height: 100%;
+    height: 130%;
   }
   .donation-checkpoint,
   .donation-checkpoint-goal {
-    width: 70px;
-    height: 70px;
-    font-size: 0.50rem;
+    width: 55px;
+    height: 55px;
+    font-size: 1rem;
   }
   .donation-checkpoint-goal {
     transform: translate(-50%, 50%) scale(0.8);
