@@ -2403,7 +2403,7 @@ export default function Page() {
       <Background bgImage={brothers} alt="Brothers Image">
         <div className="aboutImageText">
           <br />
-          ACTIVE HOUSE
+          THE BROTHERHOOD
         </div>
       </Background>
       <div 
@@ -2413,6 +2413,7 @@ export default function Page() {
           margin: "0 auto",
           padding: "0 15px 25px 15px",
         }}>
+        <h1 style={{ textAlign: 'center' }}>Active House</h1>
         {/* Menu Selection for Active House */}
         <div
           style={{

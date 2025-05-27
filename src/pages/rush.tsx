@@ -57,7 +57,12 @@ export default function Page() {
           to meet the brothers. At the end of rush week, two rounds of interviews take place and bids are
           given to accepted new members.
         </p>
-        <p className={styles.rushing}>Fill out our <a className={styles.rush} href="https://tinyurl.com/pdpsp25rush" target="blank">interest form</a> for Spring 2025 Rush!</p>
+
+        {/* Use this LOC when interest form is active! */}
+        {/* <p className={styles.rushing}>Fill out our <a className={styles.rush} href="https://tinyurl.com/pdpsp25rush" target="blank">interest form</a> for Spring 2025 Rush!</p> */}
+
+        {/* Use this LOC when rush is over */}
+        <p className={styles.rushing}> Rush is now over for this semester, but come back next semester!</p>
 
         <RushGraphic semester="Spring 2025" front={sp25front} back={sp25back} />
         <RushGraphic semester="Fall 2024" front={fa24front} back={fa24back} />
