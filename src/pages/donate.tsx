@@ -21,9 +21,9 @@ const Donate: React.FC = () => {
             <h1>Help Us Preserve the Heart of Our Brotherhood</h1>
             <p>
               Pi Delta Psi is proud to be the oldest MGFC fraternity house at Cornell University, 
-              a home we've cherished since 2003. For over two decades, 
-              this house has stood as more than just four walls and a roof — it's
-              been the foundation of our brotherhood. It's where hundreds of
+              a home we&rsquo;ve cherished since 2003. For over two decades, 
+              this house has stood as more than just four walls and a roof — it&rsquo;s
+              been the foundation of our brotherhood. It&rsquo;s where hundreds of
               brothers have laughed, grown, struggled, and celebrated together. 
               This house has a lot of historical signifiance to our chapter and is a place  
               that we hold very close to our hearts.
@@ -31,10 +31,10 @@ const Donate: React.FC = () => {
             <p>
               Today, our house is in <strong>urgent</strong> need of repair. From structural fixes to basic renovations, 
               we face some challenges that has become difficult to overcome alone. This house is 
-              the heart of our chapter's culture, a space where young men come to 
+              the heart of our chapter&rsquo;s culture, a space where young men come to 
               find purpose, support, and lifelong family.</p>
             <h2>
-              We're not just trying to fix a building — we're trying to preserve a legacy
+              We&rsquo;re not just trying to fix a building — we&rsquo;re trying to preserve a legacy
             </h2>
           </div>
         </div>
