@@ -38,26 +38,40 @@ export default function Page() {
             Awareness, Righteousness, and Friendship/Loyalty.
           </p>
         </div>
-        <br/> <br/> <br/> <br/> <br/> <br/>
+        <br/> <br/> <br/> <br/>
         <div className="hSection">
           <div className="leftColumn">
             <Image
                 src={president}
                 alt={"James"}
                 style={{
-                  width: "50%",
-                  height: "50%",
+                  width: "70%",
+                  height: "70%",
                   objectFit: "cover", 
                 }}
               /> 
             </div>
           <div className="rightColumn">
             <h1>A LETTER FROM OUR CHAPTER PRESIDENT</h1>
-            <p> Welcome to the official website of the Kappa Chapter of Pi Delta Psi Fraternity, Inc. at Cornell University. Founded on the principles of Academic Achievement, Cultural Awareness, Righteousness, and Friendship/Loyalty, our chapter is dedicated to empowering Asian American students through scholarship, community engagement, and leadership development.</p>
-            <p> <strong>James *MINI PEKKA* Kim <br></br> Chapter President</strong></p>
+            <p> Welcome to the official website of Cornell University's Pi Delta Psi Fraternity, Inc., Kappa Chapter. 
+              Pi Delta Psi was founded in 1994, and Cornell's very own Kappa Chapter was chartered in 1997 on the priniciples of academic achievement,
+              cultural awareness, righteousness, and friendship and loyalty. 
+              <br></br> <br></br>
+              Being part of Pi Delta Psi has given me the opportunity to form lifelong bonds with 40+ amazing brothers, 
+              all brought together by these shared values. I've been incredibly lucky to meet such a supportive, 
+              inspiring group of people. I'm extremely grateful to have met every single person in our chapter 
+              and have made countless memories with them whether it be through
+              philanthropic events, cultural events, or even just relaxing at our fraternity house.
+              <br></br><br></br>
+              If you want to learn more about our organization, feel free to check out the rest of this website and our
+              Facebook and Instagram pages. To learn more about Pi Delta Psi on a national level, check out the 
+              <a href="https://www.pideltapsi.com/" target="blank"> <strong>Pi Delta Psi national website</strong></a>. If you have any questions,
+              don't hesitate to reach out to any active brothers or alumni to learn more about who we are.
+              </p>
+            <p> <strong>James *<em>MINI PEKKA</em>* Kim <br></br> Chapter President</strong></p>
           </div>
         </div>
-        <br/> <br/> <br/> <br/> <br/> <br/>
+        <br/> <br/> <br/> <br/> 
         <div className='centerColumn'>
           <h1> Interested in Joining? </h1>
           <Link href="/rush#top" passHref>

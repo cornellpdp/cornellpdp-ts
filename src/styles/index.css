@@ -337,6 +337,10 @@ footer .footerRight div {
   flex: 1;
   margin-left: 3rem;
   text-align: justify;
+  position: relative;    
+  height: auto;    
+  min-height: 100vh;
+  overflow: visible;    
 }
 
 .centerColumn {
@@ -478,3 +482,155 @@ footer .footerRight div {
 }
 
 /* RUSH END */
+
+/* DONATE BEGINS */
+.container {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 0px auto;
+  position: sticky;
+  top: 200px;               
+  transform: none; 
+}
+
+.container p {
+  font-size: 1.4rem;
+}
+
+.container ul {
+  padding-left: 1.2rem; 
+  text-align: left; 
+  list-style-position: outside; 
+  margin: 0 auto;       
+  width: fit-content; 
+  font-size: 1.2rem;
+}
+
+.button {
+  background-color: #800000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  text-align: center;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1100px;
+  margin-bottom: 0;
+}
+
+.header-text h1 h2 {
+  margin-bottom: 0; 
+}
+
+/* Donation Bar styling */
+
+.donation-bar-container {
+  display: flex;
+  justify-content: left;
+  height: 800px;
+  position: relative;
+  margin: 8rem;
+}
+
+.donation-bar-track {
+  position: relative;
+  width: 35px;
+  height: 100%;
+  background-color: #eee;
+  border-radius: 15px;
+  border: 3px solid #800000;
+  overflow: visible;
+}
+
+.donation-bar-fill {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  background-color: #800000;
+  transition: height 0.3s ease;
+}
+
+.donation-checkpoint {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 100px;
+  height: 100px;
+  border: 3px solid #800000;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: background 0.3s, color 0.3s;
+}
+
+.donation-checkpoint-goal {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 300px;
+  height: 100px;
+  border: 3px solid #800000;
+  background: white;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background 0.3s, color 0.3s;
+}
+
+.donation-checkpoint.reached {
+  background: #800000;
+  border: 3px solid #000000;
+}
+
+.donation-checkpoint-goal.reached {
+  background: #800000;
+  border: 3px solid #000000;
+}
+
+.checkpoint-text {
+  color: black;
+}
+
+.checkpoint-text.reached {
+  color: white;
+}
+
+.checkpoint-goal {
+  color: black;
+}
+
+.checkpoint-goal.reached {
+  color: #ffffff;
+}
+
+
+/* DONATE ENDS */

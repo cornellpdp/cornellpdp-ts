@@ -202,6 +202,7 @@ const CurrentHouse: Class[] = [
         college: Colleges.hotel,
         major: Majors.hotel,
         big: "Aidan *MADE U* Look",
+        more: "akdguy3",
       },
       {
         image: '/img/achi/justin.jpg',
@@ -409,97 +410,6 @@ const CurrentHouse: Class[] = [
       },
     ],
   },
-  {
-    classTitle: "ALPHA SIGMA",
-    fullClassTitle: "ALPHA SIGMA — FALL 2022",
-    activeBrothers: [
-      {
-        image: '/img/as/Andrew_2.png',
-        name: "Andrew *CLEITUS* Hsiao",
-        number: "184",
-        year: "2025",
-        college: Colleges.dyson,
-        major: Majors.dyson,
-        big: "Daniel *TITUS* Lee",
-        little: "Vail *FAUSTUS* Chen & Dylan *RIMURU* Wong"
-      },
-      {
-        image: '/img/as/will.jpg',
-        name: "William *ATTICUS* Xing",
-        number: "185",
-        year: "2025",
-        college: Colleges.cas,
-        major: Majors.info,
-        big: "Daniel *TITUS* Lee",
-        little: "Gabriel *AKAZA* Huang & Francis *ARGOS* Pham",
-        more: "corniest bro"
-      },
-      {
-        image: '/img/as/chapadia.jpg',
-        name: "Chris *KROSSAPPELSOS* Chapadia",
-        number: "186",
-        year: "2025",
-        college: Colleges.dyson,
-        major: Majors.dyson,
-        big: "Jun Oh *SOLITAIRE* Koo",
-      },
-      {
-        image: '/img/as/derrick.jpg',
-        name: "Derrick *NICE TO ME* Chia",
-        number: "187",
-        year: "2025",
-        college: Colleges.cals,
-        major: Majors.info,
-        big: "Logan *Achaemenes* Chang",
-        little: "Billy *boi* Hoang"
-      },
-      {
-        image: '/img/as/ivan.jpg',
-        name: "Ivan *kinopio* Lin",
-        number: "188",
-        year: "2025",
-        college: Colleges.cas,
-        major: Majors.info,
-        big: "Joshua *ATAKE* Chang",
-        little: "Richard *NEZHA* Lin & Owen *ARISEN* Cho",
-      },
-      {
-        image: '/img/as/wonjae.jpg',
-        name: "Wonjae *I.M.* Lee",
-        number: "189",
-        year: "2026",
-        college: Colleges.aap,
-        major: "Architecture",
-        big: "Steven *MAJOR* Long",
-      },
-    ],
-  },
-  {
-    classTitle: "ALPHA RHO",
-    fullClassTitle: "ALPHA RHO — SPRING 2022",
-    activeBrothers: [
-      {
-        image: '/img/ar/luis.png',
-        name: "Luis *Meno* Malenab",
-        number: "177",
-        year: "2025",
-        college: Colleges.cas,
-        major: Majors.info,
-        big: "Liam *Kū* Monahan",
-        little: "Marcus *PUSO* Gamboa"
-      },
-      {
-        image: '/img/ar/jj.png',
-        name: "John Joshua *Crito* Bernardino",
-        number: "182",
-        year: "2025",
-        college: Colleges.dyson,
-        major: Majors.dyson,
-        big: "Liam *Kū* Monahan",
-        little: "Thomas *APØllo* Nguyen"
-      },
-    ],
-  },
 ]
 
 const Roster: Class[] = [
@@ -509,6 +419,189 @@ const Roster: Class[] = [
     activeBrothers: [
       {
         image: '/img/default.jpg',
+        name: "Dylan *RIMURU* Wong",
+        number: "214",
+        year: "2028",
+        college: Colleges.dyson,
+        major: Majors.dyson,
+        big: "Andrew *CLEITUS* Hsiao"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Billy *boi* Hoang",
+        number: "215",
+        year: "2028",
+        college: Colleges.cals,
+        major: "Nutritional Sciences",
+        minor: "Business",
+        big: "Derrick *NICE TO ME* Chia"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Owen *ARISEN* Cho",
+        number: "216",
+        year: "2027",
+        college: Colleges.ilr,
+        major: Majors.ilr,
+        big: "Ivan *kinopio* Lin"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Vincent *DRETHOS* Zheng",
+        number: "217",
+        year: "2027",
+        college: Colleges.cas,
+        major: "Info Science",
+        big: "Vinny *ATHERIS* Camarillo"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Ethan Jaybok *MAITO* Lee",
+        number: "218",
+        year: "2027",
+        college: Colleges.cals,
+        major: "Global Development and Environment & Sustainability ",
+        big: "Oliver *UNBOUNDED* Nishikawa"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Nathan *VEGETA* Bo",
+        number: "219",
+        year: "2028",
+        college: Colleges.cas,
+        major: "Psychology and English",
+        minor: "Film",
+        big: "James *MINI PEKKA* Kim"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Ethan *vol* Vo",
+        number: "220",
+        year: "2028",
+        college: Colleges.ilr,
+        major: Majors.ilr,
+        big: "Justin *finement* Yang"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Chris *kairyu* Huang",
+        number: "221",
+        year: "2027",
+        college: Colleges.ilr,
+        major: Majors.ilr,
+        big: "Richard *NEZHA* Lin"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Peter *GAWAIN* Tsung",
+        number: "222",
+        year: "2028",
+        college: Colleges.cas,
+        major: "Biological Sciences",
+        big: "Thomas *REBIRTH* Kuo"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Masen *VESPER* Chow",
+        number: "223",
+        year: "2028",
+        college: Colleges.cals,
+        major: "Food Science",
+        big: "Kyle *Ahhhaa!* Chu"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Ethan Yufei *bee* Wang",
+        number: "224",
+        year: "2027",
+        college: Colleges.cals,
+        major: "Information Science",
+        minor: "Architecture",
+        big: "James *MINI PEKKA* Kim"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Anson *yourpants* Li",
+        number: "225",
+        year: "2027",
+        college: Colleges.ilr,
+        major: Majors.ilr,
+        minor: "Business",
+        big: "Vail *FAUSTUS* Chen"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "Garrett *widul* Lee",
+        number: "226",
+        year: "2028",
+        college: Colleges.cals,
+        major: "Food Science",
+        big: "Khoa *SSANT* Nguyen"
+      },
+    ]
+  },
+  {
+    classTitle: "ALPHA CHI",
+    fullClassTitle: "ALPHA CHI — FALL 2024",
+    activeBrothers: [
+      {
+        image: '/img/achi/dom.jpg',
+        name: "Dominic *IGNATIUS* Nguyen",
+        number: "207",
+        year: "2027",
+        college: Colleges.cals,
+        major: "Nutritional Science",
+        big: "Marcus *PUSO* Gamboa",
+      },
+      {
+        image: '/img/achi/kev.jpg',
+        name: "Kevin *sun* Zhu",
+        number: "208",
+        year: "2027",
+        college: Colleges.cals,
+        major: Majors.biosci,
+        big: "Marcus *PUSO* Gamboa",
+      },
+      {
+        image: '/img/achi/francis.jpg',
+        name: "Francis *ARGOS* Pham",
+        number: "209",
+        year: "2026",
+        college: Colleges.coe,
+        major: "Electrical and Computer Engineering & Computer Science",
+        big: "William *ATTICUS* Xing",
+        more: "top dog",
+      },
+      {
+        image: '/img/achi/kimdrew.jpg',
+        name: "Andrew *BELLAGIO* Kim",
+        number: "210",
+        year: "2027",
+        college: Colleges.hotel,
+        major: Majors.hotel,
+        big: "Aidan *MADE U* Look",
+      },
+      {
+        image: '/img/achi/justin.jpg',
+        name: "Justin *finement* Yang",
+        number: "211",
+        year: "2026",
+        college: Colleges.cals,
+        major: "Biological Science & Food Science",
+        big: "Levi *enrose* Zeng",
+        little: "Ethan *vol* Vo"
+      },
+      {
+        image: '/img/achi/paul.jpg',
+        name: "Paul *Reiner* Hwang",
+        number: "212",
+        year: "2027",
+        college: Colleges.coe,
+        major: Majors.isst,
+        big: "Jaydon *SYZYGY* Ryu",
+      },
+      {
+        image: '/img/achi/aryan.jpg',
         name: "Aryan *MEGA PEKKA* Jain",
         number: "213",
         year: "2027",
@@ -577,7 +670,6 @@ const Roster: Class[] = [
         college: Colleges.coe,
         major: Majors.cs,
         big: "Kai *CREED* Kim",
-        more: "akdguy2",
         little: "Masen *VESPER* Chow"
       }
     ]
@@ -650,7 +742,6 @@ const Roster: Class[] = [
         college: Colleges.cas,
         major: Majors.cs,
         big: "Han *D-Man* Abdali",
-        more: "akdguy1",
         little: "Garrett *widul* Lee"
       },
       {
