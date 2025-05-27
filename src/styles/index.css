@@ -729,12 +729,12 @@ footer .footerRight div {
     flex-direction: column;
     align-items: center;
     margin: 2rem auto;
-    height: 300px;
+    height: 500px;
     max-width: 200px;
   }
   .donation-bar-track {
     width: 20px;
-    height: 175%;
+    height: 100%;
   }
   .donation-checkpoint {
     width: 55px;
