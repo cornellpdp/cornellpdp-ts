@@ -339,7 +339,6 @@ footer .footerRight div {
   text-align: justify;
   position: relative;    
   height: auto;    
-  min-height: 100vh;
   overflow: visible;    
 }
 
@@ -373,6 +372,54 @@ footer .footerRight div {
   background: rgb(128, 0, 1);
   transform: scale(0.98);
 }
+
+/* MOBILE (≤768px) */
+@media (max-width: 768px) {
+  /* stack the two columns vertically */
+  .hSection {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  /* make each half take full width */
+  .leftColumn,
+  .rightColumn {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  /* shrink and center the big header */
+  .header {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  .header-text h1 {
+    font-size: 1.75rem;
+  }
+
+  /* images should never exceed their container */
+  .kappa,
+  .crest,
+  .hSection img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* tighten up overall page padding */
+  .mainContent {
+    margin: 0.5rem 1rem;
+  }
+
+  .rushButton {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
+
+
 
 /* HOMEPAGE END */
 
@@ -484,6 +531,16 @@ footer .footerRight div {
 /* RUSH END */
 
 /* DONATE BEGINS */
+.rightColumn-donate {
+  flex: 1;
+  margin-left: 3rem;
+  text-align: justify;
+  position: relative;    
+  height: auto;    
+  min-height: 100vh;
+  overflow: visible;    
+}
+
 .container {
   text-align: center;
   background-color: #f0f0f0;
@@ -632,5 +689,29 @@ footer .footerRight div {
   color: #ffffff;
 }
 
+@media (max-width: 768px) {
+  .container {
+    position: static;
+    top: auto;
+    transform: none;
+    margin: 2rem auto;
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .donation-bar-container {
+    margin: 2rem auto;
+    height: 400px;       
+    max-width: 200px;    
+  }
+  .donation-bar-track {
+    width: 20px;
+  }
+  .donation-checkpoint {
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+  }
+}
 
 /* DONATE ENDS */

@@ -55,7 +55,7 @@ const Donate: React.FC = () => {
               ]}
             />
           </div>
-          <div className="rightColumn">
+          <div className="rightColumn-donate">
             <div className = "container">
               <h1> Interested in Donating?</h1>
               <p> What your money will go towards:</p>
