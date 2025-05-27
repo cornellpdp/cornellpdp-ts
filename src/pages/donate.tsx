@@ -1,5 +1,4 @@
 import React, { CSSProperties } from 'react';
-import 'react-vertical-timeline-component/style.min.css';
 import Background from "@/components/Background"
 import house from "public/img/house.jpg"
 import DonationBar from '@/components/DonationBar';
