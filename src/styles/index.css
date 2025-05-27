@@ -736,10 +736,14 @@ footer .footerRight div {
     width: 20px;
     height: 130%;
   }
-  .donation-checkpoint,
-  .donation-checkpoint-goal {
+  .donation-checkpoint {
     width: 55px;
     height: 55px;
+    font-size: 1rem;
+  }
+  .donation-checkpoint-goal {
+    width: 100px;
+    height: 70px;
     font-size: 1rem;
   }
   .donation-checkpoint-goal {
