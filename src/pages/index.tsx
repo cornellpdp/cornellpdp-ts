@@ -53,20 +53,20 @@ export default function Page() {
             </div>
           <div className="rightColumn">
             <h1>A LETTER FROM OUR CHAPTER PRESIDENT</h1>
-            <p> Welcome to the official website of Cornell University's Pi Delta Psi Fraternity, Inc., Kappa Chapter. 
-              Pi Delta Psi was founded in 1994, and Cornell's very own Kappa Chapter was chartered in 1997 on the priniciples of academic achievement,
+            <p> Welcome to the official website of Cornell University&rsquo;s Pi Delta Psi Fraternity, Inc., Kappa Chapter. 
+              Pi Delta Psi was founded in 1994, and Cornell&rsquo;s very own Kappa Chapter was chartered in 1997 on the priniciples of academic achievement,
               cultural awareness, righteousness, and friendship and loyalty. 
               <br></br> <br></br>
               Being part of Pi Delta Psi has given me the opportunity to form lifelong bonds with 40+ amazing brothers, 
-              all brought together by these shared values. I've been incredibly lucky to meet such a supportive, 
-              inspiring group of people. I'm extremely grateful to have met every single person in our chapter 
+              all brought together by these shared values. I&rsquo;ve been incredibly lucky to meet such a supportive, 
+              inspiring group of people. I&rsquo;m extremely grateful to have met every single person in our chapter 
               and have made countless memories with them whether it be through
               philanthropic events, cultural events, or even just relaxing at our fraternity house.
               <br></br><br></br>
               If you want to learn more about our organization, feel free to check out the rest of this website and our
               Facebook and Instagram pages. To learn more about Pi Delta Psi on a national level, check out the 
               <a href="https://www.pideltapsi.com/" target="blank"> <strong>Pi Delta Psi national website</strong></a>. If you have any questions,
-              don't hesitate to reach out to any active brothers or alumni to learn more about who we are.
+              don&rsquo;t hesitate to reach out to any active brothers or alumni to learn more about who we are.
               </p>
             <p> <strong>James *<em>MINI PEKKA</em>* Kim <br></br> Chapter President</strong></p>
           </div>
