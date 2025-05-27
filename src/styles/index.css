@@ -391,15 +391,6 @@ footer .footerRight div {
     padding: 0 1rem;
   }
 
-  /* shrink and center the big header */
-  .header {
-    height: auto;
-    padding: 2rem 1rem;
-  }
-  .header-text h1 {
-    font-size: 1.75rem;
-  }
-
   /* images should never exceed their container */
   .kappa,
   .crest,
@@ -417,9 +408,11 @@ footer .footerRight div {
     padding: 12px 24px;
     font-size: 14px;
   }
+
+  .leftColumn h1{
+    font-size: 5rem;
+  }
 }
-
-
 
 /* HOMEPAGE END */
 
@@ -689,28 +682,81 @@ footer .footerRight div {
   color: #ffffff;
 }
 
+/* DONATE PAGE — MOBILE (≤768px) */
 @media (max-width: 768px) {
+  /* 1. Stack left/right into one column */
+  .hSection {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .leftColumn,
+  .rightColumn-donate {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  /* 2. Make header responsive */
+  .header {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  .header-text h1 {
+    font-size: 1.75rem;
+  }
+  .header-text p {
+    font-size: 1rem;
+  }
+  .header-text h2 {
+    font-size: 1.25rem;
+  }
+
+  /* 3. Turn donate box into normal flow and full-width */
   .container {
     position: static;
     top: auto;
     transform: none;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
     width: 90%;
-    padding: 1.5rem;
+    padding: 1rem;
+  }
+  .container p,
+  .container ul li {
+    font-size: 1rem;
   }
 
+  /* 4. Scale down donation bar */
   .donation-bar-container {
+    flex-direction: column;
+    align-items: center;
     margin: 2rem auto;
-    height: 400px;       
-    max-width: 200px;    
+    height: 300px;
+    max-width: 200px;
   }
   .donation-bar-track {
-    width: 20px;
+    width: 16px;
+    height: 100%;
   }
-  .donation-checkpoint {
-    width: 50px;
-    height: 50px;
-    font-size: 1rem;
+  .donation-checkpoint,
+  .donation-checkpoint-goal {
+    width: 40px;
+    height: 40px;
+    font-size: 0.875rem;
+  }
+  .donation-checkpoint-goal {
+    transform: translate(-50%, 50%) scale(0.8);
+  }
+
+  /* 5. Shrink donate button and list bullets */
+  .button {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+  .container ul {
+    padding-left: 1.2rem;
   }
 }
 
