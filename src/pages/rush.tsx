@@ -1,4 +1,5 @@
 import { GetStaticProps } from "next"
+import { useState } from "react"
 import Background from "@/components/Background"
 import RushGraphic from "@/components/RushGraphic"
 import rush from "public/img/rush.jpg"
@@ -34,12 +35,44 @@ import sp25front from "public/img/rush/sp25front.jpg"
 import sp25back from "public/img/rush/sp25back.jpg"
 
 import styles from "@/components/styles/styles.module.css"
+import Image from "next/image"
 
 type RushProps = {
   title: string
 }
 
+interface SemesterData {
+  semester: string
+  front: any
+  back: any
+  isOpen: boolean
+}
+
 export default function Page() {
+  const [semesters, setSemesters] = useState<SemesterData[]>([
+    { semester: "Spring 2025", front: sp25front, back: sp25back, isOpen: false },
+    { semester: "Fall 2024", front: fa24front, back: fa24back, isOpen: false },
+    { semester: "Spring 2024", front: sp24front, back: sp24back, isOpen: false },
+    { semester: "Fall 2023", front: fa23front, back: fa23back, isOpen: false },
+    { semester: "Spring 2023", front: sp23front, back: sp23back, isOpen: false },
+    { semester: "Fall 2022", front: fa22front, back: fa22back, isOpen: false },
+    { semester: "Spring 2022", front: sp22front, back: sp22back, isOpen: false },
+    { semester: "Fall 2021", front: fa21front, back: fa21back, isOpen: false },
+    { semester: "Spring 2021", front: sp21front, back: sp21back, isOpen: false },
+    { semester: "Spring 2020", front: sp20front, back: sp20back, isOpen: false },
+    { semester: "Fall 2019", front: fa19front, back: fa19back, isOpen: false },
+    { semester: "Spring 2019", front: sp19front, back: sp19back, isOpen: false },
+    { semester: "Fall 2018", front: fa18front, back: fa18back, isOpen: false },
+    { semester: "Spring 2018", front: sp18front, back: sp18back, isOpen: false },
+    { semester: "Fall 2017", front: fa17front, back: fa17back, isOpen: false },
+  ])
+
+  const toggleSemester = (index: number) => {
+    setSemesters(prev => prev.map((sem, i) => 
+      i === index ? { ...sem, isOpen: !sem.isOpen } : sem
+    ))
+  }
+
   return (
     <div style={{ position: "relative" }}>
       <Background bgImage={rush} alt="Rush Image">
@@ -58,27 +91,93 @@ export default function Page() {
           given to accepted new members.
         </p>
 
-        {/* Use this LOC when interest form is active! */}
+        {/* Use this line of code when interest form is active! */}
         {/* <p className={styles.rushing}>Fill out our <a className={styles.rush} href="https://tinyurl.com/pdpsp25rush" target="blank">interest form</a> for Spring 2025 Rush!</p> */}
 
-        {/* Use this LOC when rush is over */}
+        {/* Use this line of cod when rush is over */}
         <p className={styles.rushing}> Rush is now over for this semester, but come back next semester!</p>
 
-        <RushGraphic semester="Spring 2025" front={sp25front} back={sp25back} />
-        <RushGraphic semester="Fall 2024" front={fa24front} back={fa24back} />
-        <RushGraphic semester="Spring 2024" front={sp24front} back={sp24back} />
-        <RushGraphic semester="Fall 2023" front={fa23front} back={fa23back} />
-        <RushGraphic semester="Spring 2023" front={sp23front} back={sp23back} />
-        <RushGraphic semester="Fall 2022" front={fa22front} back={fa22back} />
-        <RushGraphic semester="Spring 2022" front={sp22front} back={sp22back} />
-        <RushGraphic semester="Fall 2021" front={fa21front} back={fa21back} />
-        <RushGraphic semester="Spring 2021" front={sp21front} back={sp21back} />
-        <RushGraphic semester="Spring 2020" front={sp20front} back={sp20back} />
-        <RushGraphic semester="Fall 2019" front={fa19front} back={fa19back} />
-        <RushGraphic semester="Spring 2019" front={sp19front} back={sp19back} />
-        <RushGraphic semester="Fall 2018" front={fa18front} back={fa18back} />
-        <RushGraphic semester="Spring 2018" front={sp18front} back={sp18back} />
-        <RushGraphic semester="Fall 2017" front={fa17front} back={fa17back} />
+        <div style={{ marginTop: '3rem' }}>
+          <h2 style={{ 
+            fontSize: '2rem', 
+            marginBottom: '2rem',
+            color: '#2c3e50',
+            fontWeight: '600'
+          }}>
+            Previous Rush Graphics
+          </h2>
+          
+          <div style={{ 
+            maxWidth: '1200px', 
+            margin: '0 auto',
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr',
+            gap: '2rem'
+          }}>
+            {semesters.map((sem, index) => (
+              <div key={index} style={{ marginBottom: '1rem' }}>
+                <button
+                  onClick={() => toggleSemester(index)}
+                  style={{
+                    width: '100%',
+                    padding: '1rem 1.5rem',
+                    backgroundColor: sem.isOpen ? '#800000' : '#f8f9fa',
+                    color: sem.isOpen ? 'white' : '#2c3e50',
+                    border: '2px solid #dee2e6',
+                    borderRadius: '8px',
+                    cursor: 'pointer',
+                    fontSize: '1.1rem',
+                    fontWeight: '600',
+                    transition: 'all 0.3s ease',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)'
+                  }}
+                  onMouseEnter={(e) => {
+                    if (!sem.isOpen) {
+                      e.currentTarget.style.backgroundColor = '#e9ecef'
+                    }
+                  }}
+                  onMouseLeave={(e) => {
+                    if (!sem.isOpen) {
+                      e.currentTarget.style.backgroundColor = '#f8f9fa'
+                    }
+                  }}
+                >
+                  {sem.semester}
+                  <span style={{ 
+                    fontSize: '1.2rem',
+                    transform: sem.isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+                    transition: 'transform 0.3s ease'
+                  }}>
+                    ▼
+                  </span>
+                </button>
+                
+                {sem.isOpen && (
+                  <div style={{
+                    padding: '1.5rem',
+                    backgroundColor: 'white',
+                    border: '2px solid #dee2e6',
+                    borderTop: 'none',
+                    borderTopLeftRadius: '0',
+                    borderTopRightRadius: '0',
+                    borderBottomLeftRadius: '8px',
+                    borderBottomRightRadius: '8px',
+                    marginTop: '-1px',
+                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)'
+                  }}>
+                    <div className="rushGraphicImages">
+                      <Image src={sem.front} alt={`${sem.semester} Front`} />
+                      <Image src={sem.back} alt={`${sem.semester} Back`} />
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   )

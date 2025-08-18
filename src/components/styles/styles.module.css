@@ -222,3 +222,57 @@
   background-color: transparent;
   text-decoration: underline;
 }
+
+/* Rush Accordion Styles */
+.rushAccordionContainer {
+  margin-top: 3rem;
+}
+
+.rushAccordionButton {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background-color: rgb(128, 0, 1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rushAccordionButton:hover {
+  background-color: rgb(184, 2, 2);
+}
+
+.rushAccordionButton:active {
+  background-color: rgb(128, 0, 1);
+  transform: scale(0.98);
+}
+
+.rushAccordionContent {
+  padding: 1.5rem;
+  background-color: white;
+  border: 2px solid #dee2e6;
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-top: -1px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.rushAccordionArrow {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.rushAccordionArrow.open {
+  transform: rotate(180deg);
+}
