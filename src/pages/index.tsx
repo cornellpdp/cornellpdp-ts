@@ -90,6 +90,19 @@ export default function Page() {
           </div>
         </section>
 
+        {/* Call to Action Section */}
+        <section style={{ margin: '3rem 0' }}>
+          <InterestFormHero 
+            title="Interested in Joining Pi Delta Psi?"
+            subtitle="Fall 2025 Rush is now open! Fill out our interest form to get started."
+            buttonText="Fill Out Interest Form"
+            formUrl="https://tinyurl.com/fa25pdp"
+            showNote={true}
+            noteText="Rush applications are now open until September 17 (9/17/25)"
+            variant="compact"
+          />
+        </section>
+
         {/* President's Letter Section */}
         <section style={{ 
           padding: '4rem 2rem', 
@@ -195,19 +208,6 @@ export default function Page() {
               </p>
             </div>
           </div>
-        </section>
-
-        {/* Call to Action Section */}
-        <section style={{ margin: '3rem 0' }}>
-          <InterestFormHero 
-            title="Interested in Joining Pi Delta Psi?"
-            subtitle="Fall 2025 Rush is now open! Fill out our interest form to get started."
-            buttonText="Fill Out Interest Form"
-            formUrl="https://tinyurl.com/fa25pdp"
-            showNote={true}
-            noteText="Rush applications are now open until September 17 (9/17/25)"
-            variant="compact"
-          />
         </section>
 
         {/* EEEO Statement Section */}
