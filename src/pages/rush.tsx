@@ -2,6 +2,7 @@ import { GetStaticProps } from "next"
 import { useState } from "react"
 import Background from "@/components/Background"
 import RushGraphic from "@/components/RushGraphic"
+import InterestFormHero from "@/components/InterestFormHero"
 import rush from "public/img/rush.jpg"
 import fa23front from "public/img/rush/fa23front.jpg"
 import fa23back from "public/img/rush/fa23back.jpg"
@@ -29,12 +30,12 @@ import fa17front from "public/img/rush/fa17front.png"
 import fa17back from "public/img/rush/fa17back.png"
 import fa24back from  "public/img/rush/fa24back.jpg"
 import fa24front from  "public/img/rush/fa24front.jpg"
-import sp24front from  "public/img/rush/sp24front.jpg"
-import sp24back from  "public/img/rush/sp24back.jpg"
+import sp24front from "public/img/rush/sp24front.jpg"
+import sp24back from "public/img/rush/sp24back.jpg"
 import sp25front from "public/img/rush/sp25front.jpg"
 import sp25back from "public/img/rush/sp25back.jpg"
 
-import styles from "@/components/styles/styles.module.css"
+
 import Image from "next/image"
 
 type RushProps = {
@@ -81,6 +82,16 @@ export default function Page() {
           RUSH
         </div>
       </Background>
+      
+      {/* Interest Form Hero Section - Now the first thing users see */}
+      <InterestFormHero 
+        title="Interested in Joining Pi Delta Psi?"
+        subtitle="Fall 2025 Rush is now open! Fill out our interest form to get started."
+        buttonText="Fill Out Interest Form"
+        formUrl="https://tinyurl.com/fa25pdp"
+        variant="default"
+      />
+
       <div className="mainContent" style={{ textAlign: "center" }}>
         <p>
           Rush is a period for anyone interested in Greek life to meet the members of the organization.
@@ -90,13 +101,6 @@ export default function Page() {
           to meet the brothers. At the end of rush week, two rounds of interviews take place and bids are
           given to accepted new members.
         </p>
-
-        {/* Use this line of code when interest form is active! */}
-        {/* <p className={styles.rushing}>Fill out our <a className={styles.rush} href="https://tinyurl.com/pdpsp25rush" target="blank">interest form</a> for Spring 2025 Rush!</p> */}
-
-        {/* Use this line of cod when rush is over */}
-        <p className={styles.rushing}> Rush is now over for this semester, but come back next semester!</p>
-
         <div style={{ marginTop: '3rem' }}>
           <h2 style={{ 
             fontSize: '2rem', 

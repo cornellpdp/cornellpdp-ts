@@ -380,6 +380,7 @@ footer .footerRight div {
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
+    gap: 2rem !important;
   }
 
   /* make each half take full width */
@@ -410,7 +411,30 @@ footer .footerRight div {
   }
 
   .leftColumn h1{
-    font-size: 7rem;
+    font-size: 4rem !important;
+  }
+
+  /* Mobile-specific adjustments for new design */
+  section {
+    margin: 1.5rem 0 !important;
+    padding: 2rem 1rem !important;
+  }
+
+  /* Adjust font sizes for mobile */
+  .leftColumn h3 {
+    font-size: 1.1rem !important;
+  }
+
+  .rightColumn {
+    padding: 1.5rem !important;
+    font-size: 1rem !important;
+    margin: 0.5rem !important;
+  }
+
+  /* President image adjustments */
+  .leftColumn Image {
+    width: 250px !important;
+    height: 250px !important;
   }
 }
 
