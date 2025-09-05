@@ -34,6 +34,8 @@ import sp24front from "public/img/rush/sp24front.jpg"
 import sp24back from "public/img/rush/sp24back.jpg"
 import sp25front from "public/img/rush/sp25front.jpg"
 import sp25back from "public/img/rush/sp25back.jpg"
+import fa25front from "public/img/rush/fa25front.png"
+import fa25back from "public/img/rush/fa25back.png"
 
 
 import Image from "next/image"
@@ -101,6 +103,8 @@ export default function Page() {
           to meet the brothers. At the end of rush week, two rounds of interviews take place and bids are
           given to accepted new members.
         </p>
+        <RushGraphic semester="Fall 2025" front={fa25front} back={fa25back} />
+
         <div style={{ marginTop: '3rem' }}>
           <h2 style={{ 
             fontSize: '2rem', 
