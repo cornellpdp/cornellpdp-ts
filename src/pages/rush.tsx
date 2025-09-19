@@ -1,8 +1,7 @@
 import { GetStaticProps } from "next"
 import { useState } from "react"
 import Background from "@/components/Background"
-import RushGraphic from "@/components/RushGraphic"
-import InterestFormHero from "@/components/InterestFormHero"
+import RushStatus from "@/components/RushStatus"
 import rush from "public/img/rush.jpg"
 import fa23front from "public/img/rush/fa23front.jpg"
 import fa23back from "public/img/rush/fa23back.jpg"
@@ -30,12 +29,12 @@ import fa17front from "public/img/rush/fa17front.png"
 import fa17back from "public/img/rush/fa17back.png"
 import fa24back from  "public/img/rush/fa24back.jpg"
 import fa24front from  "public/img/rush/fa24front.jpg"
+import fa25front from "public/img/rush/fa25front.png"
+import fa25back from "public/img/rush/fa25back.png"
 import sp24front from "public/img/rush/sp24front.jpg"
 import sp24back from "public/img/rush/sp24back.jpg"
 import sp25front from "public/img/rush/sp25front.jpg"
 import sp25back from "public/img/rush/sp25back.jpg"
-import fa25front from "public/img/rush/fa25front.png"
-import fa25back from "public/img/rush/fa25back.png"
 
 
 import Image from "next/image"
@@ -53,6 +52,7 @@ interface SemesterData {
 
 export default function Page() {
   const [semesters, setSemesters] = useState<SemesterData[]>([
+    { semester: "Fall 2025", front: fa25front, back: fa25back, isOpen: false },
     { semester: "Spring 2025", front: sp25front, back: sp25back, isOpen: false },
     { semester: "Fall 2024", front: fa24front, back: fa24back, isOpen: false },
     { semester: "Spring 2024", front: sp24front, back: sp24back, isOpen: false },
@@ -85,26 +85,10 @@ export default function Page() {
         </div>
       </Background>
       
-      {/* Interest Form Hero Section - Now the first thing users see */}
-      <InterestFormHero 
-        title="Interested in Joining Pi Delta Psi?"
-        subtitle="Fall 2025 Rush is now open! Fill out our interest form to get started."
-        buttonText="Fill Out Interest Form"
-        formUrl="https://tinyurl.com/fa25pdp"
-        variant="default"
-      />
 
       <div className="mainContent" style={{ textAlign: "center" }}>
-        <p>
-          Rush is a period for anyone interested in Greek life to meet the members of the organization.
-          By organizing events for interested parties to attend, we hope to provide an opportunity for
-          students to get to know the brothers better and to learn more about our fraternity. Throughout
-          rush week, we host events such as basketball and pong tournaments, barbecues, and more to get
-          to meet the brothers. At the end of rush week, two rounds of interviews take place and bids are
-          given to accepted new members.
-        </p>
-        <RushGraphic semester="Fall 2025" front={fa25front} back={fa25back} />
-
+        {/* CHANGE isActive TO TRUE WHEN RUSH IS OPEN, CHANGE LINK TO THE INTEREST FORM LINK */}
+        <RushStatus isActive={false} variant="default" link="https://tinyurl.com/fa25pdp"/>
         <div style={{ marginTop: '3rem' }}>
           <h2 style={{ 
             fontSize: '2rem', 

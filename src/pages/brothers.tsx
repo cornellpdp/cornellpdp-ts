@@ -20,6 +20,7 @@ const Colleges = {
   humec: "College of Human Ecology",
   ilr: "School of Industrial and Labor Relations",
   hotel: "School of Hotel Administration",
+  unknown: "?"
 }
 
 const Majors = {
@@ -31,16 +32,95 @@ const Majors = {
   ece: "Electrical and Computer Engineering",
   biosci: "Biological Science",
   isst: "Information Science, Systems, and Technology",
-  hbhs: "Human Biology, Heath & Society"
+  hbhs: "Human Biology, Heath & Society",
+  unknown: "?"
 }
 
 const CurrentHouse: Class[] = [
+  {
+    classTitle: "BETA ALPHA",
+    fullClassTitle: "BETA ALPHA — FALL 2025",
+    activeBrothers: [
+      {
+        image: '/img/default.jpg',
+        name: "?",
+        number: "?",
+        year: "?",
+        college: Colleges.unknown,
+        major: Majors.unknown,
+        big: "?"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "?",
+        number: "?",
+        year: "?",
+        college: Colleges.unknown,
+        major: Majors.unknown,
+        big: "?"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "?",
+        number: "?",
+        year: "?",
+        college: Colleges.unknown,
+        major: Majors.unknown,
+        big: "?"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "?",
+        number: "?",
+        year: "?",
+        college: Colleges.unknown,
+        major: Majors.unknown,
+        big: "?"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "?",
+        number: "?",
+        year: "?",
+        college: Colleges.unknown,
+        major: Majors.unknown,
+        big: "?"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "?",
+        number: "?",
+        year: "?",
+        college: Colleges.unknown,
+        major: Majors.unknown,
+        big: "?"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "?",
+        number: "?",
+        year: "?",
+        college: Colleges.unknown,
+        major: Majors.unknown,
+        big: "?"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "?",
+        number: "?",
+        year: "?",
+        college: Colleges.unknown,
+        major: Majors.unknown,
+        big: "?"
+      },
+    ]
+  },
   {
     classTitle: "ALPHA PSI",
     fullClassTitle: "ALPHA PSI — SPRING 2025",
     activeBrothers: [
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/dwong.png',
         name: "Dylan *RIMURU* Wong",
         number: "214",
         year: "2028",
@@ -49,17 +129,17 @@ const CurrentHouse: Class[] = [
         big: "Andrew *CLEITUS* Hsiao"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/billy.png',
         name: "Billy *boi* Hoang",
         number: "215",
         year: "2028",
         college: Colleges.cals,
-        major: "Nutritional Sciences",
+        major: "Statistics and Biometry",
         minor: "Business",
         big: "Derrick *NICE TO ME* Chia"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/owen.png',
         name: "Owen *ARISEN* Cho",
         number: "216",
         year: "2027",
@@ -68,7 +148,7 @@ const CurrentHouse: Class[] = [
         big: "Ivan *kinopio* Lin"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/vincent.png',
         name: "Vincent *DRETHOS* Zheng",
         number: "217",
         year: "2027",
@@ -77,7 +157,7 @@ const CurrentHouse: Class[] = [
         big: "Vinny *ATHERIS* Camarillo"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/jaybok.png',
         name: "Ethan Jaybok *MAITO* Lee",
         number: "218",
         year: "2027",
@@ -86,7 +166,7 @@ const CurrentHouse: Class[] = [
         big: "Oliver *UNBOUNDED* Nishikawa"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/bo.png',
         name: "Nathan *VEGETA* Bo",
         number: "219",
         year: "2028",
@@ -96,16 +176,16 @@ const CurrentHouse: Class[] = [
         big: "James *MINI PEKKA* Kim"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/vo.png',
         name: "Ethan *vol* Vo",
         number: "220",
         year: "2028",
-        college: Colleges.ilr,
-        major: Majors.ilr,
+        college: Colleges.dyson,
+        major: Majors.dyson,
         big: "Justin *finement* Yang"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/chrispy.png',
         name: "Chris *kairyu* Huang",
         number: "221",
         year: "2027",
@@ -114,7 +194,7 @@ const CurrentHouse: Class[] = [
         big: "Richard *NEZHA* Lin"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/peter.png',
         name: "Peter *GAWAIN* Tsung",
         number: "222",
         year: "2028",
@@ -123,7 +203,7 @@ const CurrentHouse: Class[] = [
         big: "Thomas *REBIRTH* Kuo"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/masen.png',
         name: "Masen *VESPER* Chow",
         number: "223",
         year: "2028",
@@ -132,7 +212,7 @@ const CurrentHouse: Class[] = [
         big: "Kyle *Ahhhaa!* Chu"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/yufei.png',
         name: "Ethan Yufei *bee* Wang",
         number: "224",
         year: "2027",
@@ -142,7 +222,7 @@ const CurrentHouse: Class[] = [
         big: "James *MINI PEKKA* Kim"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/anson.png',
         name: "Anson *yourpants* Li",
         number: "225",
         year: "2027",
@@ -152,12 +232,12 @@ const CurrentHouse: Class[] = [
         big: "Vail *FAUSTUS* Chen"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/garrett.png',
         name: "Garrett *widul* Lee",
         number: "226",
         year: "2028",
         college: Colleges.cals,
-        major: "Food Science",
+        major: "Computational Biology",
         big: "Khoa *SSANT* Nguyen"
       },
     ]
@@ -172,7 +252,7 @@ const CurrentHouse: Class[] = [
         number: "207",
         year: "2027",
         college: Colleges.cals,
-        major: "Nutritional Science",
+        major: "Biology and Society",
         big: "Marcus *PUSO* Gamboa",
       },
       {
@@ -286,12 +366,13 @@ const CurrentHouse: Class[] = [
         big: "Pranav *Dynatós* Kengeri",
       },
       {
-        image: '/img/aphi/kych.png',
+        image: '/img/aphi/kych2.png',
         name: "Kyle *Ahhhaa!* Chu",
         number: "206",
         year: "2027",
         college: Colleges.coe,
         major: Majors.cs,
+        minor: "Artificial Intelligence",
         big: "Kai *CREED* Kim",
         more: "akdguy2",
         little: "Masen *VESPER* Chow"
@@ -329,7 +410,7 @@ const CurrentHouse: Class[] = [
     fullClassTitle: "ALPHA TAU — SPRING 2023",
     activeBrothers: [
       {
-        image: '/img/at/tuo.jpg',
+        image: '/img/at/tuo2.png',
         name: "Thomas *REBIRTH* Kuo",
         number: "191",
         year: "2026",
@@ -339,7 +420,7 @@ const CurrentHouse: Class[] = [
         little: "Peter *GAWAIN* Tsung"
       },
       {
-        image: '/img/at/james.png',
+        image: '/img/at/james2.png',
         name: "James *MINI PEKKA* Kim",
         number: "192",
         year: "2026",
@@ -414,11 +495,89 @@ const CurrentHouse: Class[] = [
 
 const Roster: Class[] = [
   {
+    classTitle: "BETA ALPHA",
+    fullClassTitle: "BETA ALPHA — FALL 2025",
+    activeBrothers: [
+      {
+        image: '/img/default.jpg',
+        name: "?",
+        number: "?",
+        year: "?",
+        college: Colleges.unknown,
+        major: Majors.unknown,
+        big: "?"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "?",
+        number: "?",
+        year: "?",
+        college: Colleges.unknown,
+        major: Majors.unknown,
+        big: "?"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "?",
+        number: "?",
+        year: "?",
+        college: Colleges.unknown,
+        major: Majors.unknown,
+        big: "?"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "?",
+        number: "?",
+        year: "?",
+        college: Colleges.unknown,
+        major: Majors.unknown,
+        big: "?"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "?",
+        number: "?",
+        year: "?",
+        college: Colleges.unknown,
+        major: Majors.unknown,
+        big: "?"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "?",
+        number: "?",
+        year: "?",
+        college: Colleges.unknown,
+        major: Majors.unknown,
+        big: "?"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "?",
+        number: "?",
+        year: "?",
+        college: Colleges.unknown,
+        major: Majors.unknown,
+        big: "?"
+      },
+      {
+        image: '/img/default.jpg',
+        name: "?",
+        number: "?",
+        year: "?",
+        college: Colleges.unknown,
+        major: Majors.unknown,
+        big: "?"
+      },
+    ]
+  },
+  {
     classTitle: "ALPHA PSI",
     fullClassTitle: "ALPHA PSI — SPRING 2025",
     activeBrothers: [
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/dwong.png',
         name: "Dylan *RIMURU* Wong",
         number: "214",
         year: "2028",
@@ -427,17 +586,17 @@ const Roster: Class[] = [
         big: "Andrew *CLEITUS* Hsiao"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/billy.png',
         name: "Billy *boi* Hoang",
         number: "215",
         year: "2028",
         college: Colleges.cals,
-        major: "Nutritional Sciences",
+        major: "Statistics and Biometry",
         minor: "Business",
         big: "Derrick *NICE TO ME* Chia"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/owen.png',
         name: "Owen *ARISEN* Cho",
         number: "216",
         year: "2027",
@@ -446,7 +605,7 @@ const Roster: Class[] = [
         big: "Ivan *kinopio* Lin"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/vincent.png',
         name: "Vincent *DRETHOS* Zheng",
         number: "217",
         year: "2027",
@@ -455,7 +614,7 @@ const Roster: Class[] = [
         big: "Vinny *ATHERIS* Camarillo"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/jaybok.png',
         name: "Ethan Jaybok *MAITO* Lee",
         number: "218",
         year: "2027",
@@ -464,7 +623,7 @@ const Roster: Class[] = [
         big: "Oliver *UNBOUNDED* Nishikawa"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/bo.png',
         name: "Nathan *VEGETA* Bo",
         number: "219",
         year: "2028",
@@ -474,16 +633,16 @@ const Roster: Class[] = [
         big: "James *MINI PEKKA* Kim"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/vo.png',
         name: "Ethan *vol* Vo",
         number: "220",
         year: "2028",
-        college: Colleges.ilr,
-        major: Majors.ilr,
+        college: Colleges.dyson,
+        major: Majors.dyson,
         big: "Justin *finement* Yang"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/chrispy.png',
         name: "Chris *kairyu* Huang",
         number: "221",
         year: "2027",
@@ -492,7 +651,7 @@ const Roster: Class[] = [
         big: "Richard *NEZHA* Lin"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/peter.png',
         name: "Peter *GAWAIN* Tsung",
         number: "222",
         year: "2028",
@@ -501,7 +660,7 @@ const Roster: Class[] = [
         big: "Thomas *REBIRTH* Kuo"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/masen.png',
         name: "Masen *VESPER* Chow",
         number: "223",
         year: "2028",
@@ -510,7 +669,7 @@ const Roster: Class[] = [
         big: "Kyle *Ahhhaa!* Chu"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/yufei.png',
         name: "Ethan Yufei *bee* Wang",
         number: "224",
         year: "2027",
@@ -520,7 +679,7 @@ const Roster: Class[] = [
         big: "James *MINI PEKKA* Kim"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/anson.png',
         name: "Anson *yourpants* Li",
         number: "225",
         year: "2027",
@@ -530,12 +689,12 @@ const Roster: Class[] = [
         big: "Vail *FAUSTUS* Chen"
       },
       {
-        image: '/img/default.jpg',
+        image: '/img/apsi/garrett.png',
         name: "Garrett *widul* Lee",
         number: "226",
         year: "2028",
         college: Colleges.cals,
-        major: "Food Science",
+        major: "Computational Biology",
         big: "Khoa *SSANT* Nguyen"
       },
     ]
@@ -663,12 +822,13 @@ const Roster: Class[] = [
         big: "Pranav *Dynatós* Kengeri",
       },
       {
-        image: '/img/aphi/kych.png',
+        image: '/img/aphi/kych2.png',
         name: "Kyle *Ahhhaa!* Chu",
         number: "206",
         year: "2027",
         college: Colleges.coe,
         major: Majors.cs,
+        minor: "Artificial Intelligence",
         big: "Kai *CREED* Kim",
         little: "Masen *VESPER* Chow"
       }
@@ -705,7 +865,7 @@ const Roster: Class[] = [
     fullClassTitle: "ALPHA TAU — SPRING 2023",
     activeBrothers: [
       {
-        image: '/img/at/tuo.jpg',
+        image: '/img/at/tuo2.png',
         name: "Thomas *REBIRTH* Kuo",
         number: "191",
         year: "2026",
@@ -715,7 +875,7 @@ const Roster: Class[] = [
         little: "Peter *GAWAIN* Tsung"
       },
       {
-        image: '/img/at/james.png',
+        image: '/img/at/james2.png',
         name: "James *MINI PEKKA* Kim",
         number: "192",
         year: "2026",

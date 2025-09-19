@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from "next/image"
 import Background from "@/components/Background"
 import InterestFormHero from "@/components/InterestFormHero"
+import RushStatus from "@/components/RushStatus"
 import homepage from "public/img/homepage.jpg"
 import kappa from "public/img/kappa.png"
 import crest from "public/img/crest.png"
@@ -90,17 +91,10 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Call to Action Section */}
+        {/* Rush Status Section */}
         <section style={{ margin: '3rem 0' }}>
-          <InterestFormHero 
-            title="Interested in Joining Pi Delta Psi?"
-            subtitle="Fall 2025 Rush is now open! Fill out our interest form to get started."
-            buttonText="Fill Out Interest Form"
-            formUrl="https://tinyurl.com/fa25pdp"
-            showNote={true}
-            noteText="Rush applications are now open until September 17 (9/17/25)"
-            variant="compact"
-          />
+          {/* CHANGE isActive TO TRUE WHEN RUSH IS OPEN, CHANGE LINK TO THE INTEREST FORM LINK */}
+          <RushStatus isActive={false} variant="compact" link="https://tinyurl.com/fa25pdp"/>
         </section>
 
         {/* President's Letter Section */}

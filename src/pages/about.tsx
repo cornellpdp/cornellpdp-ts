@@ -4,11 +4,11 @@ import about from "public/img/about.jpg"
 import EBoard from "@/components/EBoard"
 import { EboardMember } from "@/components/EBoard/types"
 import oliver from "public/img/at/oliver.png"
-import james from "public/img/at/james.png"
-import tuo from "public/img/at/tuo.jpg"
+import james from "public/img/at/james2.png"
+import tuo from "public/img/at/tuo2.png"
 import levi from "public/img/at/levi.jpg"
 import vinny from "public/img/aphi/vinny.png"
-import kych from "public/img/aphi/kych.png"
+import kych from "public/img/aphi/kych2.png"
 
 type AboutProps = {
   title: string
