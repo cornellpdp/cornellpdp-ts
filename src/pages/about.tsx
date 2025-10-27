@@ -19,7 +19,7 @@ const EBoardList: EboardMember[] = [
   { image: oliver, title: "Vice President", name: "Oliver *360KICKFLIP* Nishikawa" },
   { image: tuo, title: "Warden", name: "Thomas *REBIRTH* Kuo" },
   { image: levi, title: "Treasurer", name: "Levi *enrose* Zeng" },
-  { image: vinny, title: "Recorder", name: "Vinny *ATHERIS* Camarillo" },
+  // { image: vinny, title: "Recorder", name: "Vinny *ATHERIS* Camarillo" },
   { image: kych, title: "House Manager", name: "Kyle *AMATA* Chu" },
 ]
 

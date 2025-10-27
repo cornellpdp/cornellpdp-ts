@@ -154,7 +154,7 @@ const CurrentHouse: Class[] = [
         year: "2027",
         college: Colleges.cas,
         major: "Info Science",
-        big: "Vinny *ATHERIS* Camarillo"
+        big: ""
       },
       {
         image: '/img/apsi/jaybok.png',
@@ -327,16 +327,6 @@ const CurrentHouse: Class[] = [
         major: "Math & Computer Science",
         big: "Andrew *CLEITUS* Hsiao",
         little: "Anson *yourpants* Li"
-      },
-      {
-        image: '/img/aphi/vinny.png',
-        name: "Vinny *ATHERIS* Camarillo",
-        number: "202",
-        year: "2027",
-        college: Colleges.humec,
-        major: "Healthcare Policy & Human Development",
-        big: "Junior *VARANUS* Lin",
-        little: "Vincent *DRETHOS* Zheng"
       },
       {
         image: '/img/aphi/gabe.png',
@@ -611,7 +601,7 @@ const Roster: Class[] = [
         year: "2027",
         college: Colleges.cas,
         major: "Info Science",
-        big: "Vinny *ATHERIS* Camarillo"
+        big: ""
       },
       {
         image: '/img/apsi/jaybok.png',
@@ -783,16 +773,6 @@ const Roster: Class[] = [
         major: "Math & Computer Science",
         big: "Andrew *CLEITUS* Hsiao",
         little: "Anson *yourpants* Li"
-      },
-      {
-        image: '/img/aphi/vinny.png',
-        name: "Vinny *ATHERIS* Camarillo",
-        number: "202",
-        year: "2027",
-        college: Colleges.humec,
-        major: "Healthcare Policy & Human Development",
-        big: "Junior *VARANUS* Lin",
-        little: "Vincent *DRETHOS* Zheng"
       },
       {
         image: '/img/aphi/gabe.png',
@@ -1106,7 +1086,6 @@ const Roster: Class[] = [
         college: Colleges.humec,
         major: "Human Biology, Health, and Society",
         big: "Ethan *JODYE* Shan",
-        little: "Vinny *ATHERIS* Camarillo"
       },
       {
         image: '/img/ap/chris.png',
