@@ -33,332 +33,294 @@ const Majors = {
   biosci: "Biological Science",
   isst: "Information Science, Systems, and Technology",
   hbhs: "Human Biology, Heath & Society",
+  archi: "Architecture",
   unknown: "?"
 }
 
-const CurrentHouse: Class[] = [
-  {
-    classTitle: "BETA ALPHA",
+type BrotherData = Omit<Brother, 'number'>
+
+type ClassData = {
+  fullClassTitle: string
+  brothers: Record<string, BrotherData>  
+}
+
+// **********************************************************************************
+// FOR WEBMASTER -- UPDATE ACTIVE HOUSE CLASSES HERE
+// **********************************************************************************
+const ACTIVE_HOUSE_CLASSES = [
+  "BETA ALPHA",
+  "ALPHA PSI",
+  "ALPHA CHI",
+  "ALPHA PHI",
+  "ALPHA UPSILON",
+  "ALPHA TAU",
+]
+
+// **********************************************************************************
+// FOR WEBMASTER -- ADD/UPDATE BROTHERS INFORMATION HERE
+// **********************************************************************************
+const BROTHERS: Record<string, ClassData> = {
+  "BETA ALPHA": {
     fullClassTitle: "BETA ALPHA — FALL 2025",
-    activeBrothers: [
-      {
+    brothers: {
+      "227": {
         image: '/img/default.jpg',
-        name: "?",
-        number: "?",
-        year: "?",
-        college: Colleges.unknown,
-        major: Majors.unknown,
-        big: "?"
+        name: "Jonathan *gravitas* Lam",
+        year: "2027",
+        college: Colleges.ilr,
+        major: Majors.ilr,
+        big: "Gabriel *AKAZA* Huang"
       },
-      {
+      "228": {
         image: '/img/default.jpg',
-        name: "?",
-        number: "?",
-        year: "?",
-        college: Colleges.unknown,
-        major: Majors.unknown,
-        big: "?"
+        name: "Nathan *NIGHTINGALE* Rivera",
+        year: "2029",
+        college: Colleges.aap,
+        major: Majors.archi,
+        big: "Marcus *PUSO* Gamboa"
       },
-      {
+      "229": {
         image: '/img/default.jpg',
-        name: "?",
-        number: "?",
-        year: "?",
-        college: Colleges.unknown,
-        major: Majors.unknown,
-        big: "?"
+        name: "Eddie *GOCHU* Jiang",
+        year: "2028",
+        college: Colleges.hotel,
+        major: Majors.hotel,
+        big: "Max *PERUN* Wang"
       },
-      {
+      "230": {
         image: '/img/default.jpg',
-        name: "?",
-        number: "?",
-        year: "?",
-        college: Colleges.unknown,
-        major: Majors.unknown,
-        big: "?"
+        name: "Edward *HOLY MOLY BACC* Paik",
+        year: "2028",
+        college: Colleges.ilr,
+        major: Majors.ilr,
+        big: "Aryan *MEGA PEKKA* Jain"
       },
-      {
+      "231": {
         image: '/img/default.jpg',
-        name: "?",
-        number: "?",
-        year: "?",
-        college: Colleges.unknown,
-        major: Majors.unknown,
-        big: "?"
-      },
-      {
-        image: '/img/default.jpg',
-        name: "?",
-        number: "?",
-        year: "?",
-        college: Colleges.unknown,
-        major: Majors.unknown,
-        big: "?"
-      },
-      {
-        image: '/img/default.jpg',
-        name: "?",
-        number: "?",
-        year: "?",
-        college: Colleges.unknown,
-        major: Majors.unknown,
-        big: "?"
-      },
-      {
-        image: '/img/default.jpg',
-        name: "?",
-        number: "?",
-        year: "?",
-        college: Colleges.unknown,
-        major: Majors.unknown,
-        big: "?"
-      },
-    ]
+        name: "Vincent *kawa* Yi",
+        year: "2028",
+        college: Colleges.coe,
+        major: Majors.ece,
+        big: "Thomas *APØllo* Nguyen"
+      }
+    }
   },
-  {
-    classTitle: "ALPHA PSI",
+  "ALPHA PSI": {
     fullClassTitle: "ALPHA PSI — SPRING 2025",
-    activeBrothers: [
-      {
+    brothers: {
+      "214": {
         image: '/img/apsi/dwong.png',
         name: "Dylan *RIMURU* Wong",
-        number: "214",
         year: "2028",
         college: Colleges.dyson,
         major: Majors.dyson,
         big: "Andrew *CLEITUS* Hsiao"
       },
-      {
+      "215": {
         image: '/img/apsi/billy.png',
         name: "Billy *boi* Hoang",
-        number: "215",
         year: "2028",
         college: Colleges.cals,
         major: "Statistics and Biometry",
         minor: "Business",
         big: "Derrick *NICE TO ME* Chia"
       },
-      {
+      "216": {
         image: '/img/apsi/owen.png',
         name: "Owen *ARISEN* Cho",
-        number: "216",
         year: "2027",
         college: Colleges.ilr,
         major: Majors.ilr,
         big: "Ivan *kinopio* Lin"
       },
-      {
+      "217": {
         image: '/img/apsi/vincent.png',
         name: "Vincent *DRETHOS* Zheng",
-        number: "217",
         year: "2027",
         college: Colleges.cas,
         major: "Info Science",
         big: ""
       },
-      {
+      "218": {
         image: '/img/apsi/jaybok.png',
         name: "Ethan Jaybok *MAITO* Lee",
-        number: "218",
         year: "2027",
         college: Colleges.cals,
         major: "Global Development and Environment & Sustainability ",
         big: "Oliver *UNBOUNDED* Nishikawa"
       },
-      {
+      "219": {
         image: '/img/apsi/bo.png',
         name: "Nathan *VEGETA* Bo",
-        number: "219",
         year: "2028",
         college: Colleges.cas,
         major: "Psychology and English",
         minor: "Film",
         big: "James *MINI PEKKA* Kim"
       },
-      {
+      "220": {
         image: '/img/apsi/vo.png',
         name: "Ethan *vol* Vo",
-        number: "220",
         year: "2028",
         college: Colleges.dyson,
         major: Majors.dyson,
         big: "Justin *finement* Yang"
       },
-      {
+      "221": {
         image: '/img/apsi/chrispy.png',
         name: "Chris *kairyu* Huang",
-        number: "221",
         year: "2027",
         college: Colleges.ilr,
         major: Majors.ilr,
         big: "Richard *NEZHA* Lin"
       },
-      {
+      "222": {
         image: '/img/apsi/peter.png',
         name: "Peter *GAWAIN* Tsung",
-        number: "222",
         year: "2028",
         college: Colleges.cas,
         major: "Biological Sciences",
         big: "Thomas *REBIRTH* Kuo"
       },
-      {
+      "223": {
         image: '/img/apsi/masen.png',
         name: "Masen *VESPER* Chow",
-        number: "223",
         year: "2028",
         college: Colleges.cals,
         major: "Food Science",
         big: "Kyle *Ahhhaa!* Chu"
       },
-      {
+      "224": {
         image: '/img/apsi/yufei.png',
         name: "Ethan Yufei *bee* Wang",
-        number: "224",
         year: "2027",
         college: Colleges.cals,
         major: "Information Science",
         minor: "Architecture",
         big: "James *MINI PEKKA* Kim"
       },
-      {
+      "225": {
         image: '/img/apsi/anson.png',
         name: "Anson *yourpants* Li",
-        number: "225",
         year: "2027",
         college: Colleges.ilr,
         major: Majors.ilr,
         minor: "Business",
         big: "Vail *FAUSTUS* Chen"
       },
-      {
+      "226": {
         image: '/img/apsi/garrett.png',
         name: "Garrett *widul* Lee",
-        number: "226",
         year: "2028",
         college: Colleges.cals,
         major: "Computational Biology",
         big: "Khoa *SSANT* Nguyen"
-      },
-    ]
+      }
+    }
   },
-  {
-    classTitle: "ALPHA CHI",
+  "ALPHA CHI": {
     fullClassTitle: "ALPHA CHI — FALL 2024",
-    activeBrothers: [
-      {
+    brothers: {
+      "207": {
         image: '/img/achi/dom.jpg',
         name: "Dominic *IGNATIUS* Nguyen",
-        number: "207",
         year: "2027",
         college: Colleges.cals,
         major: "Biology and Society",
         big: "Marcus *PUSO* Gamboa",
       },
-      {
+      "208": {
         image: '/img/achi/kev.jpg',
         name: "Kevin *sun* Zhu",
-        number: "208",
         year: "2027",
         college: Colleges.cals,
         major: Majors.biosci,
         big: "Marcus *PUSO* Gamboa",
       },
-      {
+      "209": {
         image: '/img/achi/francis.jpg',
         name: "Francis *ARGOS* Pham",
-        number: "209",
         year: "2026",
         college: Colleges.coe,
         major: "Electrical and Computer Engineering & Computer Science",
         big: "William *ATTICUS* Xing",
         more: "top dog",
       },
-      {
+      "210": {
         image: '/img/achi/kimdrew.jpg',
         name: "Andrew *BELLAGIO* Kim",
-        number: "210",
         year: "2027",
         college: Colleges.hotel,
         major: Majors.hotel,
         big: "Aidan *MADE U* Look",
         more: "akdguy3",
       },
-      {
+      "211": {
         image: '/img/achi/justin.jpg',
         name: "Justin *finement* Yang",
-        number: "211",
         year: "2026",
         college: Colleges.cals,
         major: "Biological Science & Food Science",
         big: "Levi *enrose* Zeng",
         little: "Ethan *vol* Vo"
       },
-      {
+      "212": {
         image: '/img/achi/paul.jpg',
         name: "Paul *Reiner* Hwang",
-        number: "212",
         year: "2027",
         college: Colleges.coe,
         major: Majors.isst,
         big: "Jaydon *SYZYGY* Ryu",
       },
-      {
+      "213": {
         image: '/img/achi/aryan.jpg',
         name: "Aryan *MEGA PEKKA* Jain",
-        number: "213",
         year: "2027",
         college: Colleges.dyson,
         major: Majors.dyson,
         big: "James *MINI PEKKA* Kim",
       }
-    ]
+    }
   },
-  {
-    classTitle: "ALPHA PHI",
+  "ALPHA PHI": {
     fullClassTitle: "ALPHA PHI — SPRING 2024",
-    activeBrothers: [
-      {
+    brothers: {
+      "201": {
         image: '/img/aphi/vail.png',
         name: "Vail *FAUSTUS* Chen",
-        number: "201",
         year: "2026",
         college: Colleges.cas,
         major: "Math & Computer Science",
         big: "Andrew *CLEITUS* Hsiao",
         little: "Anson *yourpants* Li"
       },
-      {
+      "203": {
         image: '/img/aphi/gabe.png',
         name: "Gabriel *AKAZA* Huang",
-        number: "203",
         year: "2027",
         college: Colleges.coe,
         major: "Operations Research & Information Engineering",
         big: "William *ATTICUS* Xing",
       },
-      {
+      "204": {
         image: '/img/aphi/thomasn.png',
         name: "Thomas *APØllo* Nguyen",
-        number: "204",
         year: "2027",
         college: Colleges.cals,
         major: Majors.biosci,
         big: "John Joshua *Crito* Bernardino",
       },
-      {
+      "205": {
         image: '/img/aphi/adriano.png',
         name: "Adriano *Chakri* Greco",
-        number: "205",
         year: "2026",
         college: Colleges.dyson,
         major: Majors.dyson,
         big: "Pranav *Dynatós* Kengeri",
       },
-      {
+      "206": {
         image: '/img/aphi/kych2.png',
         name: "Kyle *Ahhhaa!* Chu",
-        number: "206",
         year: "2027",
         college: Colleges.coe,
         major: Majors.cs,
@@ -367,72 +329,64 @@ const CurrentHouse: Class[] = [
         more: "akdguy2",
         little: "Masen *VESPER* Chow"
       }
-    ]
+    }
   },
-  {
-    classTitle: "ALPHA UPSILON",
+  "ALPHA UPSILON": {
     fullClassTitle: "ALPHA UPSILON — FALL 2023",
-    activeBrothers: [
-      {
+    brothers: {
+      "199": {
         image: '/img/au/jaydon.jpg',
         name: "Jaydon *SYZYGY* Ryu",
-        number: "199",
         year: "2026",
         college: Colleges.humec,
         major: "Design and Environmental Analysis",
         big: "Kenneth *SYNKRONOS* Choi",
         little: "Paul *Reiner* Hwang"
       },
-      {
+      "200": {
         image: '/img/au/richard2.jpg',
         name: "Richard *NEZHA* Lin",
-        number: "200",
         year: "2026",
         college: Colleges.coe,
         major: Majors.cs,
         big: "Ivan *kinopio* Lin",
         little: "Chris *kairyu* Huang"
       }
-    ]
+    }
   },
-  {
-    classTitle: "ALPHA TAU",
+  "ALPHA TAU": {
     fullClassTitle: "ALPHA TAU — SPRING 2023",
-    activeBrothers: [
-      {
+    brothers: {
+      "191": {
         image: '/img/at/tuo2.png',
         name: "Thomas *REBIRTH* Kuo",
-        number: "191",
         year: "2026",
         college: Colleges.cas,
         major: "Government",
         big: "Jason *ASMR* Kwong",
         little: "Peter *GAWAIN* Tsung"
       },
-      {
+      "192": {
         image: '/img/at/james2.png',
         name: "James *MINI PEKKA* Kim",
-        number: "192",
         year: "2026",
         college: Colleges.humec,
         major: "Biology and Society",
         big: "Michael *OVERFLOW* Chu",
         little: "Aryan *MEGA PEKKA* Jain, Ethan Yufei *bee* Wang, Nathan *VEGETA* Bo"
       },
-      {
+      "193": {
         image: '/img/at/levi.jpg',
         name: "Levi *enrose* Zeng",
-        number: "193",
         year: "2026",
         college: Colleges.cas,
         major: Majors.cs,
         big: "Christopher *CORDUROY* Chan",
         little: "Justin *finement* Yang"
       },
-      {
+      "194": {
         image: '/img/at/khoa2.png',
         name: "Khoa *SSANT* Nguyen",
-        number: "194",
         year: "2026",
         college: Colleges.cas,
         major: Majors.cs,
@@ -440,509 +394,58 @@ const CurrentHouse: Class[] = [
         more: "akdguy1",
         little: "Garrett *widul* Lee"
       },
-      {
+      "195": {
         image: '/img/at/oliver.png',
         name: "Oliver *UNBOUNDED* Nishikawa",
-        number: "195",
         year: "2026",
         college: Colleges.coe,
         major: "Chemical Engineering",
         big: "Michael *EMPYREAN* Min",
         little: "Ethan Jaybok *MAITO* Lee"
       },
-      {
+      "196": {
         image: '/img/at/AL_1.png',
         name: "Aidan *MADE U* Look",
-        number: "196",
         year: "2026",
         college: Colleges.dyson,
         major: Majors.dyson,
         big: "Alex *ETERNAL* Choi",
         little: "Andrew *BELLAGIO* Kim"
       },
-      {
+      "197": {
         image: '/img/at/gamboa.jpg',
         name: "Marcus *PUSO* Gamboa",
-        number: "197",
         year: "2026",
         college: Colleges.coe,
         major: "Biomedical Engineering",
         big: "Luis *Meno* Malenab",
         little: "Dominic *IGNATIUS* Nguyen & Kevin *sun* Zhu"
       },
-      {
+      "198": {
         image: '/img/at/max.png',
         name: "Max *PERUN* Wang",
-        number: "198",
         year: "2026",
         college: Colleges.cas,
         major: Majors.cs,
         big: "Joshua *MIMIR* Guo"
-      },
-    ],
-  },
-]
-
-const Roster: Class[] = [
-  {
-    classTitle: "BETA ALPHA",
-    fullClassTitle: "BETA ALPHA — FALL 2025",
-    activeBrothers: [
-      {
-        image: '/img/default.jpg',
-        name: "?",
-        number: "?",
-        year: "?",
-        college: Colleges.unknown,
-        major: Majors.unknown,
-        big: "?"
-      },
-      {
-        image: '/img/default.jpg',
-        name: "?",
-        number: "?",
-        year: "?",
-        college: Colleges.unknown,
-        major: Majors.unknown,
-        big: "?"
-      },
-      {
-        image: '/img/default.jpg',
-        name: "?",
-        number: "?",
-        year: "?",
-        college: Colleges.unknown,
-        major: Majors.unknown,
-        big: "?"
-      },
-      {
-        image: '/img/default.jpg',
-        name: "?",
-        number: "?",
-        year: "?",
-        college: Colleges.unknown,
-        major: Majors.unknown,
-        big: "?"
-      },
-      {
-        image: '/img/default.jpg',
-        name: "?",
-        number: "?",
-        year: "?",
-        college: Colleges.unknown,
-        major: Majors.unknown,
-        big: "?"
-      },
-      {
-        image: '/img/default.jpg',
-        name: "?",
-        number: "?",
-        year: "?",
-        college: Colleges.unknown,
-        major: Majors.unknown,
-        big: "?"
-      },
-      {
-        image: '/img/default.jpg',
-        name: "?",
-        number: "?",
-        year: "?",
-        college: Colleges.unknown,
-        major: Majors.unknown,
-        big: "?"
-      },
-      {
-        image: '/img/default.jpg',
-        name: "?",
-        number: "?",
-        year: "?",
-        college: Colleges.unknown,
-        major: Majors.unknown,
-        big: "?"
-      },
-    ]
-  },
-  {
-    classTitle: "ALPHA PSI",
-    fullClassTitle: "ALPHA PSI — SPRING 2025",
-    activeBrothers: [
-      {
-        image: '/img/apsi/dwong.png',
-        name: "Dylan *RIMURU* Wong",
-        number: "214",
-        year: "2028",
-        college: Colleges.dyson,
-        major: Majors.dyson,
-        big: "Andrew *CLEITUS* Hsiao"
-      },
-      {
-        image: '/img/apsi/billy.png',
-        name: "Billy *boi* Hoang",
-        number: "215",
-        year: "2028",
-        college: Colleges.cals,
-        major: "Statistics and Biometry",
-        minor: "Business",
-        big: "Derrick *NICE TO ME* Chia"
-      },
-      {
-        image: '/img/apsi/owen.png',
-        name: "Owen *ARISEN* Cho",
-        number: "216",
-        year: "2027",
-        college: Colleges.ilr,
-        major: Majors.ilr,
-        big: "Ivan *kinopio* Lin"
-      },
-      {
-        image: '/img/apsi/vincent.png',
-        name: "Vincent *DRETHOS* Zheng",
-        number: "217",
-        year: "2027",
-        college: Colleges.cas,
-        major: "Info Science",
-        big: ""
-      },
-      {
-        image: '/img/apsi/jaybok.png',
-        name: "Ethan Jaybok *MAITO* Lee",
-        number: "218",
-        year: "2027",
-        college: Colleges.cals,
-        major: "Global Development and Environment & Sustainability ",
-        big: "Oliver *UNBOUNDED* Nishikawa"
-      },
-      {
-        image: '/img/apsi/bo.png',
-        name: "Nathan *VEGETA* Bo",
-        number: "219",
-        year: "2028",
-        college: Colleges.cas,
-        major: "Psychology and English",
-        minor: "Film",
-        big: "James *MINI PEKKA* Kim"
-      },
-      {
-        image: '/img/apsi/vo.png',
-        name: "Ethan *vol* Vo",
-        number: "220",
-        year: "2028",
-        college: Colleges.dyson,
-        major: Majors.dyson,
-        big: "Justin *finement* Yang"
-      },
-      {
-        image: '/img/apsi/chrispy.png',
-        name: "Chris *kairyu* Huang",
-        number: "221",
-        year: "2027",
-        college: Colleges.ilr,
-        major: Majors.ilr,
-        big: "Richard *NEZHA* Lin"
-      },
-      {
-        image: '/img/apsi/peter.png',
-        name: "Peter *GAWAIN* Tsung",
-        number: "222",
-        year: "2028",
-        college: Colleges.cas,
-        major: "Biological Sciences",
-        big: "Thomas *REBIRTH* Kuo"
-      },
-      {
-        image: '/img/apsi/masen.png',
-        name: "Masen *VESPER* Chow",
-        number: "223",
-        year: "2028",
-        college: Colleges.cals,
-        major: "Food Science",
-        big: "Kyle *Ahhhaa!* Chu"
-      },
-      {
-        image: '/img/apsi/yufei.png',
-        name: "Ethan Yufei *bee* Wang",
-        number: "224",
-        year: "2027",
-        college: Colleges.cals,
-        major: "Information Science",
-        minor: "Architecture",
-        big: "James *MINI PEKKA* Kim"
-      },
-      {
-        image: '/img/apsi/anson.png',
-        name: "Anson *yourpants* Li",
-        number: "225",
-        year: "2027",
-        college: Colleges.ilr,
-        major: Majors.ilr,
-        minor: "Business",
-        big: "Vail *FAUSTUS* Chen"
-      },
-      {
-        image: '/img/apsi/garrett.png',
-        name: "Garrett *widul* Lee",
-        number: "226",
-        year: "2028",
-        college: Colleges.cals,
-        major: "Computational Biology",
-        big: "Khoa *SSANT* Nguyen"
-      },
-    ]
-  },
-  {
-    classTitle: "ALPHA CHI",
-    fullClassTitle: "ALPHA CHI — FALL 2024",
-    activeBrothers: [
-      {
-        image: '/img/achi/dom.jpg',
-        name: "Dominic *IGNATIUS* Nguyen",
-        number: "207",
-        year: "2027",
-        college: Colleges.cals,
-        major: "Nutritional Science",
-        big: "Marcus *PUSO* Gamboa",
-      },
-      {
-        image: '/img/achi/kev.jpg',
-        name: "Kevin *sun* Zhu",
-        number: "208",
-        year: "2027",
-        college: Colleges.cals,
-        major: Majors.biosci,
-        big: "Marcus *PUSO* Gamboa",
-      },
-      {
-        image: '/img/achi/francis.jpg',
-        name: "Francis *ARGOS* Pham",
-        number: "209",
-        year: "2026",
-        college: Colleges.coe,
-        major: "Electrical and Computer Engineering & Computer Science",
-        big: "William *ATTICUS* Xing",
-        more: "top dog",
-      },
-      {
-        image: '/img/achi/kimdrew.jpg',
-        name: "Andrew *BELLAGIO* Kim",
-        number: "210",
-        year: "2027",
-        college: Colleges.hotel,
-        major: Majors.hotel,
-        big: "Aidan *MADE U* Look",
-      },
-      {
-        image: '/img/achi/justin.jpg',
-        name: "Justin *finement* Yang",
-        number: "211",
-        year: "2026",
-        college: Colleges.cals,
-        major: "Biological Science & Food Science",
-        big: "Levi *enrose* Zeng",
-        little: "Ethan *vol* Vo"
-      },
-      {
-        image: '/img/achi/paul.jpg',
-        name: "Paul *Reiner* Hwang",
-        number: "212",
-        year: "2027",
-        college: Colleges.coe,
-        major: Majors.isst,
-        big: "Jaydon *SYZYGY* Ryu",
-      },
-      {
-        image: '/img/achi/aryan.jpg',
-        name: "Aryan *MEGA PEKKA* Jain",
-        number: "213",
-        year: "2027",
-        college: Colleges.dyson,
-        major: Majors.dyson,
-        big: "James *MINI PEKKA* Kim",
       }
-    ]
+    }
   },
-  {
-    classTitle: "ALPHA PHI",
-    fullClassTitle: "ALPHA PHI — SPRING 2024",
-    activeBrothers: [
-      {
-        image: '/img/aphi/vail.png',
-        name: "Vail *FAUSTUS* Chen",
-        number: "201",
-        year: "2026",
-        college: Colleges.cas,
-        major: "Math & Computer Science",
-        big: "Andrew *CLEITUS* Hsiao",
-        little: "Anson *yourpants* Li"
-      },
-      {
-        image: '/img/aphi/gabe.png',
-        name: "Gabriel *AKAZA* Huang",
-        number: "203",
-        year: "2027",
-        college: Colleges.coe,
-        major: "Operations Research & Information Engineering",
-        big: "William *ATTICUS* Xing",
-      },
-      {
-        image: '/img/aphi/thomasn.png',
-        name: "Thomas *APØllo* Nguyen",
-        number: "204",
-        year: "2027",
-        college: Colleges.cals,
-        major: Majors.biosci,
-        big: "John Joshua *Crito* Bernardino",
-      },
-      {
-        image: '/img/aphi/adriano.png',
-        name: "Adriano *Chakri* Greco",
-        number: "205",
-        year: "2026",
-        college: Colleges.dyson,
-        major: Majors.dyson,
-        big: "Pranav *Dynatós* Kengeri",
-      },
-      {
-        image: '/img/aphi/kych2.png',
-        name: "Kyle *Ahhhaa!* Chu",
-        number: "206",
-        year: "2027",
-        college: Colleges.coe,
-        major: Majors.cs,
-        minor: "Artificial Intelligence",
-        big: "Kai *CREED* Kim",
-        little: "Masen *VESPER* Chow"
-      }
-    ]
-  },
-  {
-    classTitle: "ALPHA UPSILON",
-    fullClassTitle: "ALPHA UPSILON — FALL 2023",
-    activeBrothers: [
-      {
-        image: '/img/au/jaydon.jpg',
-        name: "Jaydon *SYZYGY* Ryu",
-        number: "199",
-        year: "2026",
-        college: Colleges.humec,
-        major: "Design and Environmental Analysis",
-        big: "Kenneth *SYNKRONOS* Choi",
-        little: "Paul *Reiner* Hwang"
-      },
-      {
-        image: '/img/au/richard2.jpg',
-        name: "Richard *NEZHA* Lin",
-        number: "200",
-        year: "2026",
-        college: Colleges.coe,
-        major: Majors.cs,
-        big: "Ivan *kinopio* Lin",
-        little: "Chris *kairyu* Huang"
-      }
-    ]
-  },
-  {
-    classTitle: "ALPHA TAU",
-    fullClassTitle: "ALPHA TAU — SPRING 2023",
-    activeBrothers: [
-      {
-        image: '/img/at/tuo2.png',
-        name: "Thomas *REBIRTH* Kuo",
-        number: "191",
-        year: "2026",
-        college: Colleges.cas,
-        major: "Government",
-        big: "Jason *ASMR* Kwong",
-        little: "Peter *GAWAIN* Tsung"
-      },
-      {
-        image: '/img/at/james2.png',
-        name: "James *MINI PEKKA* Kim",
-        number: "192",
-        year: "2026",
-        college: Colleges.humec,
-        major: "Biology and Society",
-        big: "Michael *OVERFLOW* Chu",
-        little: "Aryan *MEGA PEKKA* Jain, Ethan Yufei *bee* Wang, Nathan *VEGETA* Bo"
-      },
-      {
-        image: '/img/at/levi.jpg',
-        name: "Levi *enrose* Zeng",
-        number: "193",
-        year: "2026",
-        college: Colleges.cas,
-        major: Majors.cs,
-        big: "Christopher *CORDUROY* Chan",
-        little: "Justin *finement* Yang"
-      },
-      {
-        image: '/img/at/khoa2.png',
-        name: "Khoa *SSANT* Nguyen",
-        number: "194",
-        year: "2026",
-        college: Colleges.cas,
-        major: Majors.cs,
-        big: "Han *D-Man* Abdali",
-        little: "Garrett *widul* Lee"
-      },
-      {
-        image: '/img/at/oliver.png',
-        name: "Oliver *UNBOUNDED* Nishikawa",
-        number: "195",
-        year: "2026",
-        college: Colleges.coe,
-        major: "Chemical Engineering",
-        big: "Michael *EMPYREAN* Min",
-        little: "Ethan Jaybok *MAITO* Lee"
-      },
-      {
-        image: '/img/at/AL_1.png',
-        name: "Aidan *MADE U* Look",
-        number: "196",
-        year: "2026",
-        college: Colleges.dyson,
-        major: Majors.dyson,
-        big: "Alex *ETERNAL* Choi",
-        little: "Andrew *BELLAGIO* Kim"
-      },
-      {
-        image: '/img/at/gamboa.jpg',
-        name: "Marcus *PUSO* Gamboa",
-        number: "197",
-        year: "2026",
-        college: Colleges.coe,
-        major: "Biomedical Engineering",
-        big: "Luis *Meno* Malenab",
-        little: "Dominic *IGNATIUS* Nguyen & Kevin *sun* Zhu"
-      },
-      {
-        image: '/img/at/max.png',
-        name: "Max *PERUN* Wang",
-        number: "198",
-        year: "2026",
-        college: Colleges.cas,
-        major: Majors.cs,
-        big: "Joshua *MIMIR* Guo"
-      },
-    ],
-  },
-  {
-    classTitle: "ALPHA SIGMA",
+  "ALPHA SIGMA": {
     fullClassTitle: "ALPHA SIGMA — FALL 2022",
-    activeBrothers: [
-      {
+    brothers: {
+      "184": {
         image: '/img/as/Andrew_2.png',
         name: "Andrew *CLEITUS* Hsiao",
-        number: "184",
         year: "2025",
         college: Colleges.dyson,
         major: Majors.dyson,
         big: "Daniel *TITUS* Lee",
         little: "Vail *FAUSTUS* Chen & Dylan *RIMURU* Wong"
       },
-      {
+      "185": {
         image: '/img/as/will.jpg',
         name: "William *ATTICUS* Xing",
-        number: "185",
         year: "2025",
         college: Colleges.cals,
         major: Majors.info,
@@ -950,1589 +453,1373 @@ const Roster: Class[] = [
         little: "Gabriel *AKAZA* Huang & Francis *ARGOS* Pham",
         more: "corniest bro"
       },
-      {
+      "186": {
         image: '/img/as/chapadia.jpg',
         name: "Chris *KROSSAPPELSOS* Chapadia",
-        number: "186",
         year: "2025",
         college: Colleges.dyson,
         major: Majors.dyson,
         big: "Jun Oh *SOLITAIRE* Koo",
       },
-      {
+      "187": {
         image: '/img/as/derrick.jpg',
         name: "Derrick *NICE TO ME* Chia",
-        number: "187",
         year: "2025",
         college: Colleges.cals,
         major: Majors.info,
         big: "Logan *Achaemenes* Chang",
         little: "Billy *boi* Hoang"
       },
-      {
+      "188": {
         image: '/img/as/ivan.jpg',
         name: "Ivan *kinopio* Lin",
-        number: "188",
         year: "2025",
         college: Colleges.cas,
         major: Majors.info,
         big: "Joshua *ATAKE* Chang",
         little: "Richard *NEZHA* Lin & Owen *ARISEN* Cho",
       },
-      {
+      "189": {
         image: '/img/as/wonjae.jpg',
         name: "Wonjae *I.M.* Lee",
-        number: "189",
         year: "2026",
         college: Colleges.aap,
         major: "Architecture",
         big: "Steven *MAJOR* Long",
       },
-      {
+      "190": {
         image: '/img/as/ken.jpg',
         name: "Kenneth *SYNKRONOS* Choi",
-        number: "190",
         year: "2024",
         college: Colleges.cals,
         major: "Communications",
         big: "Alan *BRUTUS* Lau",
         little: "Jaydon *SYZYGY* Ryu",
-      },
-    ],
+      }
+    }
   },
-  {
-    classTitle: "ALPHA RHO",
+  "ALPHA RHO": {
     fullClassTitle: "ALPHA RHO — SPRING 2022",
-    activeBrothers: [
-      {
+    brothers: {
+      "177": {
         image: '/img/ar/luis.png',
         name: "Luis *Meno* Malenab",
-        number: "177",
         year: "2025",
         college: Colleges.cas,
         major: Majors.info,
         big: "Liam *Kū* Monahan",
         little: "Marcus *PUSO* Gamboa"
       },
-      {
+      "178": {
         image: '/img/ar/min.png',
         name: "Michael *EMPYREAN* Min",
-        number: "178",
         year: "2024",
         college: Colleges.humec,
         major: Majors.hbhs,
         big: "Thomas *PRIDE* Lee",
         little: "Oliver *UNBOUNDED* Nishikawa"
       },
-      {
+      "179": {
         image: '/img/ar/kinllen.png',
         name: "Kinllen *TESSERACT* Peng",
-        number: "179",
         year: "2024",
         college: Colleges.cas,
         major: "Computer Science/Math",
         big: "Marvin *LINK* Yang",
       },
-      {
+      "180": {
         image: '/img/ar/tony.png',
         name: "Tony *wasa* Bi",
-        number: "180",
         year: "2024",
         college: Colleges.cas,
         major: "Economics",
         big: "Jun Oh *SOLITAIRE* Koo",
       },
-      {
+      "181": {
         image: '/img/ar/han.jpg',
         name: "Han *D-Man* Abdali",
-        number: "181",
         year: "2024",
         college: Colleges.coe,
         major: "Mechanical Engineering",
         big: "Bryan *This Guy* Fuchs",
         little: "Khoa *SSANT* Nguyen"
       },
-      {
+      "182": {
         image: '/img/ar/jj.png',
         name: "John Joshua *Crito* Bernardino",
-        number: "182",
         year: "2025",
         college: Colleges.dyson,
         major: Majors.dyson,
         big: "Liam *Kū* Monahan",
         little: "Thomas *APØllo* Nguyen"
       },
-      {
+      "183": {
         image: '/img/ar/jguo.png',
         name: "Joshua *MIMIR* Guo",
-        number: "183",
         year: "2024",
         college: Colleges.coe,
         major: Majors.cs,
         big: "Jack *YASASHII* Lo",
-
-      },
-    ],
+      }
+    }
   },
-  {
-    classTitle: "ALPHA PI",
+  "ALPHA PI": {
     fullClassTitle: "ALPHA PI — FALL 2021",
-    activeBrothers: [
-      {
+    brothers: {
+      "170": {
         image: '/img/ap/junior.png',
         name: "Junior *VARANUS* Lin",
-        number: "170",
         year: "2024",
         college: Colleges.humec,
         major: "Human Biology, Health, and Society",
         big: "Ethan *JODYE* Shan",
       },
-      {
+      "171": {
         image: '/img/ap/chris.png',
         name: "Christopher *CORDUROY* Chan",
-        number: "171",
         year: "2024",
         college: Colleges.coe,
         major: "Operations Research and Information Engineering",
         big: "Thomas *PRIDE* Lee",
         little: "Levi *enrose* Zeng",
       },
-      {
+      "172": {
         image: '/img/ap/pranav.png',
         name: "Pranav *Dynatós* Kengeri",
-        number: "172",
         year: "2024",
         college: Colleges.dyson,
         major: Majors.dyson,
         big: "Jared *CRUX* Wong",
         little: "Adriano *Chakri* Greco"
       },
-      {
+      "173": {
         image: '/img/ap/alex.png',
         name: "Alex *ETERNAL* Choi",
-        number: "173",
         year: "2024",
         college: Colleges.humec,
         major: "Policy Analysis and Management",
         big: "Matthew *LIL UZI* Kuo",
         little: "Aidan *MADE U* Look"
       },
-      {
+      "174": {
         image: '/img/ap/jchang.png',
         name: "Joshua *ATAKE* Chang",
-        number: "174",
         year: "2024",
         college: Colleges.humec,
         major: "Policy Analysis and Management",
         big: "Matthew *LIL UZI* Kuo",
       },
-      {
+      "175": {
         image: '/img/ap/marcus.jpg',
         name: "Marcus *Lucius* Kang",
-        number: "175",
         year: "2024",
         college: Colleges.cals,
         major: Majors.info,
         big: "Takashi *Caligula* Yuasa",
       },
-      {
+      "176": {
         image: '/img/ap/dan.jpg',
         name: "Daniel *TITUS* Lee",
-        number: "176",
         year: "2024",
         college: Colleges.cals,
         major: "Information Science/E&S",
         big: "Alan *BRUTUS* Lau",
         little: "Andrew *CLEITUS* Hsiao"
-      },
-    ],
+      }
+    }
   },
-  {
-    classTitle: "ALPHA OMICRON",
+  "ALPHA OMICRON": {
     fullClassTitle: "ALPHA OMICRON — SPRING 2021",
-    activeBrothers: [
-      {
+    brothers: {
+      "162": {
         image: '/img/default.jpg',
         name: "Logan *Achaemenes* Chang",
-        number: "162",
         year: "2023",
         college: Colleges.ilr,
         major: Majors.ilr,
         big: "Takashi *Caligula* Yuasa",
         little: "Derrick *NICE TO ME* Chia"
       },
-      {
+      "163": {
         image: '/img/ao/liam.png',
         name: "Liam *Kū* Monahan",
-        number: "163",
         year: "2024",
         college: Colleges.cals,
         major: "Communications",
         big: "Derek *Ryusoken* Xie",
         little: "Luis *Meno* Malenab & John Joshua *Crito* Bernardino"
       },
-      {
+      "164": {
         image: '/img/ao/jun.png',
         name: "Jun Oh *SOLITAIRE* Koo",
-        number: "164",
         year: "2024",
         college: Colleges.aap,
         major: "Architecture",
         big: "Sang Bo *EMPEROR* Yoon",
         little: "Tony *wasa* Bi & Chris *KROSSAPPELSOS* Chapadia"
       },
-      {
+      "165": {
         image: '/img/default.jpg',
         name: "Bryan *This Guy* Fuchs",
-        number: "165",
         year: "2023",
         college: Colleges.coe,
         major: "Mechanical Engineering",
         big: "Arthur *LUPARA* Liao",
         little: "Han *D-Man* Abdali",
       },
-      {
+      "166": {
         image: '/img/default.jpg',
         name: "Alan *LUPOS* Lin",
-        number: "166",
         year: "2023",
         big: "Steven *NXO* Yeung",
         little: "William *ATTICUS* Xing"
       },
-      {
+      "167": {
         image: '/img/default.jpg',
         name: "Steven *MAJOR* Long",
-        number: "167",
         year: "2024",
         college: Colleges.cas,
         major: Majors.cs,
         big: "Alan *2nd-Order* Wo",
         little: "Wonjae *I.M.* Lee"
       },
-      {
-        image:'/img/ao/jack.png',
+      "168": {
+        image: '/img/ao/jack.png',
         name: "Jack *YASASHII* Lo",
-        number: "168",
         year: "2023",
         college: Colleges.cas,
         major: Majors.cs,
         big: "Andrew *KONAMI* Lee",
         little: "Joshua *MIMIR* Guo" 
       },
-      {
-        image:'/img/ao/jason.png',
+      "169": {
+        image: '/img/ao/jason.png',
         name: "Jason *ASMR* Kwong",
-        number: "169",
         year: "2023",
         college: Colleges.coe,
         major: Majors.cs,
         big: "William *SUNSIN* Lee",
         little: "Thomas *REBIRTH* Kuo"
-      },
-    ],
+      }
+    }
   },
-  {
-    classTitle: "ALPHA XI",
+  "ALPHA XI": {
     fullClassTitle: "ALPHA XI - SPRING 2020",
-    activeBrothers: [
-      {
-        image:'/img/axi/alau.png',
+    brothers: {
+      "154": {
+        image: '/img/axi/alau.png',
         name: "Alan *BRUTUS* Lau",
-        number: "154",
         year: "2023",
         big: "Michael *CAESAR* Chin",
         little: "Daniel *TITUS* Lee & Kenneth *SYNKRONOS* Choi"
       },
-      {
-        image:'/img/axi/marvin.png',
+      "155": {
+        image: '/img/axi/marvin.png',
         name: "Marvin *LINK* Yang",
-        number: "155",
         year: "2023",
         big: "Allen *FORESIGHT* Chen",
         little: "Kinllen *TESSERACT* Peng"
       },
-      {
-        image:'/img/axi/jared.png',
+      "156": {
+        image: '/img/axi/jared.png',
         name: "Jared *CRUX* Wong",
-        number: "156",
         year: "2023",
         big: "Justin *LIFELINE* Ong",
         little: "Pranav *Dynatós* Kengeri"
       },
-      {
-        image:'/img/axi/ethan.png',
+      "157": {
+        image: '/img/axi/ethan.png',
         name: "Ethan *JODYE* Shan",
-        number: "157",
         year: "2023",
         big: "Brian *HANWOO* Jeong",
         little: "Junior *VARANOS* Lin"
       },
-      {
-        image:'/img/axi/thomas.png',
+      "158": {
+        image: '/img/axi/thomas.png',
         name: "Thomas *PRIDE* Lee",
-        number: "158",
         year: "2023",
         big: "Brian *METRO* Lu",
         little: "Christopher *CORDUROY* Chan & Michael *EMPYREAN* Min"
       },
-      {
-        image:'/img/default.jpg',
+      "159": {
+        image: '/img/default.jpg',
         name: "Takashi *Caligula* Yuasa",
-        number: "159",
         year: "2022",
         big: "Steven *Ouranos* Wang",
         little: "Logan *Achaemenes* Chang & Marcus *Lucius* Kang"
       },
-      {
-        image:'/img/axi/derek.png',
+      "160": {
+        image: '/img/axi/derek.png',
         name: "Derek *Ryusoken* Xie",
-        number: "160",
         year: "2023",
         big: "Eumin *wyrm* Kim",
         little: "Liam *Kū* Monahan"
       },
-      {
-        image:'/img/default.jpg',
+      "161": {
+        image: '/img/default.jpg',
         name: "Jordan *ABSTRACT* Chan",
-        number: "161",
         big: "Miah *TYGA* Feroz",
-      },
-    ]
+      }
+    }
   },
-  {
-    classTitle: "ALPHA NU",
+  "ALPHA NU": {
     fullClassTitle: "ALPHA NU - FALL 2019",
-    activeBrothers: [
-      {
-        image:'/img/default.jpg',
+    brothers: {
+      "150": {
+        image: '/img/default.jpg',
         name: "Matthew *LIL UZI* Kuo",
-        number: "150",
         big: "Will *XAVIER* Zhang",
         little: "Alex *ETERNAL* Choi & Joshua *ATAKE* Chang"
       },
-      {
-        image:'/img/default.jpg',
+      "151": {
+        image: '/img/default.jpg',
         name: "Andrew *KONAMI* Lee",
-        number: "151",
         big: "Derek *GUNGIR* Cheung",
         little: "Jack *YASASHII* Lo"
       },
-      {
-        image:'/img/default.jpg',
+      "152": {
+        image: '/img/default.jpg',
         name: "William *SUNSIN* Lee",
-        number: "152",
         big: "Jay *LIL MAC* Lee",
         little: "Jason *ASMR* Kwong"
       },
-      {
-        image:'/img/default.jpg',
+      "153": {
+        image: '/img/default.jpg',
         name: "Steven *NXO* Yeung",
-        number: "153",
         big: "Laurence *ENCORE* Zhang",
         little: "Alan *LUPOS* Lin"
-      },
-    ]
+      }
+    }
   },
-  {
-    classTitle: "ALPHA MU",
+  "ALPHA MU": {
     fullClassTitle: "ALPHA MU - SPRING 2019",
-    activeBrothers: [
-      {
-        image:'/img/default.jpg',
+    brothers: {
+      "145": {
+        image: '/img/default.jpg',
         name: "Alan *2nd-Order* Wo",
-        number: "145",
         big: "Justin *ESCANOR* Oh",
         little: "Steven *MAJOR* Long"
       },
-      {
-        image:'/img/default.jpg',
+      "146": {
+        image: '/img/default.jpg',
         name: "Justin *LIFELINE* Ong",
-        number: "146",
         big: "Jason *4 AM* Lee",
         little: "Jared *CRUX* Wong"
       },
-      {
-        image:'/img/default.jpg',
+      "147": {
+        image: '/img/default.jpg',
         name: "Arthur *LUPARA* Liao",
-        number: "147",
         big: "Jason *TSUZUMI* Lin",
         little: "Bryan *This Guy* Fuchs"
       },
-      {
-        image:'/img/am/kai.png',
+      "148": {
+        image: '/img/am/kai.png',
         name: "Kai *CREED* Kim",
-        number: "148",
         year: "2024",
         college: Colleges.hotel,
         major: Majors.hotel,
         big: "Aaron *EXCISION* Ogita",
         little: "Kyle *Ahhhaa!* Chu"
       },
-      {
-        image:'/img/default.jpg',
+      "149": {
+        image: '/img/default.jpg',
         name: "Allen *FORESIGHT* Chen",
-        number: "149",
         big: "Depei *HOWL* Yu",
         little: "Marvin *LINK* Yang"
-      },
-    ]
-    
+      }
+    }
   },
-  {
-    classTitle: "ALPHA LAMBDA",
+  "ALPHA LAMBDA": {
     fullClassTitle: "ALPHA LAMBDA - FALL 2018",
-    activeBrothers: [
-      {
-        image:'/img/default.jpg',
+    brothers: {
+      "141": {
+        image: '/img/default.jpg',
         name: "Brian *HANWOO* Jeong",
-        number: "141",
         big: "Jay *LIL MAC* Lee",
         little: "Ethan *JODYE* Shan"
       },
-      {
-        image:'/img/default.jpg',
+      "142": {
+        image: '/img/default.jpg',
         name: "Eumin (Andy) *wyrm* Kim",
-        number: "142",
         big: "Raymond *HORUS* Guo",
         little: "Derek *Ryusoken* Xie"
       },
-      {
-        image:'/img/default.jpg',
+      "143": {
+        image: '/img/default.jpg',
         name: "Brian *METRO* Lu",
-        number: "143",
         big: "Miah *TYGA* Feroz",
         little: "Thomas *PRIDE* Lee"
       },
-      {
-        image:'/img/default.jpg',
+      "144": {
+        image: '/img/default.jpg',
         name: "Steven *Ouranos* Wang",
-        number: "144",
         big: "Hansen *DROSE* Tai",
         little: "Takashi *Caligula* Yuasa"
-      },
-    ]
+      }
+    }
   },
-  {
-    classTitle: "ALPHA KAPPA",
+  "ALPHA KAPPA": {
     fullClassTitle: "ALPHA KAPPA - SPRING 2018",
-    activeBrothers: [
-      {
-        image:'/img/default.jpg',
+    brothers: {
+      "133": {
+        image: '/img/default.jpg',
         name: "Steven *SWEETSPOT* Lu",
-        number: "133",
         big: "Hansen *DROSE* Tai",
       },
-      {
-        image:'/img/default.jpg',
+      "134": {
+        image: '/img/default.jpg',
         name: "William *XAVIER* Zhang",
-        number: "134",
         big: "Felix *U.D. APP* Chin",
         little: "Matthew *LIL UZI* Kuo"
       },
-      {
-        image:'/img/default.jpg',
+      "135": {
+        image: '/img/default.jpg',
         name: "Michael *CAESAR* Chin",
-        number: "135",
         big: "Andrew *ATLANTIC* Lee",
         little: "Alan *BRUTUS* Lau"
       },
-      {
+      "136": {
         image: '/img/default.jpg',
         name: "Sangbo *EMPEROR* Yoon",
-        number: "136",
         big: "Emmanuel *JETSTREAM* Paulino",
         little: "Jun Oh *SOLITAIRE* Koo"
       },
-      {
+      "137": {
         image: '/img/default.jpg',
         name: "Derek *GUNGNIR* Cheung",
-        number: "137",
         big: "Andrew *IDFWY* Deng",
       },
-      {
+      "138": {
         image: '/img/default.jpg',
         name: "Jack *KODIAK* Ding",
-        number: "138",
         big: "Max *EMBRE* Kong",
       },
-      {
+      "140": {
         image: '/img/default.jpg',
         name: "Depei *HOWL* Yu",
-        number: "140",
         big: "Jason *4 AM* Lee",
         little: "Allen *FORESIGHT* Chen"
-      },
-    ]
+      }
+    }
   },
-  {
-    classTitle: "ALPHA IOTA",
+  "ALPHA IOTA": {
     fullClassTitle: "ALPHA IOTA - FALL 2017",
-    activeBrothers: [
-      {
+    brothers: {
+      "128": {
         image: '/img/default.jpg',
         name: "Jason *TSUZUMI* Lin",
-        number: "128",
         big: "Jefferson *TRUENO* Poserio",
         little: "Arthur *LUPARA* Liao"
       },
-      {
+      "129": {
         image: '/img/default.jpg',
         name: "Justin *ESCANOR* Oh",
-        number: "129",
         big: "Austen *OG-MINTS* Te",
         little: "Alan *2nd-Order* Wo"
       },
-      {
+      "130": {
         image: '/img/default.jpg',
         name: "Laurence *ENCORE* Zhang",
-        number: "130",
         big: "Christopher *PARETO* Wan",
         little: "Steven *NXO* Yeung"
       },
-      {
+      "131": {
         image: '/img/default.jpg',
         name: "Miah *TYGA* Feroz",
-        number: "131",
         big: "Jason *ASTRO* Zhou",
         little: "Brian *METRO* Lu & Jordan *ABSTRACT* Chan"
       },
-      {
+      "132": {
         image: '/img/default.jpg',
         name: "Aaron *EXCISION* Ogita",
-        number: "132",
         big: "Lawrence *SONOROUS* Hu",
         little: "Kai *CREED* Kim"
-      },
-    ]
+      }
+    }
   },
-  {
-    classTitle: "ALPHA THETA",
+  "ALPHA THETA": {
     fullClassTitle: "ALPHA THETA - SPRING 2017",
-    activeBrothers: [
-      {
+    brothers: {
+      "121": {
         image: '/img/default.jpg',
         name: "Raymond *HORUS* Guo",
-        number: "121",
-        big: "N/A", //his big delettered
+        big: "N/A",
         little: "Eumin *wyrm* Kim"
       },
-      {
+      "122": {
         image: '/img/default.jpg',
         name: "Andrew *ATLANTIC* Lee",
-        number: "122",
         big: "George *BASELINE* Mao",
         little: "Michael *CAESAR* Chin",
       },
-      {
+      "123": {
         image: '/img/default.jpg',
         name: "Jason *4AM* Lee",
-        number: "123",
         big: "Jongyoon *Zoot* Lee",
         little: "Depei *HOWL* Yu & Justin *LIFELINE* Ong"
       },
-      {
+      "124": {
         image: '/img/default.jpg',
         name: "Jay *LIL MAC* Lee",
-        number: "124",
         big: "Alex *VERTIGO* Huang",
         little: "Brian *HANWOO* Jeong & William *SUNSIN* Lee"
       },
-      {
+      "125": {
         image: '/img/default.jpg',
         name: "Austin *VITREUM* Chiu",
-        number: "125",
-        big: "N/A", //his big delettered
+        big: "N/A",
       },
-      {
+      "126": {
         image: '/img/default.jpg',
         name: "Max *EMBRE* Kong",
-        number: "126",
         big: "Luke *VITALIZE* Shin",
         little: "Jack *KODIAK* Ding"
       },
-      {
+      "127": {
         image: '/img/default.jpg',
         name: "Hansen *DROSE* Tai",
-        number: "127",
         big: "Alex *VERTIGO* Huang",
         little: "Steven *SWEETSPOT* Lu & Steven *Ouranos* Wang"
-      },
-      
-    ]
+      }
+    }
   },
-  {
-    classTitle: "ALPHA ETA",
+  "ALPHA ETA": {
     fullClassTitle: "ALPHA ETA - FALL 2016",
-    activeBrothers: [
-      {
+    brothers: {
+      "119": {
         image: '/img/default.jpg',
         name: "Jongyoon *Zoot* Han",
-        number: "119",
         big: "John *KEYBLADE* Lee",
         little: "Jason *4AM* Lee"
-      },
-      {
-        image: '/img/default.jpg',
-        name: "Felix *U.D.APP* Chin",
-        number: "119",
-        big: "Alex *Subversive* Ma",
-        little: "William *XAIVER* Zhang"
-      },
-    ]
+      }
+    }
   },
-  {
-    classTitle: "ALPHA ZETA",
+  "ALPHA ZETA": {
     fullClassTitle: "ALPHA ZETA - SPRING 2016",
-    activeBrothers: [
-      {
+    brothers: {
+      "111": {
         image: '/img/default.jpg',
         name: "Andrew *IDFWY* Deng",
-        number: "111",
         big: "Randy *BOSE* Tung",
         little: "Derek *GUNGNIR* Cheung"
       },
-      {
+      "115": {
         image: '/img/default.jpg',
-        name: "Austin *OG-MINTS* Te",
-        number: "111",
-        big: "Alex *Subversive* Ma",
-        little: "Derek *GUNGNIR* Cheung"
-      },  
-      {
-      image: '/img/default.jpg',
-      name: "Jefferson *TRUENO* Poserio",
-      number: "115",
-      big: "Evan *Milgauss* Mok",
-      little: "Jason *TSUZUMI* Lin"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Christopher *PARETO* Wan",
-      number: "116",
-      big: "Victor *CRYSIS* Zhao",
-      little: "Laurence *ENCORE* Zhang"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Emmanuel *JETSTREAM* Paulino",
-      number: "117",
-      big: "Steven *GUY* Liu",
-      little: "Sangbo *EMPEROR* Yoon"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Luke *VITALIZE* Shin",
-      number: "118",
-      big: "Jason *ASTRO* Zhou",
-      little: "Max *EMBRE* Kong"
+        name: "Jefferson *TRUENO* Poserio",
+        big: "Evan *Milgauss* Mok",
+        little: "Jason *TSUZUMI* Lin"
+      },
+      "116": {
+        image: '/img/default.jpg',
+        name: "Christopher *PARETO* Wan",
+        big: "Victor *CRYSIS* Zhao",
+        little: "Laurence *ENCORE* Zhang"
+      },
+      "117": {
+        image: '/img/default.jpg',
+        name: "Emmanuel *JETSTREAM* Paulino",
+        big: "Steven *GUY* Liu",
+        little: "Sangbo *EMPEROR* Yoon"
+      },
+      "118": {
+        image: '/img/default.jpg',
+        name: "Luke *VITALIZE* Shin",
+        big: "Jason *ASTRO* Zhou",
+        little: "Max *EMBRE* Kong"
+      }
     }
-    ]
   },
-  {
-  classTitle: "ALPHA DELTA",
-  fullClassTitle: "ALPHA DELTA - SPRING 2015",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Evan *Milgauss* Mok",
-      number: "102",
-      big: "Brandon *Hourglass* Yeh",
-      little: "Jefferson *TRUENO* Poserio"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Jason *ASTRO* Zhou",
-      number: "103",
-      big: "Brandon *YES MAN* Yep",
-      little: "Luke *VITALIZE* Shin & Miah *TYGA* Feroz"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "George *BASELINE* Mao",
-      number: "104",
-      big: "Brandon *YES MAN* Yep",
-      little: "Andrew *ATLANTIC* Lee"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Alex *VERTIGO* Huang",
-      number: "105",
-      big: "Jeffrey *SQUID* Lin",
-      little: "Jay *LIL MAC* Lee"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Randy *BOSE* Tung",
-      number: "107",
-      big: "Richard *BALTO* Hsu",
-      little: "Andrew *IDFWY* Deng"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "John *KEYBLADE* Lee",
-      number: "108",
-      big: "Taeyoon *ASCALON* Dan",
-      little: "Jongyoon *Zoot* Han"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Lawrence *SONOROUS* Hu",
-      number: "109",
-      big: "Dan *Cal* Cho",
-      little: "Aaron *EXCISION* Ogita"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Alex *Subversive* Ma",
-      number: "110",
-      big: "Michael *ICHIRO* Stewart",
-      little: "Austen *OG-MINTS* Te & Felix *U.D.APP* Chin"
+  "ALPHA DELTA": {
+    fullClassTitle: "ALPHA DELTA - SPRING 2015",
+    brothers: {
+      "102": {
+        image: '/img/default.jpg',
+        name: "Evan *Milgauss* Mok",
+        big: "Brandon *Hourglass* Yeh",
+        little: "Jefferson *TRUENO* Poserio"
+      },
+      "103": {
+        image: '/img/default.jpg',
+        name: "Jason *ASTRO* Zhou",
+        big: "Brandon *YES MAN* Yep",
+        little: "Luke *VITALIZE* Shin & Miah *TYGA* Feroz"
+      },
+      "104": {
+        image: '/img/default.jpg',
+        name: "George *BASELINE* Mao",
+        big: "Brandon *YES MAN* Yep",
+        little: "Andrew *ATLANTIC* Lee"
+      },
+      "105": {
+        image: '/img/default.jpg',
+        name: "Alex *VERTIGO* Huang",
+        big: "Jeffrey *SQUID* Lin",
+        little: "Jay *LIL MAC* Lee"
+      },
+      "107": {
+        image: '/img/default.jpg',
+        name: "Randy *BOSE* Tung",
+        big: "Richard *BALTO* Hsu",
+        little: "Andrew *IDFWY* Deng"
+      },
+      "108": {
+        image: '/img/default.jpg',
+        name: "John *KEYBLADE* Lee",
+        big: "Taeyoon *ASCALON* Dan",
+        little: "Jongyoon *Zoot* Han"
+      },
+      "109": {
+        image: '/img/default.jpg',
+        name: "Lawrence *SONOROUS* Hu",
+        big: "Dan *Cal* Cho",
+        little: "Aaron *EXCISION* Ogita"
+      },
+      "110": {
+        image: '/img/default.jpg',
+        name: "Alex *Subversive* Ma",
+        big: "Michael *ICHIRO* Stewart",
+        little: "Austen *OG-MINTS* Te & Felix *U.D.APP* Chin"
+      }
     }
-  ]
   },
-  {
-  classTitle: "ALPHA GAMMA",
-  fullClassTitle: "ALPHA GAMMA - FALL 2014",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "JiaWen (Steven) *GUY* Liu",
-      number: "97",
-      big: "Gray *PIP* Guo",
-      little: "Emmanuel *JETSTREAM* Paulino"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Taeyoon (Dan) *ASCALON* Kim",
-      number: "98",
-      big: "Brandon *EXCALIBUR* Eng",
-      little: "John *KEYBLADE* Lee"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Brandon *Yes Man* Yep",
-      number: "99",
-      big: "Austin *RICOCHET* Shiau",
-      little: "George *BASELINE* Mao & Jason *ASTRO* Zhou"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Daniel *CAL* Cho",
-      number: "100",
-      big: "Gray *PIP* Guo",
-      little: "Laurence *SONOROUS* Hu"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Michael *Ichiro* Stewart",
-      number: "101",
-      big: "Orlando *CONJURING* He",
-      little: "Alex *Subversive* Ma"
+  "ALPHA GAMMA": {
+    fullClassTitle: "ALPHA GAMMA - FALL 2014",
+    brothers: {
+      "97": {
+        image: '/img/default.jpg',
+        name: "JiaWen (Steven) *GUY* Liu",
+        big: "Gray *PIP* Guo",
+        little: "Emmanuel *JETSTREAM* Paulino"
+      },
+      "98": {
+        image: '/img/default.jpg',
+        name: "Taeyoon (Dan) *ASCALON* Kim",
+        big: "Brandon *EXCALIBUR* Eng",
+        little: "John *KEYBLADE* Lee"
+      },
+      "99": {
+        image: '/img/default.jpg',
+        name: "Brandon *Yes Man* Yep",
+        big: "Austin *RICOCHET* Shiau",
+        little: "George *BASELINE* Mao & Jason *ASTRO* Zhou"
+      },
+      "100": {
+        image: '/img/default.jpg',
+        name: "Daniel *CAL* Cho",
+        big: "Gray *PIP* Guo",
+        little: "Laurence *SONOROUS* Hu"
+      },
+      "101": {
+        image: '/img/default.jpg',
+        name: "Michael *Ichiro* Stewart",
+        big: "Orlando *CONJURING* He",
+        little: "Alex *Subversive* Ma"
+      }
     }
-  ]
-},
-{
-  classTitle: "ALPHA BETA",
-  fullClassTitle: "ALPHA BETA - FALL 2013",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Brandon *Hourglass* Yeh",
-      number: "93",
-      big: "Peter *DUD* Ro",
-      little: "Evan *Milgauss* Mok"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Orlando *CONJURING* He",
-      number: "94",
-      big: "Albert *D.T.F.* Yang",
-      little: "Michael *Ichiro* Stewart"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Dan *TMNT* Heo",
-      number: "95",
-      big: "David *Gargoyle* Lee",
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Gray *PIP* Guo",
-      number: "96",
-      big: "Kevin *LANDMINE* Lei",
-      little: "JiaWen (Steven) *GUY* Liu &  Daniel *CAL* Cho"
+  },
+  "ALPHA BETA": {
+    fullClassTitle: "ALPHA BETA - FALL 2013",
+    brothers: {
+      "93": {
+        image: '/img/default.jpg',
+        name: "Brandon *Hourglass* Yeh",
+        big: "Peter *DUD* Ro",
+        little: "Evan *Milgauss* Mok"
+      },
+      "94": {
+        image: '/img/default.jpg',
+        name: "Orlando *CONJURING* He",
+        big: "Albert *D.T.F.* Yang",
+        little: "Michael *Ichiro* Stewart"
+      },
+      "95": {
+        image: '/img/default.jpg',
+        name: "Dan *TMNT* Heo",
+        big: "David *Gargoyle* Lee",
+      },
+      "96": {
+        image: '/img/default.jpg',
+        name: "Gray *PIP* Guo",
+        big: "Kevin *LANDMINE* Lei",
+        little: "JiaWen (Steven) *GUY* Liu &  Daniel *CAL* Cho"
+      }
     }
-  ]
-},
-{
-  classTitle: "ALPHA ALPHA",
-  fullClassTitle: "ALPHA ALPHA - SPRING 2013",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Victor *CRYSIS* Zhao",
-      number: "88",
-      big: "Daniel *SIMPLE JACK* Ki",
-      little: "Christopher *PARETO* Wan"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Albert *D.T.F.* Yang",
-      number: "89",
-      big: "David *MR. MISTER* Ko",
-      little: "Orlando *CONJURING* He"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Richard *BALTO* Hsu",
-      number: "90",
-      big: "David *JABU JABU* Zhang",
-      little: "Randy *BOSE* Tung"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Jeffrey *SQUID* Lin",
-      number: "91",
-      big: "James *CONDUCT* Park",
-      little: "Alex *VERTIGO* Huang"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Brandon *EXCALIBUR* Eng",
-      number: "92",
-      big: "Alexander *VASH* Park",
-      little: "Taeyoon (Dan) *ASCALON* Kim"
+  },
+  "ALPHA ALPHA": {
+    fullClassTitle: "ALPHA ALPHA - SPRING 2013",
+    brothers: {
+      "88": {
+        image: '/img/default.jpg',
+        name: "Victor *CRYSIS* Zhao",
+        big: "Daniel *SIMPLE JACK* Ki",
+        little: "Christopher *PARETO* Wan"
+      },
+      "89": {
+        image: '/img/default.jpg',
+        name: "Albert *D.T.F.* Yang",
+        big: "David *MR. MISTER* Ko",
+        little: "Orlando *CONJURING* He"
+      },
+      "90": {
+        image: '/img/default.jpg',
+        name: "Richard *BALTO* Hsu",
+        big: "David *JABU JABU* Zhang",
+        little: "Randy *BOSE* Tung"
+      },
+      "91": {
+        image: '/img/default.jpg',
+        name: "Jeffrey *SQUID* Lin",
+        big: "James *CONDUCT* Park",
+        little: "Alex *VERTIGO* Huang"
+      },
+      "92": {
+        image: '/img/default.jpg',
+        name: "Brandon *EXCALIBUR* Eng",
+        big: "Alexander *VASH* Park",
+        little: "Taeyoon (Dan) *ASCALON* Kim"
+      }
     }
-  ]
-},
-{
-  classTitle: "PSI",
-  fullClassTitle: "PSI - SPRING 2012",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Kevin *LANDMINE* Lei",
-      number: "82",
-      big: "Steven *Gohan* Lau",
-      little: "Gray *PIP* Guo"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Alexander *VASH* Park",
-      number: "83",
-      big: "Bryan *LUMPS* Louie",
-      little: "Brandon *EXCALIBUR* Eng"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Austin *RICOCHET* Shiau",
-      number: "84",
-      big: "Hong Chan *DIDDY KONG* Kim",
-      little: "Brandon *Yes Man* Yep"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "David *MR. MISTER* Ko",
-      number: "85",
-      big: "Vincent *STIFFIE* Tieu",
-      little: "Albert *D.T.F.* Yang"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "James *CONDUCT* Park",
-      number: "86",
-      big: "David *Gargoyle* Lee",
-      little: "Jeffrey *SQUID* Lin"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "David *JABU JABU* Zhang",
-      number: "87",
-      big: "Alan *ATM* Liang",
-      little: "Richard *BALTO* Hsu"
+  },
+  "PSI": {
+    fullClassTitle: "PSI - SPRING 2012",
+    brothers: {
+      "82": {
+        image: '/img/default.jpg',
+        name: "Kevin *LANDMINE* Lei",
+        big: "Steven *Gohan* Lau",
+        little: "Gray *PIP* Guo"
+      },
+      "83": {
+        image: '/img/default.jpg',
+        name: "Alexander *VASH* Park",
+        big: "Bryan *LUMPS* Louie",
+        little: "Brandon *EXCALIBUR* Eng"
+      },
+      "84": {
+        image: '/img/default.jpg',
+        name: "Austin *RICOCHET* Shiau",
+        big: "Hong Chan *DIDDY KONG* Kim",
+        little: "Brandon *Yes Man* Yep"
+      },
+      "85": {
+        image: '/img/default.jpg',
+        name: "David *MR. MISTER* Ko",
+        big: "Vincent *STIFFIE* Tieu",
+        little: "Albert *D.T.F.* Yang"
+      },
+      "86": {
+        image: '/img/default.jpg',
+        name: "James *CONDUCT* Park",
+        big: "David *Gargoyle* Lee",
+        little: "Jeffrey *SQUID* Lin"
+      },
+      "87": {
+        image: '/img/default.jpg',
+        name: "David *JABU JABU* Zhang",
+        big: "Alan *ATM* Liang",
+        little: "Richard *BALTO* Hsu"
+      }
     }
-  ]
-},
-{
-  classTitle: "CHI",
-  fullClassTitle: "CHI - FALL 2011",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "David *Gargoyle* Lee",
-      number: "80",
-      big: "Christopher *Country Time* Chin",
-      little: "James *CONDUCT* Park & Dan *TMNT* Heo"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Daniel *SIMPLE JACK* Ki",
-      number: "81",
-      big: "Daniel *FLOP* Wang",
-      little: "Victor *CRYSIS* Zhao"
+  },
+  "CHI": {
+    fullClassTitle: "CHI - FALL 2011",
+    brothers: {
+      "80": {
+        image: '/img/default.jpg',
+        name: "David *Gargoyle* Lee",
+        big: "Christopher *Country Time* Chin",
+        little: "James *CONDUCT* Park & Dan *TMNT* Heo"
+      },
+      "81": {
+        image: '/img/default.jpg',
+        name: "Daniel *SIMPLE JACK* Ki",
+        big: "Daniel *FLOP* Wang",
+        little: "Victor *CRYSIS* Zhao"
+      }
     }
-  ]
-},
-{
-  classTitle: "PHI",
-  fullClassTitle: "PHI - SPRING 2011",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Steven *Gohan* Lau",
-      number: "77",
-      big: "Nathan *Zohan* Supakul",
-      little: "Kevin *LANDMINE* Lei"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Peter *DUD* Ro",
-      number: "78",
-      big: "Joon *MISSILE* Baek",
-      little: "Brandon *Hourglass* Yeh"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Hong Chan *DIDDY KONG* Kim",
-      number: "79",
-      big: "Andrew *MBLAQ* Kim",
-      little: "Austin *RICOCHET* Shiau"
+  },
+  "PHI": {
+    fullClassTitle: "PHI - SPRING 2011",
+    brothers: {
+      "77": {
+        image: '/img/default.jpg',
+        name: "Steven *Gohan* Lau",
+        big: "Nathan *Zohan* Supakul",
+        little: "Kevin *LANDMINE* Lei"
+      },
+      "78": {
+        image: '/img/default.jpg',
+        name: "Peter *DUD* Ro",
+        big: "Joon *MISSILE* Baek",
+        little: "Brandon *Hourglass* Yeh"
+      },
+      "79": {
+        image: '/img/default.jpg',
+        name: "Hong Chan *DIDDY KONG* Kim",
+        big: "Andrew *MBLAQ* Kim",
+        little: "Austin *RICOCHET* Shiau"
+      }
     }
-  ]
-},
-{
-  classTitle: "UPSILON",
-  fullClassTitle: "UPSILON - SPRING 2010",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Alan *ATM* Liang",
-      number: "73",
-      big: "Alex *Bomberman* McGlynn",
-      little: "David *JABU JABU* Zhang"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Bryan *LUMPS* Louie",
-      number: "74",
-      big: "Kirby *Funky Town* Hsu",
-      little: "Alexander *VASH* Park"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Vincent *STIFFIE* Tieu",
-      number: "75",
-      big: "David *Tic Tac* Zhu",
-      little: "David *MR. MISTER* Ko"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Andrew *MBLAQ* Kim",
-      number: "76",
-      big: "Jae *McLovin* Sul",
-      little: "Hong Chan *DIDDY KONG* Kim"
+  },
+  "UPSILON": {
+    fullClassTitle: "UPSILON - SPRING 2010",
+    brothers: {
+      "73": {
+        image: '/img/default.jpg',
+        name: "Alan *ATM* Liang",
+        big: "Alex *Bomberman* McGlynn",
+        little: "David *JABU JABU* Zhang"
+      },
+      "74": {
+        image: '/img/default.jpg',
+        name: "Bryan *LUMPS* Louie",
+        big: "Kirby *Funky Town* Hsu",
+        little: "Alexander *VASH* Park"
+      },
+      "75": {
+        image: '/img/default.jpg',
+        name: "Vincent *STIFFIE* Tieu",
+        big: "David *Tic Tac* Zhu",
+        little: "David *MR. MISTER* Ko"
+      },
+      "76": {
+        image: '/img/default.jpg',
+        name: "Andrew *MBLAQ* Kim",
+        big: "Jae *McLovin* Sul",
+        little: "Hong Chan *DIDDY KONG* Kim"
+      }
     }
-  ]
-},
-{
-  classTitle: "TAU",
-  fullClassTitle: "TAU - SPRING 2009",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Christopher *Country Time* Chin",
-      number: "70",
-      big: "Hyeong *Lance* Yoon",
-      little: "David *Gargoyle* Lee"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Kirby *Funky Town* Hsu",
-      number: "71",
-      big: "Alvin *1-Pac* Chen",
-      little: "Bryan *LUMPS* Louie"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Nathan *Zohan* Supakul",
-      number: "72",
-      big: "Xiang *F-Steal* Liang",
-      little: "Steven *Gohan* Lau"
+  },
+  "TAU": {
+    fullClassTitle: "TAU - SPRING 2009",
+    brothers: {
+      "70": {
+        image: '/img/default.jpg',
+        name: "Christopher *Country Time* Chin",
+        big: "Hyeong *Lance* Yoon",
+        little: "David *Gargoyle* Lee"
+      },
+      "71": {
+        image: '/img/default.jpg',
+        name: "Kirby *Funky Town* Hsu",
+        big: "Alvin *1-Pac* Chen",
+        little: "Bryan *LUMPS* Louie"
+      },
+      "72": {
+        image: '/img/default.jpg',
+        name: "Nathan *Zohan* Supakul",
+        big: "Xiang *F-Steal* Liang",
+        little: "Steven *Gohan* Lau"
+      }
     }
-  ]
-},
-{
-  classTitle: "SIGMA",
-  fullClassTitle: "SIGMA - SPRING 2008",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Hyeong *Lance* Yoon",
-      number: "63",
-      big: "Genki *Turok* Kondo",
-      little: "Christopher *Country Time* Chin"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Edward *NASTIE* Lee",
-      number: "64",
-      big: "Tian *DUST* Liang",
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Jae *McLovin* Sul",
-      number: "65",
-      big: "Ferdinand *Hoodwank* Chan",
-      little: "Andrew *MBLAQ* Kim"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Toby *ELF* Huang",
-      number: "66",
-      big: "Clyde *Nemo* Chung",
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Brian *Sprinkles* Lin",
-      number: "67",
-      big: "Alex *Bomberman* McGlynn",
-      little: ""
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Daniel *FLOP* Wang",
-      number: "68",
-      big: "Jun *Decepticon* Kim",
-      little: "Daniel *SIMPLE JACK* Ki"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "David *Tic Tac* Zhu",
-      number: "69",
-      big: "Jonathan *P.Biddy* Lui",
-      little: "Vincent *STIFFIE* Tieu"
+  },
+  "SIGMA": {
+    fullClassTitle: "SIGMA - SPRING 2008",
+    brothers: {
+      "63": {
+        image: '/img/default.jpg',
+        name: "Hyeong *Lance* Yoon",
+        big: "Genki *Turok* Kondo",
+        little: "Christopher *Country Time* Chin"
+      },
+      "64": {
+        image: '/img/default.jpg',
+        name: "Edward *NASTIE* Lee",
+        big: "Tian *DUST* Liang",
+      },
+      "65": {
+        image: '/img/default.jpg',
+        name: "Jae *McLovin* Sul",
+        big: "Ferdinand *Hoodwank* Chan",
+        little: "Andrew *MBLAQ* Kim"
+      },
+      "66": {
+        image: '/img/default.jpg',
+        name: "Toby *ELF* Huang",
+        big: "Clyde *Nemo* Chung",
+      },
+      "67": {
+        image: '/img/default.jpg',
+        name: "Brian *Sprinkles* Lin",
+        big: "Alex *Bomberman* McGlynn",
+        little: ""
+      },
+      "68": {
+        image: '/img/default.jpg',
+        name: "Daniel *FLOP* Wang",
+        big: "Jun *Decepticon* Kim",
+        little: "Daniel *SIMPLE JACK* Ki"
+      },
+      "69": {
+        image: '/img/default.jpg',
+        name: "David *Tic Tac* Zhu",
+        big: "Jonathan *P.Biddy* Lui",
+        little: "Vincent *STIFFIE* Tieu"
+      }
     }
-  ]
-},
-{
-  classTitle: "RHO",
-  fullClassTitle: "RHO - SPRING 2007",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Alex *Bomberman* McGlynn",
-      number: "57",
-      big: "Nick *Spot* Theodoss",
-      little: "Brian *Sprinkles* Lin & Alan *ATM* Liang"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Kevin *Koopa Troopa* Siu",
-      number: "58",
-      big: "Jonathan *Def* Tsui",
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Joon *MISSILE* Baek",
-      number: "59",
-      big: "Daniel *Dolittle* Choi",
-      little: "Peter *DUD* Ro"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Genki *Turok* Kondo",
-      number: "60",
-      big: "Tian *DUST* Liang",
-      little: "Hyeong *Lance* Yoon"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Jonathan *P.Biddy* Lui",
-      number: "61",
-      big: "Brenden *Slippy* Eng",
-      little: "David *Tic Tac* Zhu"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Jun *Decepticon* Kim",
-      number: "62",
-      big: "Kevin *BFG* Liang",
-      little: "Daniel *FLOP* Wang"
+  },
+  "RHO": {
+    fullClassTitle: "RHO - SPRING 2007",
+    brothers: {
+      "57": {
+        image: '/img/default.jpg',
+        name: "Alex *Bomberman* McGlynn",
+        big: "Nick *Spot* Theodoss",
+        little: "Brian *Sprinkles* Lin & Alan *ATM* Liang"
+      },
+      "58": {
+        image: '/img/default.jpg',
+        name: "Kevin *Koopa Troopa* Siu",
+        big: "Jonathan *Def* Tsui",
+      },
+      "59": {
+        image: '/img/default.jpg',
+        name: "Joon *MISSILE* Baek",
+        big: "Daniel *Dolittle* Choi",
+        little: "Peter *DUD* Ro"
+      },
+      "60": {
+        image: '/img/default.jpg',
+        name: "Genki *Turok* Kondo",
+        big: "Tian *DUST* Liang",
+        little: "Hyeong *Lance* Yoon"
+      },
+      "61": {
+        image: '/img/default.jpg',
+        name: "Jonathan *P.Biddy* Lui",
+        big: "Brenden *Slippy* Eng",
+        little: "David *Tic Tac* Zhu"
+      },
+      "62": {
+        image: '/img/default.jpg',
+        name: "Jun *Decepticon* Kim",
+        big: "Kevin *BFG* Liang",
+        little: "Daniel *FLOP* Wang"
+      }
     }
-  ]
-},
-{
-  classTitle: "PI",
-  fullClassTitle: "PI - SPRING 2006",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Nick *Spot* Theodoss",
-      number: "48",
-      big: "Richard *7* Liao",
-      little: "Alex *Bomberman* McGlynn"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Haruki *Mr. Sparkle* Yukawa",
-      number: "49",
-      big: "Jerry *Jenga* Hum",
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Alvin *1-Pac* Chen",
-      number: "50",
-      big: "Elmer *Zapp* Lin",
-      little: "Kirby *Funky Town* Hsu"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Xiang *F-Steal* Liang",
-      number: "51",
-      big: "Damon *Bounty* Lee",
-      little: "Nathan *Zohan* Supakul"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Kevin *BFG* Liang",
-      number: "52",
-      big: "Jonathan *Def* Tsui",
-      little: "Jun *Decepticon* Kim"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Tian *DUST* Liang",
-      number: "53",
-      big: "Richard *DR. ILLS* Kui",
-      little: "Genki *Turok* Kondo & Edward *NASTIE* Lee"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Ferdinand *Hoodwank* Chan",
-      number: "54",
-      big: "Brian *Mix A Lot* Chen",
-      little: "Jae *McLovin* Sul"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Brenden *Slippy* Eng",
-      number: "55",
-      big: "Dennis *Homeslice* Liu",
-      little: "Jonathan *P.Biddy* Lui"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Clyde *Nemo* Chung",
-      number: "56",
-      big: "Aidi *Jar Jar* Su",
-      little: "Toby *ELF* Huang"
+  },
+  "PI": {
+    fullClassTitle: "PI - SPRING 2006",
+    brothers: {
+      "48": {
+        image: '/img/default.jpg',
+        name: "Nick *Spot* Theodoss",
+        big: "Richard *7* Liao",
+        little: "Alex *Bomberman* McGlynn"
+      },
+      "49": {
+        image: '/img/default.jpg',
+        name: "Haruki *Mr. Sparkle* Yukawa",
+        big: "Jerry *Jenga* Hum",
+      },
+      "50": {
+        image: '/img/default.jpg',
+        name: "Alvin *1-Pac* Chen",
+        big: "Elmer *Zapp* Lin",
+        little: "Kirby *Funky Town* Hsu"
+      },
+      "51": {
+        image: '/img/default.jpg',
+        name: "Xiang *F-Steal* Liang",
+        big: "Damon *Bounty* Lee",
+        little: "Nathan *Zohan* Supakul"
+      },
+      "52": {
+        image: '/img/default.jpg',
+        name: "Kevin *BFG* Liang",
+        big: "Jonathan *Def* Tsui",
+        little: "Jun *Decepticon* Kim"
+      },
+      "53": {
+        image: '/img/default.jpg',
+        name: "Tian *DUST* Liang",
+        big: "Richard *DR. ILLS* Kui",
+        little: "Genki *Turok* Kondo & Edward *NASTIE* Lee"
+      },
+      "54": {
+        image: '/img/default.jpg',
+        name: "Ferdinand *Hoodwank* Chan",
+        big: "Brian *Mix A Lot* Chen",
+        little: "Jae *McLovin* Sul"
+      },
+      "55": {
+        image: '/img/default.jpg',
+        name: "Brenden *Slippy* Eng",
+        big: "Dennis *Homeslice* Liu",
+        little: "Jonathan *P.Biddy* Lui"
+      },
+      "56": {
+        image: '/img/default.jpg',
+        name: "Clyde *Nemo* Chung",
+        big: "Aidi *Jar Jar* Su",
+        little: "Toby *ELF* Huang"
+      }
     }
-  ]
-},
-{
-  classTitle: "OMICRON",
-  fullClassTitle: "OMICRON - FALL 2005",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Jerry *Jenga* Hum",
-      number: "46",
-      big: "Kevin *H.E.L.P.* Hwang",
-      little: "Haruki *Mr. Sparkle* Yukawa"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Richard *DR. ILLS* Kui",
-      number: "47",
-      big: "Charles *D.D.R.* Kuo",
-      little: "Tian *DUST* Liang"
+  },
+  "OMICRON": {
+    fullClassTitle: "OMICRON - FALL 2005",
+    brothers: {
+      "46": {
+        image: '/img/default.jpg',
+        name: "Jerry *Jenga* Hum",
+        big: "Kevin *H.E.L.P.* Hwang",
+        little: "Haruki *Mr. Sparkle* Yukawa"
+      },
+      "47": {
+        image: '/img/default.jpg',
+        name: "Richard *DR. ILLS* Kui",
+        big: "Charles *D.D.R.* Kuo",
+        little: "Tian *DUST* Liang"
+      }
     }
-  ]
-},
-{
-  classTitle: "XI",
-  fullClassTitle: "XI - SPRING 2005",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Jonathan *Def* Tsui",
-      number: "43",
-      big: "Jonathan *Stewie* Kuo",
-      little: "Kevin *BFG* Liang & Kevin *Koopa Troopa* Siu"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Dennis *Homeslice* Liu",
-      number: "44",
-      big: "Jeffrey *Shermanator* Chang",
-      little: "Brenden *Slippy* Eng"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Elmer *Zapp* Lin",
-      number: "45",
-      big: "Steven *McBain* Zhou",
-      little: "Alvin *1-Pac* Chen"
+  },
+  "XI": {
+    fullClassTitle: "XI - SPRING 2005",
+    brothers: {
+      "43": {
+        image: '/img/default.jpg',
+        name: "Jonathan *Def* Tsui",
+        big: "Jonathan *Stewie* Kuo",
+        little: "Kevin *BFG* Liang & Kevin *Koopa Troopa* Siu"
+      },
+      "44": {
+        image: '/img/default.jpg',
+        name: "Dennis *Homeslice* Liu",
+        big: "Jeffrey *Shermanator* Chang",
+        little: "Brenden *Slippy* Eng"
+      },
+      "45": {
+        image: '/img/default.jpg',
+        name: "Elmer *Zapp* Lin",
+        big: "Steven *McBain* Zhou",
+        little: "Alvin *1-Pac* Chen"
+      }
     }
-  ]
-},
-{
-  classTitle: "MU",
-  fullClassTitle: "MU - SPRING 2004",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Jimmy *Wolverine* You",
-      number: "37",
-      big: "Silby *Fiber* Philip",
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Kevin *H.E.L.P.* Hwang",
-      number: "38",
-      big: "Alan *Rubble* Chen",
-      little: "Jerry *Jenga* Hum"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Damon *Bounty* Lee",
-      number: "39",
-      big: "Christopher *Beat It* Gibbs",
-      little: "Xiang *F-Steal* Liang"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Daniel *Dolittle* Choi",
-      number: "40",
-      big: "Peter *J.A.K.L.E.* Jang",
-      little: "Joon *MISSILE* Baek"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Brian *Mix A Lot* Chen",
-      number: "41",
-      big: "Albert *S.T.A.R. 69* Lin",
-      little: "Ferdinand *Hoodwank* Chan"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Richard *007* Liao",
-      number: "42",
-      big: "Steven *Scrat* Tsai",
+  },
+  "MU": {
+    fullClassTitle: "MU - SPRING 2004",
+    brothers: {
+      "37": {
+        image: '/img/default.jpg',
+        name: "Jimmy *Wolverine* You",
+        big: "Silby *Fiber* Philip",
+      },
+      "38": {
+        image: '/img/default.jpg',
+        name: "Kevin *H.E.L.P.* Hwang",
+        big: "Alan *Rubble* Chen",
+        little: "Jerry *Jenga* Hum"
+      },
+      "39": {
+        image: '/img/default.jpg',
+        name: "Damon *Bounty* Lee",
+        big: "Christopher *Beat It* Gibbs",
+        little: "Xiang *F-Steal* Liang"
+      },
+      "40": {
+        image: '/img/default.jpg',
+        name: "Daniel *Dolittle* Choi",
+        big: "Peter *J.A.K.L.E.* Jang",
+        little: "Joon *MISSILE* Baek"
+      },
+      "41": {
+        image: '/img/default.jpg',
+        name: "Brian *Mix A Lot* Chen",
+        big: "Albert *S.T.A.R. 69* Lin",
+        little: "Ferdinand *Hoodwank* Chan"
+      },
+      "42": {
+        image: '/img/default.jpg',
+        name: "Richard *007* Liao",
+        big: "Steven *Scrat* Tsai",
+      }
     }
-  ]
-},
-{
-  classTitle: "Kappa",
-  fullClassTitle: "Kappa - SPRING 2003",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Charles *D.D.R.* Kuo",
-      number: "34",
-      big: "Kenneth *Eeyore* Lee",
-      little: "Richard *DR. ILLS* Kui"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Jonathan *Stewie* Kuo",
-      number: "35",
-      big: "Vincent *S.O.S.* Poon",
-      little: "Jonathan *Def* Tsui"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Aidi *Jar Jar* Su",
-      number: "36",
-      big: "Kai *Pee Wee* Ang",
-      little: "Clyde *Nemo* Chung"
+  },
+  "Kappa": {
+    fullClassTitle: "Kappa - SPRING 2003",
+    brothers: {
+      "34": {
+        image: '/img/default.jpg',
+        name: "Charles *D.D.R.* Kuo",
+        big: "Kenneth *Eeyore* Lee",
+        little: "Richard *DR. ILLS* Kui"
+      },
+      "35": {
+        image: '/img/default.jpg',
+        name: "Jonathan *Stewie* Kuo",
+        big: "Vincent *S.O.S.* Poon",
+        little: "Jonathan *Def* Tsui"
+      },
+      "36": {
+        image: '/img/default.jpg',
+        name: "Aidi *Jar Jar* Su",
+        big: "Kai *Pee Wee* Ang",
+        little: "Clyde *Nemo* Chung"
+      }
     }
-  ]
-},
-{
-  classTitle: "Iota",
-  fullClassTitle: "Iota - FALL 2002",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Peter *J.A.K.L.E.* Jang",
-      number: "31",
-      big: "Jason Seok-Hyoung *Silent Bob* Lee",
-      little: "Daniel *Dolittle* Choi"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Vincent *S.O.S.* Poon",
-      number: "32",
-      big: "Sokhandhi *Lax* Ung",
-      little: "Jonathan *Stewie* Kuo"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Steven *McBain* Zhou",
-      number: "33",
-      big: "Randy *Bonk* Chan",
-      little: "Elmer *Zapp* Lin"
+  },
+  "Iota": {
+    fullClassTitle: "Iota - FALL 2002",
+    brothers: {
+      "31": {
+        image: '/img/default.jpg',
+        name: "Peter *J.A.K.L.E.* Jang",
+        big: "Jason Seok-Hyoung *Silent Bob* Lee",
+        little: "Daniel *Dolittle* Choi"
+      },
+      "32": {
+        image: '/img/default.jpg',
+        name: "Vincent *S.O.S.* Poon",
+        big: "Sokhandhi *Lax* Ung",
+        little: "Jonathan *Stewie* Kuo"
+      },
+      "33": {
+        image: '/img/default.jpg',
+        name: "Steven *McBain* Zhou",
+        big: "Randy *Bonk* Chan",
+        little: "Elmer *Zapp* Lin"
+      }
     }
-  ]
-},
-{
-  classTitle: "Theta",
-  fullClassTitle: "Theta - SPRING 2002",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Steven *Scrat* Tsai",
-      number: "25",
-      big: "Jeffrey *Gibberish* Leung",
-      little: "Richard *007* Liao"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Kenneth *Eeyore* Lee",
-      number: "26",
-      big: "Henry Min *F.A.C.E. Off* Hsu",
-      little: "Charles *D.D.R.* Kuo"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Jeffrey *Shermanator* Chang",
-      number: "27",
-      big: "Christopher *Beat It* Gibbs",
-      little: "Dennis *Homeslice* Liu"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Jason *Silent Bob* Lee",
-      number: "28",
-      big: "Steven *T.2K* Lee",
-      little: "Peter *J.A.K.L.E.* Jang"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Albert *S.T.A.R. 69* Lin",
-      number: "29",
-      big: "Derek *So-Low* Hsiang",
-      little: "Brian *Mix A Lot* Chen"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Kai *Pee Wee* Ang",
-      number: "30",
-      big: "Melvin *Wiggums* Chu",
-      little: "Aidi *Jar Jar* Su"
+  },
+  "Theta": {
+    fullClassTitle: "Theta - SPRING 2002",
+    brothers: {
+      "25": {
+        image: '/img/default.jpg',
+        name: "Steven *Scrat* Tsai",
+        big: "Jeffrey *Gibberish* Leung",
+        little: "Richard *007* Liao"
+      },
+      "26": {
+        image: '/img/default.jpg',
+        name: "Kenneth *Eeyore* Lee",
+        big: "Henry Min *F.A.C.E. Off* Hsu",
+        little: "Charles *D.D.R.* Kuo"
+      },
+      "27": {
+        image: '/img/default.jpg',
+        name: "Jeffrey *Shermanator* Chang",
+        big: "Christopher *Beat It* Gibbs",
+        little: "Dennis *Homeslice* Liu"
+      },
+      "28": {
+        image: '/img/default.jpg',
+        name: "Jason *Silent Bob* Lee",
+        big: "Steven *T.2K* Lee",
+        little: "Peter *J.A.K.L.E.* Jang"
+      },
+      "29": {
+        image: '/img/default.jpg',
+        name: "Albert *S.T.A.R. 69* Lin",
+        big: "Derek *So-Low* Hsiang",
+        little: "Brian *Mix A Lot* Chen"
+      },
+      "30": {
+        image: '/img/default.jpg',
+        name: "Kai *Pee Wee* Ang",
+        big: "Melvin *Wiggums* Chu",
+        little: "Aidi *Jar Jar* Su"
+      }
     }
-  ]
-},
-{
-  classTitle: "Eta",
-  fullClassTitle: "Iota - FALL 2002",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Derek *So-Low* Hsiang",
-      number: "24",
-      big: "Alan *Rubble* Chen",
-      little: "Albert Kao *S.T.A.R. 69* Lin"
-    },
-  ]
-},
-{
-  classTitle: "Zeta",
-  fullClassTitle: "Zeta - SPRING 2001",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Christopher *Beat It* Gibbs",
-      number: "21",
-      big: "Matthew L. *K.W.I.T.* Bendall",
-      little: "Jeffrey *Shermanator* Chang"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Jeffrey *Gibberish* Leung",
-      number: "22",
-      big: "Justin *Mishap* Kuo",
-      little: "Steven Wai *Scrat* Tsai"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Henry Min *F.A.C.E. Off* Hsu",
-      number: "23",
-      big: "Michael *NyQuil* Chang",
-      little: "Kenneth *Eeyore* Lee"
+  },
+  "Eta": {
+    fullClassTitle: "Iota - FALL 2002",
+    brothers: {
+      "24": {
+        image: '/img/default.jpg',
+        name: "Derek *So-Low* Hsiang",
+        big: "Alan *Rubble* Chen",
+        little: "Albert Kao *S.T.A.R. 69* Lin"
+      }
     }
-  ]
-},
-{
-  classTitle: "Epsilon",
-  fullClassTitle: "Epsilon - FALL 2000",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Alan *Rubble* Chen",
-      number: "571",
-      big: "Sokhandhi *Lax* Ung",
-      little: "Derek *So-Low* Hsiang"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Melvin *Wiggums* Chu",
-      number: "572",
-      big: "Silby *Fiber* Philip",
-      little: "Kai *Pee Wee* Ang"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Justin *Mishap* Kuo",
-      number: "573",
-      big: "Li *Pu-Tong* Liang",
-      little: "Jeffrey *Gibberish* Leung"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Steven *T.2K* Lee",
-      number: "574",
-      big: "Hoon P. *Croc* Joo",
-      little: "Jason *Silent Bob* Lee"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Matthew L. *K.W.I.T.* Bendall",
-      number: "575",
-      big: "David *Fonz* Lee",
-      little: "Christopher *Beat It* Gibbs"
+  },
+  "Zeta": {
+    fullClassTitle: "Zeta - SPRING 2001",
+    brothers: {
+      "21": {
+        image: '/img/default.jpg',
+        name: "Christopher *Beat It* Gibbs",
+        big: "Matthew L. *K.W.I.T.* Bendall",
+        little: "Jeffrey *Shermanator* Chang"
+      },
+      "22": {
+        image: '/img/default.jpg',
+        name: "Jeffrey *Gibberish* Leung",
+        big: "Justin *Mishap* Kuo",
+        little: "Steven Wai *Scrat* Tsai"
+      },
+      "23": {
+        image: '/img/default.jpg',
+        name: "Henry Min *F.A.C.E. Off* Hsu",
+        big: "Michael *NyQuil* Chang",
+        little: "Kenneth *Eeyore* Lee"
+      }
     }
-  ]
-},
-{
-  classTitle: "Delta",
-  fullClassTitle: "Delta - SPRING 2000",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Sokhandhi *Lax* Ung",
-      number: "11",
-      big: "Li *Pu-Tong* Liang",
-      little: "Alan *Rubble* Chen & Vincent *S.O.S.* Poon"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "David *Fonz* Lee",
-      number: "12",
-      big: "Stephen *Fenton* Chow",
-      little: "Matthew L. *K.W.I.T.* Bendall"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "David *Odie* Meng",
-      number: "13",
-      big: "Randy *Bonk* Chan",
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Silby *Fiber* Philip",
-      number: "14",
-      big: "Wellie *Rugrat* Chiang",
-      little: "Melvin *Wiggums* Chu & Jimmy *Wolverine* You"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Hoon P. *Croc* Joo",
-      number: "15",
-      big: "Dennis *Vague* Yueh",
-      little: "Steven *T.2K* Lee"
+  },
+  "Epsilon": {
+    fullClassTitle: "Epsilon - FALL 2000",
+    brothers: {
+      "571": {
+        image: '/img/default.jpg',
+        name: "Alan *Rubble* Chen",
+        big: "Sokhandhi *Lax* Ung",
+        little: "Derek *So-Low* Hsiang"
+      },
+      "572": {
+        image: '/img/default.jpg',
+        name: "Melvin *Wiggums* Chu",
+        big: "Silby *Fiber* Philip",
+        little: "Kai *Pee Wee* Ang"
+      },
+      "573": {
+        image: '/img/default.jpg',
+        name: "Justin *Mishap* Kuo",
+        big: "Li *Pu-Tong* Liang",
+        little: "Jeffrey *Gibberish* Leung"
+      },
+      "574": {
+        image: '/img/default.jpg',
+        name: "Steven *T.2K* Lee",
+        big: "Hoon P. *Croc* Joo",
+        little: "Jason *Silent Bob* Lee"
+      },
+      "575": {
+        image: '/img/default.jpg',
+        name: "Matthew L. *K.W.I.T.* Bendall",
+        big: "David *Fonz* Lee",
+        little: "Christopher *Beat It* Gibbs"
+      }
     }
-  ]
-},
-{
-  classTitle: "Gamma",
-  fullClassTitle: "Gamma - FALL 1999",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Randy *Bonk* Chan",
-      number: "9",
-      big: "Sung Han *Pops* Kim",
-      little: "David *Odie* Meng"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Stephen *Fenton* Chow",
-      number: "10",
-      big: "Frank *Snarf* Hsieh",
-      little: "David *Fonz* Lee"
+  },
+  "Delta": {
+    fullClassTitle: "Delta - SPRING 2000",
+    brothers: {
+      "11": {
+        image: '/img/default.jpg',
+        name: "Sokhandhi *Lax* Ung",
+        big: "Li *Pu-Tong* Liang",
+        little: "Alan *Rubble* Chen & Vincent *S.O.S.* Poon"
+      },
+      "12": {
+        image: '/img/default.jpg',
+        name: "David *Fonz* Lee",
+        big: "Stephen *Fenton* Chow",
+        little: "Matthew L. *K.W.I.T.* Bendall"
+      },
+      "13": {
+        image: '/img/default.jpg',
+        name: "David *Odie* Meng",
+        big: "Randy *Bonk* Chan",
+      },
+      "14": {
+        image: '/img/default.jpg',
+        name: "Silby *Fiber* Philip",
+        big: "Wellie *Rugrat* Chiang",
+        little: "Melvin *Wiggums* Chu & Jimmy *Wolverine* You"
+      },
+      "15": {
+        image: '/img/default.jpg',
+        name: "Hoon P. *Croc* Joo",
+        big: "Dennis *Vague* Yueh",
+        little: "Steven *T.2K* Lee"
+      }
     }
-  ]
-},
-{
-  classTitle: "Beta",
-  fullClassTitle: "Beta - SPRING 1999",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Sung Han *Pops* Kim",
-      number: "6",
-      big: "Wellie *Rugrat* Chiang",
-      little: "Randy *Bonk* Chan"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Richard *Blurr* Siu",
-      number: "7",
-      big: "Michael *NyQuil* Chang",
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Dennis *Vague* Yueh",
-      number: "8",
-      big: "Hyoung Kyu *Millhouse* Oh",
-      little: "Hoon P. *Croc* Joo"
+  },
+  "Gamma": {
+    fullClassTitle: "Gamma - FALL 1999",
+    brothers: {
+      "9": {
+        image: '/img/default.jpg',
+        name: "Randy *Bonk* Chan",
+        big: "Sung Han *Pops* Kim",
+        little: "David *Odie* Meng"
+      },
+      "10": {
+        image: '/img/default.jpg',
+        name: "Stephen *Fenton* Chow",
+        big: "Frank *Snarf* Hsieh",
+        little: "David *Fonz* Lee"
+      }
     }
-  ]
-},
-{
-  classTitle: "Alpha",
-  fullClassTitle: "Alpha - SPRING 1998",
-  activeBrothers: [
-    {
-      image: '/img/default.jpg',
-      name: "Frank *Snarf* Hsieh",
-      number: "1",
-      big: "Jimmy *Skeeter* Quan",
-      little: "Stephen *Fenton* Chow"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Wellie *Rugrat* Chiang",
-      number: "2",
-      big: "Chi Wai *Stimpy* Lee",
-      little: "Sung Han *Pops* Kim & Silby *Fiber* Philip"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Hyoung Kyu *Millhouse* Oh",
-      number: "3",
-      big: "Hak Bin *Blanka* Ahn",
-      little: "Dennis *Vague* Yueh"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Li *Pu-Tong* Liang",
-      number: "4",
-      big: "Kevin J. *Spam* Tabije",
-      little: "Sokhandhi *Lax* Ung & Justin *Mishap* Kuo"
-    },
-    {
-      image: '/img/default.jpg',
-      name: "Michael *NyQuil* Chang",
-      number: "5",
-      big: "Kenny *Emunster* Eng",
-      little: "Richard *Blurr* Siu & Henry Min *F.A.C.E. Off* Hsu"
+  },
+  "Beta": {
+    fullClassTitle: "Beta - SPRING 1999",
+    brothers: {
+      "6": {
+        image: '/img/default.jpg',
+        name: "Sung Han *Pops* Kim",
+        big: "Wellie *Rugrat* Chiang",
+        little: "Randy *Bonk* Chan"
+      },
+      "7": {
+        image: '/img/default.jpg',
+        name: "Richard *Blurr* Siu",
+        big: "Michael *NyQuil* Chang",
+      },
+      "8": {
+        image: '/img/default.jpg',
+        name: "Dennis *Vague* Yueh",
+        big: "Hyoung Kyu *Millhouse* Oh",
+        little: "Hoon P. *Croc* Joo"
+      }
     }
-  ]
+  },
+  "Alpha": {
+    fullClassTitle: "Alpha - SPRING 1998",
+    brothers: {
+      "1": {
+        image: '/img/default.jpg',
+        name: "Frank *Snarf* Hsieh",
+        big: "Jimmy *Skeeter* Quan",
+        little: "Stephen *Fenton* Chow"
+      },
+      "2": {
+        image: '/img/default.jpg',
+        name: "Wellie *Rugrat* Chiang",
+        big: "Chi Wai *Stimpy* Lee",
+        little: "Sung Han *Pops* Kim & Silby *Fiber* Philip"
+      },
+      "3": {
+        image: '/img/default.jpg',
+        name: "Hyoung Kyu *Millhouse* Oh",
+        big: "Hak Bin *Blanka* Ahn",
+        little: "Dennis *Vague* Yueh"
+      },
+      "4": {
+        image: '/img/default.jpg',
+        name: "Li *Pu-Tong* Liang",
+        big: "Kevin J. *Spam* Tabije",
+        little: "Sokhandhi *Lax* Ung & Justin *Mishap* Kuo"
+      },
+      "5": {
+        image: '/img/default.jpg',
+        name: "Michael *NyQuil* Chang",
+        big: "Kenny *Emunster* Eng",
+        little: "Richard *Blurr* Siu & Henry Min *F.A.C.E. Off* Hsu"
+      }
+    }
+  }
 }
-]
+
+// Helper function to build a Class from BROTHERS
+function buildClass(classTitle: string): Class {
+  const classData = BROTHERS[classTitle]
+  return {
+    classTitle: classTitle,
+    fullClassTitle: classData.fullClassTitle,
+    activeBrothers: Object.entries(classData.brothers)
+      .map(([number, data]) => ({
+        number,
+        ...data
+      }))
+      .filter(brother => brother.name !== undefined) as Brother[]
+  }
+}
+
+// Build CurrentHouse and Roster from the centralized data
+const CurrentHouse: Class[] = ACTIVE_HOUSE_CLASSES.map(buildClass)
+
+const Roster: Class[] = Object.keys(BROTHERS).map(buildClass)
 
 export default function Page() {
   const [selectedClass, setSelectedClass] = useState<Class | null>(null)
