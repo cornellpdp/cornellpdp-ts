@@ -35,6 +35,8 @@ import sp24front from "public/img/rush/sp24front.jpg"
 import sp24back from "public/img/rush/sp24back.jpg"
 import sp25front from "public/img/rush/sp25front.jpg"
 import sp25back from "public/img/rush/sp25back.jpg"
+import sp26front from "public/img/rush/sp26front.jpg"
+import sp26back from "public/img/rush/sp26back.jpg"
 
 
 import Image from "next/image"
@@ -87,8 +89,9 @@ export default function Page() {
       
 
       <div className="mainContent" style={{ textAlign: "center" }}>
-        {/* CHANGE isActive TO TRUE WHEN RUSH IS OPEN, CHANGE LINK TO THE INTEREST FORM LINK */}
-        <RushStatus isActive={false} variant="default" link="https://tinyurl.com/fa25pdp"/>
+        {/* TODO: CHANGE isActive TO TRUE WHEN RUSH IS OPEN, CHANGE LINK TO THE INTEREST FORM LINK 
+            and go to ../RushStatus/index.tsx and update semester / graphics */}
+        <RushStatus isActive={true} variant="default" link="https://forms.gle/zxP3BSRRwZHwySoA8"/>
         <div style={{ marginTop: '3rem' }}>
           <h2 style={{ 
             fontSize: '2rem', 

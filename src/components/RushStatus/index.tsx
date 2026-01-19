@@ -1,4 +1,7 @@
 import React from 'react'
+import Image from 'next/image'
+import sp26front from "public/img/rush/sp26front.jpg"
+import sp26back from "public/img/rush/sp26back.jpg"
 
 interface RushStatusProps {
   isActive: boolean
@@ -41,6 +44,41 @@ const RushStatus: React.FC<RushStatusProps> = ({ isActive, variant = 'default', 
           }}>
             Interested in Joining Pi Delta Psi?
           </h2>
+
+        {/* Image Container */}
+          <div style={{
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: '20px',
+            margin: '2rem 0',
+            flexWrap: 'wrap'
+          }}>
+            <Image 
+              src={sp26front} // TODO: Change image
+              alt="Rush Flyer Front" 
+              style={{
+                width: '100%',
+                maxWidth: '400px',
+                height: 'auto',
+                borderRadius: '8px',
+                boxShadow: '0 10px 30px rgba(0,0,0,0.4)'
+              }}
+            />
+            <Image 
+              src={sp26back}  // TODO: Change image
+              alt="Rush Flyer Back" 
+              style={{
+                width: '100%',
+                maxWidth: '400px',
+                height: 'auto',
+                borderRadius: '8px',
+                boxShadow: '0 10px 30px rgba(0,0,0,0.4)'
+              }}
+            />
+          </div>
+
           <p style={{ 
             fontSize: variant === 'compact' ? '1.2rem' : '1.4rem', 
             color: 'white',
@@ -48,7 +86,7 @@ const RushStatus: React.FC<RushStatusProps> = ({ isActive, variant = 'default', 
             fontWeight: '500',
             textShadow: '0 1px 2px rgba(0,0,0,0.3)'
           }}>
-            Fall 2025 Rush is now open! Fill out our interest form to get started.
+            Spring 2026 Rush is now open! Fill out our interest form to get started.
           </p>
           
           <a 
@@ -92,7 +130,7 @@ const RushStatus: React.FC<RushStatusProps> = ({ isActive, variant = 'default', 
             opacity: 0.9,
             textShadow: '0 1px 2px rgba(0,0,0,0.3)'
           }}>
-            Rush applications are now open until September 17 (9/17/25)
+            Rush applications are now open until February 04 (02/04/2026)
           </p>
         </div>
       </div>
@@ -123,7 +161,7 @@ const RushStatus: React.FC<RushStatusProps> = ({ isActive, variant = 'default', 
         marginBottom: '2rem',
         fontWeight: '500'
       }}>
-        Thank you for your interest in Pi Delta Psi! Rush for Fall 2025 has concluded.
+        Thank you for your interest in Pi Delta Psi! Rush for Spring 2026 has concluded.
       </p>
       <p style={{ 
         fontSize: variant === 'compact' ? '1rem' : '1.1rem', 
