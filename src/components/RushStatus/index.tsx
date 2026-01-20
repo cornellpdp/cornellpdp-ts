@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import sp26front from "public/img/rush/sp26front.jpg"
-import sp26back from "public/img/rush/sp26back.jpg"
+import sp26front from "public/img/rush/sp26front.jpeg"
+import sp26back from "public/img/rush/sp26back.jpeg"
 
 interface RushStatusProps {
   isActive: boolean
