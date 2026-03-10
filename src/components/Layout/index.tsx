@@ -94,7 +94,7 @@ const Layout = ({ children }: PropsWithChildren) => {
           <div className="footerRight">
             <div>© 2024 Cornell Pi Delta Psi Fraternity, Inc.</div>
             <div>Website by Joshua Guo</div>
-            <div>Maintained by Kyle Chu, Francis Pham</div>
+            <div>Maintained by Kyle Chu, Francis Pham, Vincent Yi</div>
           </div>
         </footer>
       </div>
