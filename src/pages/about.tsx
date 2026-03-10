@@ -3,22 +3,22 @@ import Background from "@/components/Background"
 import about from "public/img/about.jpg"
 import EBoard from "@/components/EBoard"
 import { EboardMember } from "@/components/EBoard/types"
-import oliver from "public/img/at/oliver.png"
-import james from "public/img/at/james2.png"
-import tuo from "public/img/at/tuo2.png"
-import levi from "public/img/at/levi.jpg"
-import kych from "public/img/aphi/kych2.png"
+import paul from "public/img/achi/paul.jpg"
+import dom from "public/img/achi/dom_prez.jpg"
+import masen from "public/img/apsi/masen.png"
+import vo from "public/img/apsi/vo.png"
+import peter from "public/img/apsi/peter.png"
 
 type AboutProps = {
   title: string
 }
 
 const EBoardList: EboardMember[] = [
-  { image: james, title: "President", name: "James *MINI PEKKA* Kim" },
-  { image: oliver, title: "Vice President", name: "Oliver *360KICKFLIP* Nishikawa" },
-  { image: tuo, title: "Warden", name: "Thomas *REBIRTH* Kuo" },
-  { image: levi, title: "Treasurer", name: "Levi *enrose* Zeng" },
-  { image: kych, title: "House Manager", name: "Kyle *AMATA* Chu" },
+  { image: dom, title: "President", name: "Dominic *IGNATIUS* Nguyen" },
+  { image: paul, title: "Vice President", name: "Paul *REINER* Hwang" },
+  { image: masen, title: "Warden", name: "Masen *VESPER* Chow" },
+  { image: vo, title: "Treasurer", name: "Ethan *vol* Vo" },
+  { image: peter, title: "House Manager", name: "Peter *GAWAIN* Tsung" },
 ]
 
 export default function Page() {

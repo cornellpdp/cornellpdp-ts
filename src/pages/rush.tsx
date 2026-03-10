@@ -54,6 +54,7 @@ interface SemesterData {
 
 export default function Page() {
   const [semesters, setSemesters] = useState<SemesterData[]>([
+    { semester: "Spring 2026", front: sp26front, back: sp26back, isOpen: false },
     { semester: "Fall 2025", front: fa25front, back: fa25back, isOpen: false },
     { semester: "Spring 2025", front: sp25front, back: sp25back, isOpen: false },
     { semester: "Fall 2024", front: fa24front, back: fa24back, isOpen: false },

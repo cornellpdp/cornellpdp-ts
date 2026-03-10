@@ -71,7 +71,7 @@ export const BROTHERS: Record<string, ClassData> = {
     fullClassTitle: "BETA ALPHA — FALL 2025",
     brothers: {
       "227": {
-        image: '/img/default.jpg',
+        image: '/img/ba/jlam.jpg',
         name: "Jonathan *gravitas* Lam",
         year: "2027",
         college: Colleges.ilr,
@@ -79,7 +79,7 @@ export const BROTHERS: Record<string, ClassData> = {
         big: "Gabriel *AKAZA* Huang"
       },
       "228": {
-        image: '/img/default.jpg',
+        image: '/img/ba/nathan.jpg',
         name: "Nathan *NIGHTINGALE* Rivera",
         year: "2029",
         college: Colleges.aap,
@@ -87,7 +87,7 @@ export const BROTHERS: Record<string, ClassData> = {
         big: "Marcus *PUSO* Gamboa"
       },
       "229": {
-        image: '/img/default.jpg',
+        image: '/img/ba/eddie.jpg',
         name: "Eddie *GOCHU* Jiang",
         year: "2028",
         college: Colleges.hotel,
@@ -95,7 +95,7 @@ export const BROTHERS: Record<string, ClassData> = {
         big: "Max *PERUN* Wang"
       },
       "230": {
-        image: '/img/default.jpg',
+        image: '/img/ba/edward.jpg',
         name: "Edward *HOLY MOLY BACC* Paik",
         year: "2028",
         college: Colleges.ilr,
@@ -103,7 +103,7 @@ export const BROTHERS: Record<string, ClassData> = {
         big: "Aryan *MEGA PEKKA* Jain"
       },
       "231": {
-        image: '/img/default.jpg',
+        image: '/img/ba/vy.jpg',
         name: "Vincent *kawa* Yi",
         year: "2028",
         college: Colleges.coe,
@@ -286,6 +286,7 @@ export const BROTHERS: Record<string, ClassData> = {
         college: Colleges.dyson,
         major: Majors.dyson,
         big: "James *MINI PEKKA* Kim",
+        little: "Edward *HOLY MOLY BACC* Paik"
       }
     }
   },
@@ -308,6 +309,7 @@ export const BROTHERS: Record<string, ClassData> = {
         college: Colleges.coe,
         major: "Operations Research & Information Engineering",
         big: "William *ATTICUS* Xing",
+        little: "Jonathan *gravitas* Lam"
       },
       "204": {
         image: '/img/aphi/thomasn.png',
@@ -316,6 +318,7 @@ export const BROTHERS: Record<string, ClassData> = {
         college: Colleges.cals,
         major: Majors.biosci,
         big: "John Joshua *Crito* Bernardino",
+        little: "Vincent *kawa* Yi"
       },
       "205": {
         image: '/img/aphi/adriano.png',
@@ -426,7 +429,7 @@ export const BROTHERS: Record<string, ClassData> = {
         college: Colleges.coe,
         major: "Biomedical Engineering",
         big: "Luis *Meno* Malenab",
-        little: "Dominic *IGNATIUS* Nguyen & Kevin *sun* Zhu"
+        little: "Dominic *IGNATIUS* Nguyen, Kevin *sun* Zhu, Nathan *NIGHTINGALE* Rivera"
       },
       "198": {
         image: '/img/at/max.png',
@@ -434,7 +437,8 @@ export const BROTHERS: Record<string, ClassData> = {
         year: "2026",
         college: Colleges.cas,
         major: Majors.cs,
-        big: "Joshua *MIMIR* Guo"
+        big: "Joshua *MIMIR* Guo",
+        little: "Eddie *GOCHU* Jiang"
       }
     }
   },

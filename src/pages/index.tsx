@@ -7,7 +7,7 @@ import RushStatus from "@/components/RushStatus"
 import homepage from "public/img/homepage.jpg"
 import kappa from "public/img/kappa.png"
 import crest from "public/img/crest.png"
-import president from "public/img/at/james.png"
+import president from "public/img/achi/dom_prez.jpg"
 
 type HomeProps = {
   title: string
@@ -137,7 +137,7 @@ export default function Page() {
               }}>
                 <Image
                   src={president}
-                  alt="James Kim - Chapter President"
+                  alt="Dominic Nguyen - Chapter President"
                   style={{
                     width: "300px",
                     height: "300px",
@@ -159,7 +159,7 @@ export default function Page() {
                   fontSize: '1.1rem',
                   fontWeight: '600'
                 }}>
-                  James <em>&quot;MINI PEKKA&quot;</em> Kim<br/>
+                  Dominic <em>&quot;IGNATIUS&quot;</em> Nguyen<br/>
                   Chapter President
                 </p>
               </div>
@@ -175,30 +175,33 @@ export default function Page() {
               margin: '1rem'
             }}>
               <p style={{ color: '#495057', marginBottom: '1.5rem' }}>
-                Welcome to the official website of Cornell University&rsquo;s Pi Delta Psi Fraternity, Inc., Kappa Chapter. 
-                Pi Delta Psi was founded in 1994, and Cornell&rsquo;s very own Kappa Chapter was chartered in 1997 on the principles of academic achievement,
-                cultural awareness, righteousness, and friendship and loyalty.
+                Welcome to the official website of Pi Delta Psi, Fraternity Inc., Kappa Chapter at Cornell University. 
+                Pi Delta Psi was founded in 1994 at Binghamton University, and Cornell&rsquo;s very own Kappa Chapter was 
+                chartered in 1998 on our four pillars of Academic Achievement, Cultural Awareness, Righteousness, and 
+                Friendship and Loyalty.
               </p>
               
               <p style={{ color: '#495057', marginBottom: '1.5rem' }}>
-                Being part of Pi Delta Psi has given me the opportunity to form lifelong bonds with 40+ amazing brothers, 
-                all brought together by these shared values. I&rsquo;ve been incredibly lucky to meet such a supportive, 
-                inspiring group of people. I&rsquo;m extremely grateful to have met every single person in our chapter 
-                and have made countless memories with them whether it be through
-                philanthropic events, cultural events, or even just relaxing at our fraternity house.
+                Being a brother of Pi Delta Psi has been an incredibly meaningful experience. Through this fraternity, 
+                I&rsquo;ve formed lifelong friendships with over 40 brothers who are united by shared values and a strong 
+                sense of brotherhood. I&rsquo;m deeply grateful to be part of a community that is supportive, caring, and 
+                constantly inspiring. From social and cultural events to simply spending time together at our fraternity 
+                house, I&rsquo;ve made countless memories that will always remain a meaningful part of my time at Cornell.
               </p>
               
               <p style={{ color: '#495057', margin: 0 }}>
-                If you want to learn more about our organization, feel free to check out the rest of this website and our
-                Facebook and Instagram pages. To learn more about Pi Delta Psi on a national level, check out the 
+                To learn more about our organization, feel free to explore the rest of our website and follow us on Instagram. 
+                To learn more about Pi Delta Psi on a national level, please visit the  
                 <a href="https://www.pideltapsi.com/" target="_blank" rel="noopener noreferrer" style={{ 
                   color: '#800000', 
                   textDecoration: 'none', 
                   fontWeight: '600',
                   borderBottom: '2px solid #800000',
                   paddingBottom: '1px'
-                }}> Pi Delta Psi national website</a>. If you have any questions,
-                don&rsquo;t hesitate to reach out to any active brothers or alumni to learn more about who we are.
+                }}> Pi Delta Psi national website</a>. If you have any questions or would like to learn more, 
+                feel free to reach out to me, any of our active brothers, or our alumni. We would love to connect 
+                and share what Pi Delta Psi means to us.
+
               </p>
             </div>
           </div>
