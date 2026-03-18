@@ -42,7 +42,7 @@ const Donate: React.FC = () => {
         <div className="hSection">
           <div className="leftColumn">
             {/* Manually adjust 'current' to current donation amount */}
-            <DonationBar current={4782} goal={50000}
+            <DonationBar current={9902} goal={50000}
               checkpoints={[
                 {
                   amount: 10000,
