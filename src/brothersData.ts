@@ -94,7 +94,7 @@ export const BROTHERS: Record<string, ClassData> = {
         image: '/img/default.jpg',
         name: "Ryan *HENNESSY* Liu",
         year: "2028",
-        college: Colleges.cals,
+        college: Colleges.humec,
         major: Majors.nutsci,
         big: "Dominic *IGNATIUS* Nguyen"
       },
