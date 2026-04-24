@@ -23,6 +23,9 @@ export const Majors = {
   isst: "Information Science, Systems, and Technology",
   hbhs: "Human Biology, Heath & Society",
   archi: "Architecture",
+  meche: "Mechanical Engineering",
+  dea: "Design + Environmental Analysis",
+  nutsci: "Nutritional Sciences",
   unknown: "?"
 }
 
@@ -37,6 +40,7 @@ export type ClassData = {
 // FOR WEBMASTER -- UPDATE ACTIVE HOUSE CLASSES HERE
 // **********************************************************************************
 export const ACTIVE_HOUSE_CLASSES = [
+  "BETA BETA",
   "BETA ALPHA",
   "ALPHA PSI",
   "ALPHA CHI",
@@ -67,6 +71,91 @@ export const ACTIVE_HOUSE_CLASSES = [
 // }
 // **********************************************************************************
 export const BROTHERS: Record<string, ClassData> = {
+  "BETA BETA": {
+    fullClassTitle: "BETA BETA — SPRING 2026",
+    brothers: {
+      "232": {
+        image: '/img/default.jpg',
+        name: "William *OBLIVIATE* Liu",
+        year: "2029",
+        college: Colleges.dyson,
+        major: Majors.dyson,
+        big: "Owen *ARISEN* Cho"
+      },
+      "233": {
+        image: '/img/default.jpg',
+        name: "Christopher *TATSUJIN* Voon",
+        year: "2029",
+        college: Colleges.cas,
+        major: Majors.cs,
+        big: "Jonathan *gravitas* Lam"
+      },
+      "234": {
+        image: '/img/default.jpg',
+        name: "Ryan *HENNESSY* Liu",
+        year: "2028",
+        college: Colleges.cals,
+        major: Majors.nutsci,
+        big: "Dominic *IGNATIUS* Nguyen"
+      },
+      "235": {
+        image: '/img/default.jpg',
+        name: "Chase *BILL* Ngai",
+        year: "2029",
+        college: Colleges.hotel,
+        major: Majors.hotel,
+        big: "Adriano *Chakri* Greco"
+      },
+      "236": {
+        image: '/img/default.jpg',
+        name: "Matthew *TAKUMI* Cheung",
+        year: "2029",
+        college: Colleges.hotel,
+        major: Majors.hotel,
+        big: "Anson *yourpants* Li"
+      },
+      "237": {
+        image: '/img/default.jpg',
+        name: "Ethan *giggly* Gu",
+        year: "2029",
+        college: Colleges.humec,
+        major: Majors.dea,
+        big: "Garrett *widul* Lee"
+      },
+      "238": {
+        image: '/img/default.jpg',
+        name: "Dicky *NORMOUS* Ning",
+        year: "2028",
+        college: Colleges.coe,
+        major: Majors.cs,
+        big: "Kevin *sun* Zhu"
+      },
+      "239": {
+        image: '/img/default.jpg',
+        name: "Andrew *DoYouKnowDa* Wei",
+        year: "2028",
+        college: Colleges.hotel,
+        major: Majors.hotel,
+        big: "Edward *HOLY MOLY BACC* Paik"
+      },
+      "240": {
+        image: '/img/default.jpg',
+        name: "Kensho *SEISHUN* Kaya",
+        year: "2030",
+        college: Colleges.aap,
+        major: Majors.archi,
+        big: "Wonjae *I.M.* Lee"
+      },
+      "241": {
+        image: '/img/default.jpg',
+        name: "Calvin *PACATUS Pang",
+        year: "2028",
+        college: Colleges.coe,
+        major: Majors.meche,
+        big: "Francis *ARGOS* Pham"
+      },
+    }
+  },
   "BETA ALPHA": {
     fullClassTitle: "BETA ALPHA — FALL 2025",
     brothers: {
