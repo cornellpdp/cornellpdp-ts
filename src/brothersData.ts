@@ -148,7 +148,7 @@ export const BROTHERS: Record<string, ClassData> = {
       },
       "241": {
         image: '/img/default.jpg',
-        name: "Calvin *PACATUS Pang",
+        name: "Calvin *PACATUS* Pang",
         year: "2028",
         college: Colleges.coe,
         major: Majors.meche,
