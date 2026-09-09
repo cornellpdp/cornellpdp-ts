@@ -86,7 +86,7 @@ const RushStatus: React.FC<RushStatusProps> = ({ isActive, variant = 'default', 
             fontWeight: '500',
             textShadow: '0 1px 2px rgba(0,0,0,0.3)'
           }}>
-            Spring 2026 Rush is now open! Fill out our interest form to get started.
+            Fall 2026 Rush is now open! Fill out our interest form to get started.
           </p>
           
           <a 
@@ -130,7 +130,7 @@ const RushStatus: React.FC<RushStatusProps> = ({ isActive, variant = 'default', 
             opacity: 0.9,
             textShadow: '0 1px 2px rgba(0,0,0,0.3)'
           }}>
-            Rush applications are now open until February 04 (02/04/2026)
+            Rush applications are now open until September 15th (09/15/2026)
           </p>
         </div>
       </div>
