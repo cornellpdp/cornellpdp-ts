@@ -37,6 +37,8 @@ import sp25front from "public/img/rush/sp25front.jpg"
 import sp25back from "public/img/rush/sp25back.jpg"
 import sp26front from "public/img/rush/sp26front.jpeg"
 import sp26back from "public/img/rush/sp26back.jpeg"
+import fa26front from "public/img/rush/fa26front.jpeg"
+import fa26back from "public/img/rush/fa26back.jpeg"
 
 
 import Image from "next/image"
@@ -54,6 +56,7 @@ interface SemesterData {
 
 export default function Page() {
   const [semesters, setSemesters] = useState<SemesterData[]>([
+    { semester: "Fall 2026", front: fa26front, back: fa26back, isOpen: true },
     { semester: "Spring 2026", front: sp26front, back: sp26back, isOpen: false },
     { semester: "Fall 2025", front: fa25front, back: fa25back, isOpen: false },
     { semester: "Spring 2025", front: sp25front, back: sp25back, isOpen: false },
@@ -92,7 +95,7 @@ export default function Page() {
       <div className="mainContent" style={{ textAlign: "center" }}>
         {/* TODO: CHANGE isActive TO TRUE WHEN RUSH IS OPEN, CHANGE LINK TO THE INTEREST FORM LINK 
             and go to ../RushStatus/index.tsx and update semester / graphics */}
-        <RushStatus isActive={false} variant="default" link="https://forms.gle/zxP3BSRRwZHwySoA8"/>
+        <RushStatus isActive={true} variant="default" link="https://forms.gle/eU8wPdMSha9W5ATB7"/>
         <div style={{ marginTop: '3rem' }}>
           <h2 style={{ 
             fontSize: '2rem', 

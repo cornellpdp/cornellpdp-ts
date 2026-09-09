@@ -8,6 +8,7 @@ import dom from "public/img/achi/dom_prez.jpg"
 import masen from "public/img/apsi/masen.png"
 import vo from "public/img/apsi/vo.png"
 import peter from "public/img/apsi/peter.png"
+import vincent from "public/img/apsi/vincent.png"
 
 type AboutProps = {
   title: string
@@ -19,6 +20,7 @@ const EBoardList: EboardMember[] = [
   { image: masen, title: "Warden", name: "Masen *VESPER* Chow" },
   { image: vo, title: "Treasurer", name: "Ethan *vol* Vo" },
   { image: peter, title: "House Manager", name: "Peter *GAWAIN* Tsung" },
+  { image: vincent, title: "Recorder", name: "Vincent *DRETHOS* Zheng"}
 ]
 
 export default function Page() {
