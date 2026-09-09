@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import sp26front from "public/img/rush/sp26front.jpeg"
-import sp26back from "public/img/rush/sp26back.jpeg"
+import fa26front from "public/img/rush/fa26front.jpeg"
+import fa26back from "public/img/rush/fa26back.jpeg"
 
 interface RushStatusProps {
   isActive: boolean
@@ -56,7 +56,7 @@ const RushStatus: React.FC<RushStatusProps> = ({ isActive, variant = 'default', 
             flexWrap: 'wrap'
           }}>
             <Image 
-              src={sp26front} // TODO: Change image
+              src={fa26front} // TODO: Change image
               alt="Rush Flyer Front" 
               style={{
                 width: '100%',
@@ -67,7 +67,7 @@ const RushStatus: React.FC<RushStatusProps> = ({ isActive, variant = 'default', 
               }}
             />
             <Image 
-              src={sp26back}  // TODO: Change image
+              src={fa26back}  // TODO: Change image
               alt="Rush Flyer Back" 
               style={{
                 width: '100%',

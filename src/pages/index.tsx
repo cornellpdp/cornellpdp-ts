@@ -94,7 +94,7 @@ export default function Page() {
         {/* Rush Status Section */}
         <section style={{ margin: '3rem 0' }}>
           {/* CHANGE isActive TO TRUE WHEN RUSH IS OPEN, CHANGE LINK TO THE INTEREST FORM LINK */}
-          <RushStatus isActive={false} variant="compact" link="https://tinyurl.com/fa25pdp"/>
+          <RushStatus isActive={true} variant="compact" link="https://forms.gle/eU8wPdMSha9W5ATB7"/>
         </section>
 
         {/* President's Letter Section */}
