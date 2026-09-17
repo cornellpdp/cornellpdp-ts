@@ -120,7 +120,7 @@ export const BROTHERS: Record<string, ClassData> = {
         name: "Ethan *giggly* Gu",
         year: "2029",
         college: Colleges.humec,
-        major: Majors.dea,
+        major: Majors.hotel,
         big: "Garrett *widul* Lee"
       },
       "238": {
