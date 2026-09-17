@@ -95,7 +95,7 @@ export default function Page() {
       <div className="mainContent" style={{ textAlign: "center" }}>
         {/* TODO: CHANGE isActive TO TRUE WHEN RUSH IS OPEN, CHANGE LINK TO THE INTEREST FORM LINK 
             and go to ../RushStatus/index.tsx and update semester / graphics */}
-        <RushStatus isActive={true} variant="default" link="https://forms.gle/eU8wPdMSha9W5ATB7"/>
+        <RushStatus isActive={false} variant="default" link="https://forms.gle/eU8wPdMSha9W5ATB7"/>
         <div style={{ marginTop: '3rem' }}>
           <h2 style={{ 
             fontSize: '2rem', 
