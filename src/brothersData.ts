@@ -47,6 +47,7 @@ export const ACTIVE_HOUSE_CLASSES = [
   "ALPHA PHI",
   "ALPHA UPSILON",
   "ALPHA TAU",
+  "ALPHA SIGMA"
 ]
 
 // **********************************************************************************
