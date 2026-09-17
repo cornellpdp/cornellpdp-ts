@@ -75,7 +75,7 @@ export const BROTHERS: Record<string, ClassData> = {
     fullClassTitle: "BETA BETA — SPRING 2026",
     brothers: {
       "232": {
-        image: '/img/default.jpg',
+        image: '/img/bb/will.jpeg',
         name: "William *OBLIVIATE* Liu",
         year: "2029",
         college: Colleges.dyson,
@@ -83,7 +83,7 @@ export const BROTHERS: Record<string, ClassData> = {
         big: "Owen *ARISEN* Cho"
       },
       "233": {
-        image: '/img/default.jpg',
+        image: '/img/bb/chris.jpeg',
         name: "Christopher *TATSUJIN* Voon",
         year: "2029",
         college: Colleges.cas,
@@ -91,7 +91,7 @@ export const BROTHERS: Record<string, ClassData> = {
         big: "Jonathan *gravitas* Lam"
       },
       "234": {
-        image: '/img/default.jpg',
+        image: '/img/bb/ryan.jpeg',
         name: "Ryan *HENNESSY* Liu",
         year: "2028",
         college: Colleges.humec,
@@ -99,7 +99,7 @@ export const BROTHERS: Record<string, ClassData> = {
         big: "Dominic *IGNATIUS* Nguyen"
       },
       "235": {
-        image: '/img/default.jpg',
+        image: '/img/bb/chase.jpeg',
         name: "Chase *BILL* Ngai",
         year: "2029",
         college: Colleges.hotel,
@@ -107,7 +107,7 @@ export const BROTHERS: Record<string, ClassData> = {
         big: "Adriano *Chakri* Greco"
       },
       "236": {
-        image: '/img/default.jpg',
+        image: '/img/bb/matt.jpeg',
         name: "Matthew *TAKUMI* Cheung",
         year: "2029",
         college: Colleges.hotel,
@@ -115,7 +115,7 @@ export const BROTHERS: Record<string, ClassData> = {
         big: "Anson *yourpants* Li"
       },
       "237": {
-        image: '/img/default.jpg',
+        image: '/img/bb/egu.jpeg',
         name: "Ethan *giggly* Gu",
         year: "2029",
         college: Colleges.humec,
@@ -123,7 +123,7 @@ export const BROTHERS: Record<string, ClassData> = {
         big: "Garrett *widul* Lee"
       },
       "238": {
-        image: '/img/default.jpg',
+        image: '/img/bb/dicky.jpeg',
         name: "Dicky *NORMOUS* Ning",
         year: "2028",
         college: Colleges.coe,
@@ -131,7 +131,7 @@ export const BROTHERS: Record<string, ClassData> = {
         big: "Kevin *sun* Zhu"
       },
       "239": {
-        image: '/img/default.jpg',
+        image: '/img/bb/andrew.jpeg',
         name: "Andrew *DoYouKnowDa* Wei",
         year: "2028",
         college: Colleges.hotel,
@@ -139,7 +139,7 @@ export const BROTHERS: Record<string, ClassData> = {
         big: "Edward *HOLY MOLY BACC* Paik"
       },
       "240": {
-        image: '/img/default.jpg',
+        image: '/img/bb/ken.jpeg',
         name: "Kensho *SEISHUN* Kaya",
         year: "2030",
         college: Colleges.aap,
@@ -147,7 +147,7 @@ export const BROTHERS: Record<string, ClassData> = {
         big: "Wonjae *I.M.* Lee"
       },
       "241": {
-        image: '/img/default.jpg',
+        image: '/img/bb/calvin.jpeg',
         name: "Calvin *PACATUS* Pang",
         year: "2028",
         college: Colleges.coe,
