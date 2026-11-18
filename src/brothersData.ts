@@ -2,13 +2,14 @@ import { Brother } from "@/components/Roster/types"
 
 export const Colleges = {
   cas: "College of Arts and Sciences",
-  coe: "College of Engineering",
+  coe: "David A. Duffield College of Engineering",
   dyson: "S.C. Johnson College of Business",
   aap: "College of Architecture, Art, and Planning",
   cals: "College of Agriculture and Life Sciences",
   humec: "College of Human Ecology",
   ilr: "School of Industrial and Labor Relations",
   hotel: "School of Hotel Administration",
+  brooks: "Jeb E. Brooks School of Public Policy",
   unknown: "?"
 }
 
@@ -26,6 +27,8 @@ export const Majors = {
   meche: "Mechanical Engineering",
   dea: "Design + Environmental Analysis",
   nutsci: "Nutritional Sciences",
+  pubpol: "Public Policy",
+  gphs: "Global and Public Health Sciences",
   unknown: "?"
 }
 
@@ -40,6 +43,7 @@ export type ClassData = {
 // FOR WEBMASTER -- UPDATE ACTIVE HOUSE CLASSES HERE
 // **********************************************************************************
 export const ACTIVE_HOUSE_CLASSES = [
+  "BETA GAMMA",
   "BETA BETA",
   "BETA ALPHA",
   "ALPHA PSI",
@@ -71,6 +75,43 @@ export const ACTIVE_HOUSE_CLASSES = [
 // }
 // **********************************************************************************
 export const BROTHERS: Record<string, ClassData> = {
+  "BETA GAMMA": {
+    fullClassTitle: "BETA GAMMA — FALL 2026",
+    brothers: {
+      "242": {
+        image: '/img/default.jpg',
+        name: "Jimmy *brocco* Li",
+        year: "2029",
+        college: Colleges.ilr,
+        major: Majors.ilr,
+        big: "Chris *kairyu* Huang"
+      },
+      "243": {
+        image: '/img/default.jpg',
+        name: "Alan *LETS-A* Guo",
+        year: "2029",
+        college: Colleges.cals,
+        major: Majors.gphs,
+        big: "Edward *HOLY MOLY BACC* Paik"
+      },
+      "244": {
+        image: '/img/default.jpg',
+        name: "Max *upsmashOOS* Hurst",
+        year: "2029",
+        college: Colleges.brooks,
+        major: Majors.pubpol,
+        big: "Gabriel *AKAZA* Huang"
+      },
+      "245": {
+        image: '/img/default.jpg',
+        name: "Matthew *GENER4L* Tsao",
+        year: "2028",
+        college: Colleges.humec,
+        major: Majors.nutsci,
+        big: "Paul *Reiner* Hwang"
+      }
+    }
+  },
   "BETA BETA": {
     fullClassTitle: "BETA BETA — SPRING 2026",
     brothers: {
