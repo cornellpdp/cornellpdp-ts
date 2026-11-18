@@ -194,7 +194,7 @@ export const BROTHERS: Record<string, ClassData> = {
         college: Colleges.coe,
         major: Majors.meche,
         big: "Francis *ARGOS* Pham"
-      },
+      }
     }
   },
   "BETA ALPHA": {
