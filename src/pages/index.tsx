@@ -159,7 +159,7 @@ export default function Page() {
                   fontSize: '1.1rem',
                   fontWeight: '600'
                 }}>
-                  Dominic <em>&quot;IGNATIUS&quot;</em> Nguyen<br/>
+                  Dominic <em>*IGNATIUS*</em> Nguyen<br/>
                   Chapter President
                 </p>
               </div>
